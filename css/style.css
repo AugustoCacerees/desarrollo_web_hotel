@@ -6,20 +6,32 @@
     box-sizing: border-box;
 }
 /*------------------------------------- HEADER --------------------------------------------------*/
-.menu-nav li{
-    display: inline-block;
-} 
-
-.menu-nav li a{
-    margin-left: 1.25rem;
-    list-style: none;
-    color: white;
-    text-decoration: none;
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #76453B;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
+.menu-nav{
+    display: flex;
+    list-style: none; 
+    gap: 3.75rem;
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+} 
 
+.menu-nav li a{  
+    text-decoration: none;
+    color: white;
+}
 
-
+ 
 /*------------------------------------- MAIN --------------------------------------------------*/
 body{
     background-color: rgb(232, 152, 62);
