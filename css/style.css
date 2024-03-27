@@ -23,15 +23,14 @@ header{
     list-style: none; 
     gap: 3.75rem;
     margin-right: 1.25rem;
-    font-size: 1.25rem;
 } 
 
 .menu-nav li a{  
     text-decoration: none;
     color: white;
+    font-size: 1.25rem;
 }
 
- 
 /*------------------------------------- MAIN --------------------------------------------------*/
 body{
     background-color: rgb(232, 152, 62);
@@ -41,9 +40,9 @@ body{
 .main-back{
     width: 100%;
     height: 31.25rem;
-    background-image: url("../assets/img/inicio/background-1.jpg");
+    background-image: url("https://resizer.glanacion.com/resizer/v2/la-ex-finca-monterrey-conserva-las-fachadas-y-DPYMBABYLBAAPI24SGQ42MGZHM.jpg?auth=ba0896fcaee651cce277b56a8f91fcdf05f4328666fb2e783192096ad6161a58&width=1920&height=1280&quality=70&smart=true");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-left: 2.5%;
     padding-top: 9.375rem;
@@ -56,4 +55,462 @@ body{
 }
 
 /*------------------------------------- SECCIONES -----------------------------------------------*/
+.main-sections-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "section-1 section-1"
+    "section-2 section-3"
+    "section-4 section-5"
+    ;
+    gap: .625rem;
+    background-color: #F8FAE5;
+}
+
+.main-section-1{
+    background-color: blue;
+    grid-area: section-1;
+    justify-self: center;
+}
+
+.main-section-2{
+    background-color: red;
+    grid-area: section-2;
+}
+
+.main-section-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.main-section-3{
+    background-color: rgb(0, 255, 17);
+    grid-area: section-3;
+}
+
+.main-section-4{
+    background-color: rgb(255, 204, 0);
+    grid-area: section-4;
+}
+
+.main-section-5{
+    background-color: rgb(255, 0, 255);
+    grid-area: section-5;
+}
+
+.main-section-5 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---- CLIENTES ----*/
+.clients-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr repeat(3,5fr) 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
+    "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
+    ". . client-section-7 . ."
+    ;
+    gap: .625rem;
+    background-color: #D4E7C5;
+}
+
+.client-section-one{
+    background-color: blue;
+    grid-area: client-section-1;
+    justify-self: center;
+}
+
+.client-section-two{
+    background-color: rgb(47, 108, 62);
+    grid-area: client-section-2;
+    align-self: center;
+}
+
+.client-section-three{
+    background-color: #789461;
+    grid-area: client-section-3;
+}
+
+.client-testimony-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
+    "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4"
+    "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5"
+    "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6"
+    ;
+    /* gap: .625rem; */
+    /* background-color: #F8FAE5; */
+}
+
+.client-testimony-section-one{
+    /* background-color: rgb(0, 255, 51); */
+    grid-area: client-testimony-section-1;
+}
+
+.client-testimony-section-one img{
+    width: 100%;
+    height: 100%;
+}
+
+.client-testimony-section-two{
+    /* background-color: rgb(0, 229, 255); */
+    grid-area: client-testimony-section-2;
+}
+
+.client-testimony-section-three{
+    /* background-color: rgb(255, 0, 64); */
+    grid-area: client-testimony-section-3;
+}
+
+.client-testimony-section-three img{
+    width: 60%;
+    height: 60%;
+}
+
+.client-testimony-section-four{
+    /* background-color: rgb(0, 17, 255); */
+    grid-area: client-testimony-section-4;
+}
+
+.client-testimony-section-five{
+    /* background-color: rgb(204, 206, 112); */
+    grid-area: client-testimony-section-5;
+}
+
+.client-testimony-section-six{
+    /* background-color: rgb(24, 67, 60); */
+    grid-area: client-testimony-section-6;
+}
+
+.client-section-four{
+    background-color: #789461;
+    grid-area: client-section-4;
+}
+
+.client-section-five{
+    background-color: #789461;
+    grid-area: client-section-5;
+}
+
+.client-section-six{
+    background-color: rgb(0, 208, 255);
+    grid-area: client-section-6;
+    align-self: center;
+}
+
+.client-section-seven{
+    background-color: rgb(72, 82, 29);
+    grid-area: client-section-7;
+    justify-self: center;
+}
+
+/* --------- HABITACIONES --------- */
+.image-background-rooms img{
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
+}
+.text-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "text-section-1"
+    "text-section-2"
+    "text-section-3"
+}
+
+.text-section-one{
+    background-color: blue;
+    grid-area: text-section-1;
+    justify-self: center;
+}
+
+.text-section-two{
+    background-color: rgb(0, 255, 64);
+    grid-area: text-section-2;
+    justify-self: center;
+}
+
+.text-section-three{
+    background-color: rgb(255, 0, 68);
+    grid-area: text-section-3;
+    justify-self: center;
+}
+
+.room-type-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "room-type-section-1 room-type-section-3"
+    "room-type-section-1 room-type-section-4"
+    "room-type-section-2 room-type-section-5"
+    ;
+    /* gap: .625rem; */
+    background-color: #D4E7C5;
+}
+
+.room-type-section-one{
+    background-color: blue;
+    grid-area: room-type-section-1;
+}
+
+.room-type-section-one img{
+    width: 100%;
+    height: 100%;
+}
+
+.room-type-section-two{
+    background-color: rgb(9, 255, 0);
+    grid-area: room-type-section-2;
+}
+
+.room-type-section-three{
+    background-color: rgb(255, 0, 204);
+    grid-area: room-type-section-3;
+}
+
+.room-type-section-four{
+    background-color: rgb(0, 179, 255);
+    grid-area: room-type-section-4;
+}
+
+.room-type-section-five{
+    background-color: rgb(255, 0, 13);
+    grid-area: room-type-section-5;
+}
+
+/* --------- GASTRONOMIA --------- */
+.image-background-gastronomy img{
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
+}
+
+.gastronomic-experience-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "gastronomic-experience-section-1 gastronomic-experience-section-1"
+    "gastronomic-experience-section-2 gastronomic-experience-section-2"
+    "gastronomic-experience-section-3 gastronomic-experience-section-3"
+    "gastronomic-experience-section-4 gastronomic-experience-section-5"
+}
+
+.gastronomic-experience-section-one{
+    background-color: blue;
+    grid-area: gastronomic-experience-section-1;
+    justify-self: center;
+}
+
+.gastronomic-experience-section-two{
+    background-color: rgb(0, 255, 64);
+    grid-area: gastronomic-experience-section-2;
+    justify-self: center;
+}
+
+.gastronomic-experience-section-three{
+    background-color: rgb(255, 0, 68);
+    grid-area: gastronomic-experience-section-3;
+    justify-self: center;
+}
+
+.gastronomic-experience-section-four{
+    background-color: rgb(0, 47, 255);
+    grid-area: gastronomic-experience-section-4;
+}
+
+.gastronomic-experience-section-four img{
+    width: 100%;
+    height: 100%;
+}
+
+.gastronomic-experience-section-five{
+    background-color: rgb(255, 222, 5);
+    grid-area: gastronomic-experience-section-5;
+}
+
+/* PLATOS REGIONALES */
+.our-meals-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "our-meals-section-1 our-meals-section-1 our-meals-section-1"
+    "our-meals-section-2 our-meals-section-2 our-meals-section-2"
+    "our-meals-section-3 our-meals-section-4 our-meals-section-5"
+    "our-meals-section-6 our-meals-section-6 our-meals-section-6";
+    gap: .625rem; 
+
+}
+
+.our-meals-section-one{
+    background-color: rgb(5, 255, 126);
+    grid-area: our-meals-section-1;
+}
+
+.our-meals-section-two{
+    background-color: rgb(5, 47, 255);
+    grid-area: our-meals-section-2;     
+}
+
+.our-meals-section-three{
+    background-color: rgb(255, 5, 155);
+    grid-area: our-meals-section-3;
+}
+
+.our-meals-section-three img{
+    width: 100%;
+    height: 100%;
+}
+
+.our-meals-section-four{
+    background-color: rgb(5, 255, 9);
+    grid-area: our-meals-section-4;
+}
+
+.our-meals-section-four img{
+    width: 100%;
+    height: 100%;
+}
+
+.our-meals-section-five{
+    background-color: rgb(5, 234, 255);
+    grid-area: our-meals-section-5;
+}
+
+.our-meals-section-five img{
+    width: 100%;
+    height: 100%;
+}
+
+.our-meals-section-six{
+    background-color: rgb(60, 210, 105);
+    grid-area: our-meals-section-6;
+}
+
+/* ............EXCURSIONES............ */
+.image-background-excursions{
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
+}
+/* SECCION SALINAS GRANDES */
+.salinas-grandes-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "salinas-grandes-1 salinas-grandes-1"
+    "salinas-grandes-2 salinas-grandes-2"
+    "salinas-grandes-3 salinas-grandes-4";
+    gap: .625rem; 
+}
+
+.salinas-grandes-section-one{
+    background-color: rgb(5, 234, 255);
+    grid-area: salinas-grandes-1;
+}
+
+.salinas-grandes-section-two{
+    background-color: rgb(255, 5, 201);
+    grid-area: salinas-grandes-2;
+}
+
+.salinas-grandes-section-three{
+    background-color: rgb(255, 159, 5);
+    grid-area: salinas-grandes-3;
+}
+
+.salinas-grandes-section-three img{
+    width: 100%;
+    height: 100%;
+}
+
+.salinas-grandes-section-four{
+    background-color: rgb(5, 168, 255);
+    grid-area: salinas-grandes-4;
+}
+
+/* SECCION PROMOCIONES EXCURSIONES*/
+.excursions-promotions-section-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "promotions-section-1 promotions-section-1 promotions-section-1"
+    "promotions-section-2 promotions-section-3 promotions-section-4"
+    "promotions-section-5 promotions-section-6 promotions-section-7";
+    gap: .625rem; 
+}
+
+.excursions-section-one{
+    background-color: rgb(5, 234, 255);
+    grid-area: promotions-section-1;
+}
+
+.excursions-section-two{
+    background-color: rgb(255, 5, 205);
+    grid-area: promotions-section-2;
+}
+
+.excursions-section-two img{
+    width: 100%;
+    height: 100%;
+}
+
+.excursions-section-three{
+    background-color: rgb(255, 5, 205);
+    grid-area: promotions-section-3;
+}
+
+.excursions-section-three img{
+    width: 100%;
+    height: 100%;
+}
+
+.excursions-section-four{
+    background-color: rgb(255, 5, 205);
+    grid-area: promotions-section-4;
+}
+
+.excursions-section-four img{
+    width: 100%;
+    height: 100%;
+}
+
+.excursions-section-five{
+    background-color: rgb(230, 255, 5);
+    grid-area: promotions-section-5;
+}
+
+.excursions-section-six{
+    background-color: rgb(230, 255, 5);
+    grid-area: promotions-section-6;
+}
+
+.excursions-section-seven{
+    background-color: rgb(230, 255, 5);
+    grid-area: promotions-section-7;
+}
+
+
 /*-------------------------------------- FOOTER ------------------------------------------------- */
