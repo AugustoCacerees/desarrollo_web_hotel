@@ -18,6 +18,11 @@ header{
     top: 0;
 }
 
+header img{
+    width: 10%;
+    height: 10%;
+}
+
 .menu-nav{
     display: flex;
     list-style: none; 
