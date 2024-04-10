@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Reservar</title>
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/7485a1f76b.js" crossorigin="anonymous"></script>
 </head>
     <body>
         <!------------------------------------- HEADER -------------------------------------------------->
@@ -21,125 +23,96 @@
             </nav>         
         </header>
         <!--------------------------------------- MAIN --------------------------------------------------->
-        <main>
-            <div>
-                <h1>A Humahuaca siempre se vuelve</h1>
-                <p>¡Hace tu reserva y accede a las mejores promociones de temporada!</p>
-            </div>
-            <div>
-                <form action="">
-                    <fieldset>
-                        <legend>Reserva tu habitacion</legend>
-                        <label for="fecha_ingreso">Fecha de ingreso</label>
-                        <input type="date" id="fecha_ingreso" required>
-                        <label for="fecha_salida">Fecha de salida</label>
-                        <input type="date" id="fecha_salida" required>
-                        <label for="number_adults">Adultos</label>
-                        <input type="number" id="number_adults" required>
-                        <label for="number_children">Ninos</label>
-                        <input type="number" id="number_children" required>
-                        <label for="number_rooms">Cantidad de habitaciones</label>
-                        <input type="number" id="number_rooms" required>
-                        <input type="submit">
-                    </fieldset>
-                </form>
-            </div>
-            <div>
-                <img src="../assets/img/reservar/main-hotel.jpg" alt="">
-            </div>
+        <main class="book-room-grid">
+            <img class="book-room-one" src="../assets/img/reservar/main-hotel.jpg" alt="">
+            <h1 class="book-room-two">A Humahuaca siempre se vuelve</h1>
+            <p class="book-room-three">¡Hace tu reserva y accede a las mejores promociones de temporada!</p>
+            <section class="book-room-four">
+                <div class="book-card-grid">
+                    <legend class="book-card-title">RESERVA TU HABITACIÓN</legend>
+                    <label class="book-card-one" for="fecha_ingreso">Fecha Ingreso</label>
+                    <input class="book-card-two" type="date" id="fecha_ingreso" required>
+                    <label class="book-card-three" for="fecha_salida">Fecha Salida</label>
+                    <input class="book-card-four" type="date" id="fecha_salida" required>
+                    <label class="book-card-five" for="number_adults">Adultos</label>
+                    <input class="book-card-six" type="number" id="number_adults" required>
+                    <label class="book-card-seven" for="number_children">Ninos</label>
+                    <input class="book-card-eight" type="number" id="number_children" required>
+                    <label class="book-card-nine" for="number_rooms">Cantidad de habitaciones</label>
+                    <input class="book-card-ten" type="number" id="number_rooms" required>
+                    <input class="book-card-eleven" type="submit" value="Chequear Disponibilidad">
+                </div>
+            </section>
         </main>
         <!------------------------------------- SECCIONES ----------------------------------------------->
-        <section>
-            <h2>Contactanos</h2>
-            <div>
-                <h3>Distancias</h3>
-                <p>San Salvador de Jujuy 131 km</p>
-                <p>Salta 248 km</p>
-                <p>Purmamarca 66 km</p>
-            </div>
-        </section>
-        <section>
-            <p>Complete el siguiente formulario y en breve le enviaremos un presupuesto detallado con nuestros 
+        <section class="contact-us-grid">
+            <h2 class="contact-us-one">Contactanos</h2>
+            <p class="contact-us-two">Complete el siguiente formulario y en breve le enviaremos un presupuesto detallado con nuestros 
                 servicios y nuestra mejor oferta</p>
-            <div>
-                <form action="">
-                    <fieldset>
-                        <legend>Formulario</legend>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" required>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" required>
-                        <label for="email">Email</label>
-                        <input type="text" id="email" required>
-                        <label for="ponhe">Telefono</label>
-                        <input type="tel" id="phone" required>
-                        <label for="country">Pais</label>
-                        <input type="text" id="country" required>
-                        <label for="province">Provincia</label>
-                        <input type="text" id="province" required>
-                        <label for="comment">Consulta o comentario adicional:</label>
-                        <input type="text" id="comment" required>
-                        <input type="submit">
-                    </fieldset>
-                </form>
+            <div class="contact-us-three">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+            </div > 
+            <div class="contact-us-four">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" required>
             </div>
+            <div class="contact-us-five">
+                <label for="email">Email</label>
+                <input type="text" id="email" required>
+            </div>
+            <div class="contact-us-six">
+                <label for="ponhe">Telefono</label>
+                <input type="tel" id="phone" required>
+            </div >
+            <div class="contact-us-seven">
+                <label for="country">Pais</label>
+                <input type="text" id="country" required>
+            </div>
+            <div class="contact-us-eight">
+                <label for="province">Provincia</label>
+                <input type="text" id="province" required>
+            </div>
+            <div class="contact-us-nine">
+                <label for="comment">Consulta o comentario adicional:</label>
+                <input type="text" id="comment" required>
+            </div>
+            <input class="contact-us-ten" type="submit" value="Enviar Consulta">  
+            <iframe class="contact-us-eleven" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14667.677882000704!2d-65.36125274706002!3d-23.209605214686714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404e9a4ba40a8c1%3A0x5ff8703d0479ecf9!2sHumahuaca%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1712276454981!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section>
+        <section class="payment-methods">
             <h2>Medios de Pago</h2>
             <div>
                 <img src="../assets/img/reservar/payment-methods.png" alt="">
             </div>
         </section>
-        
         <!------------------------------------- FOOTER ----------------------------------------------->
-        <footer>
-            <h3>HOTEL ALTO HUMAHUCA</h3>
-            <section>
-                <div>
-                    <img src="../assets/img/iconos/phone.png" alt="">
-                    <p>+549-2616492726 <br> +549-2616492726</p>
+        <footer class="footer-grid">
+            <div class="first-group">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../assets/img/iconos/logo-hotel-alto-hca.png" alt="">
+                        </a>
+                    </figure>
                 </div>
-                <div>
-                    <img src="../assets/img/iconos/send-email.png" alt="">
-                    <p>hotelaltohca@gmail.com</p>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium accusamus, odio officiis fugit corrupti earum commodi facilis nisi sunt voluptates officia. Minus temporibus officiis dicta nulla, ut error voluptatem nisi!</p>
                 </div>
-                <div>
-                    <img src="..assets/img/iconos/address.png" alt="">
-                    <p>Calle Catamarca 31 <br>Barrio Sarmiento <br> Ciudad Humahuaca</p>
+                <div class="box">
+                    <h2>Siguenos</h2>
+                    <div class="social-network">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
                 </div>
-            </section>
-            <section>
-                <div>
-                    <img src="../assets/img/iconos/instagram.png" alt="">
-                    <p>@hotelaltohca</p>
-                </div>
-                <div>
-                    <img src="../assets/img/iconos/facebook.png" alt="">
-                    <p>Alto Humahuaca</p>
-                </div>
-                <div>
-                    <img src="../assets/img/iconos/twitter.png" alt="">
-                    <p>@hotelaltohca</p>
-                </div>
-                <div>
-                    <img src="../assets/img/iconos/youtube.png" alt="">
-                    <p>Hotel Alto Humahuaca</p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <p>Coloca tu email y te enviaremos toda la información que necesitas</p>
-                    <form action="">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" required>
-                        <button type="submit">Confirmar</button>
-                    </form>
-                </div>
-                <div>
-                    <img src="../assets/img/iconos/logo-aucomi.png" alt="">
-                    <img src="../assets/img/iconos/logo-jujuy.png" alt="">
-                </div>
-            </section>
+            </div>
+            <div class="second-group">
+                <small>&copy; 2024 <b>AUCOMI Web Desgin</b> - Todos los Derechos Reservados</small>
+            </div>
         </footer>
     </body>
 </html>

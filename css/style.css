@@ -5,7 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*------------------------------------- HEADER --------------------------------------------------*/
+body{
+    background-color: rgb(232, 152, 62);
+    font-family: "Josefin Sans", sans-serif;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -36,12 +42,12 @@ header img{
     font-size: 1.25rem;
 }
 
-/*------------------------------------- MAIN --------------------------------------------------*/
-body{
-    background-color: rgb(232, 152, 62);
-    font-family: "Josefin Sans", sans-serif;
+.menu-nav li a:hover{  
+    color:rgba(0, 153, 229, 0.682);
+    text-decoration: underline;
 }
 
+/*------------------------------------- INDEX --------------------------------------------------*/
 .main-back{
     width: 100%;
     height: 31.25rem;
@@ -59,63 +65,83 @@ body{
     text-shadow: 1px 1px 3px black;
 }
 
-/*------------------------------------- SECCIONES -----------------------------------------------*/
 .main-sections-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    /* margin: .625rem auto; */
+    padding: 25px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px repeat(3,150px);
     grid-template-areas: 
-    "section-1 section-1"
-    "section-2 section-3"
-    "section-4 section-5"
+    "section-1 section-1 section-1 section-1"
+    "section-2 section-2 section-3 section-3"
+    "section-2 section-2 section-5 section-5"
+    "section-4 section-4 section-5 section-5"
     ;
-    gap: .625rem;
+    gap: 20px;
     background-color: #F8FAE5;
 }
 
 .main-section-1{
-    background-color: blue;
+    /* background-color: blue; */
     grid-area: section-1;
     justify-self: center;
+    align-self: center;
+    font-size: 21px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .main-section-2{
-    background-color: red;
+    /* background-color: red; */
     grid-area: section-2;
 }
 
 .main-section-2 img{
     width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main-section-3{
-    background-color: rgb(0, 255, 17);
+    /* background-color: rgb(0, 255, 17); */
     grid-area: section-3;
+    font-size: 20px;
+    text-align: center;
+    display: flex; /* Cambia a modelo de caja flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 .main-section-4{
-    background-color: rgb(255, 204, 0);
+    /* background-color: rgb(255, 204, 0); */
     grid-area: section-4;
+    font-size: 20px;
+    text-align: center;
+    display: flex; /* Cambia a modelo de caja flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 .main-section-5{
-    background-color: rgb(255, 0, 255);
+    /* background-color: rgb(255, 0, 255); */
     grid-area: section-5;
 }
 
 .main-section-5 img{
     width: 100%;
     height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* ---- CLIENTES ----*/
+/* ---- SUB SECCIÓN CLIENTES ----*/
 .clients-section-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr repeat(3,5fr) 1fr;
-    grid-template-rows: repeat(3,1fr);
+    height: 450px;
+    padding: 1.5625rem;
+    grid-template-columns: 1fr repeat(3,10fr) 1fr;
+    grid-template-rows: 60px 300px 30px;
     grid-template-areas: 
     "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
     "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
@@ -123,16 +149,21 @@ body{
     ;
     gap: .625rem;
     background-color: #D4E7C5;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-section-one{
-    background-color: blue;
+    /* background-color: blue; */
     grid-area: client-section-1;
     justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
 }
 
 .client-section-two{
-    background-color: rgb(47, 108, 62);
+    /* background-color: rgb(47, 108, 62); */
     grid-area: client-section-2;
     align-self: center;
 }
@@ -145,20 +176,22 @@ body{
 .client-testimony-section-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    height: 300px;
+    padding: .9375rem;
+    grid-template-columns: 75px 60px 1fr;
+    grid-template-rows: 35px 35px 20px 200px;
     grid-template-areas: 
     "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
     "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4"
     "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5"
     "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6"
     ;
-    /* gap: .625rem; */
+    gap: 5px;
     /* background-color: #F8FAE5; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .client-testimony-section-one{
-    /* background-color: rgb(0, 255, 51); */
     grid-area: client-testimony-section-1;
 }
 
@@ -170,21 +203,27 @@ body{
 .client-testimony-section-two{
     /* background-color: rgb(0, 229, 255); */
     grid-area: client-testimony-section-2;
+    align-self: center;
+    font-size: 30px;
 }
 
 .client-testimony-section-three{
     /* background-color: rgb(255, 0, 64); */
     grid-area: client-testimony-section-3;
+    display: flex;
+    align-items: center;
 }
 
 .client-testimony-section-three img{
-    width: 60%;
-    height: 60%;
+    width: 75%;
+    height: 80%;
 }
 
 .client-testimony-section-four{
     /* background-color: rgb(0, 17, 255); */
     grid-area: client-testimony-section-4;
+    align-self: center;
+    font-size: 1.5625rem;
 }
 
 .client-testimony-section-five{
@@ -192,9 +231,14 @@ body{
     grid-area: client-testimony-section-5;
 }
 
+.client-testimony-section-five img{
+    height: 100%;
+}
+
 .client-testimony-section-six{
     /* background-color: rgb(24, 67, 60); */
     grid-area: client-testimony-section-6;
+    font-size: 15px;
 }
 
 .client-section-four{
@@ -208,13 +252,13 @@ body{
 }
 
 .client-section-six{
-    background-color: rgb(0, 208, 255);
+    /* background-color: rgb(0, 208, 255); */
     grid-area: client-section-6;
     align-self: center;
 }
 
 .client-section-seven{
-    background-color: rgb(72, 82, 29);
+    /* background-color: rgb(72, 82, 29); */
     grid-area: client-section-7;
     justify-self: center;
 }
@@ -225,6 +269,7 @@ body{
     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
     max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
 }
+
 .text-section-grid{
     display: grid;
     width: 100%;
@@ -234,48 +279,74 @@ body{
     "text-section-1"
     "text-section-2"
     "text-section-3"
+    ;
+    gap: .625rem;
+    background-color: #FFFFFF;
 }
 
 .text-section-one{
     background-color: blue;
     grid-area: text-section-1;
     justify-self: center;
+    align-self: center;
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .text-section-two{
     background-color: rgb(0, 255, 64);
     grid-area: text-section-2;
     justify-self: center;
+    text-align: center;
+    font-size: 25px;
+    padding-inline-start: 200px; /* Padding a la izquierda */
+    padding-inline-end: 200px; /* Padding a la derecha */
 }
 
 .text-section-three{
     background-color: rgb(255, 0, 68);
     grid-area: text-section-3;
     justify-self: center;
+    align-self: center;
+    color: #76453B;
 }
 
+/* Habitacion Premium */
 .room-type-section-grid{
     display: grid;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
     "room-type-section-1 room-type-section-3"
     "room-type-section-1 room-type-section-4"
+    "room-type-section-1 room-type-section-4"
+    "room-type-section-1 room-type-section-4"
     "room-type-section-2 room-type-section-5"
     ;
-    /* gap: .625rem; */
     background-color: #D4E7C5;
+    gap: 10px; /* Borde transparente */
+    justify-content: center ;
+}
+
+.room-type-section-grid:last-child {
+    margin-bottom: 100px; /* Puedes ajustar este valor según sea necesario */
 }
 
 .room-type-section-one{
     background-color: blue;
     grid-area: room-type-section-1;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
 }
 
 .room-type-section-one img{
-    width: 100%;
-    height: 100%;
+    width:75%;
+    max-width: 100%;
 }
 
 .room-type-section-two{
@@ -284,18 +355,98 @@ body{
 }
 
 .room-type-section-three{
-    background-color: rgb(255, 0, 204);
+    background-color: #789461;
     grid-area: room-type-section-3;
+    justify-self: center;
+    align-self: center;
+    border: 10px solid #789461;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 .room-type-section-four{
     background-color: rgb(0, 179, 255);
     grid-area: room-type-section-4;
+    font-size: 17px;
+}
+
+.room-type-section-four p {
+    margin-bottom: 10px; /* Ajusta este valor según sea necesario */
 }
 
 .room-type-section-five{
     background-color: rgb(255, 0, 13);
     grid-area: room-type-section-5;
+}
+
+/* Habitacion Estandar */
+.standard-room-section-grid{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "standard-room-section-1 standard-room-section-4"
+    "standard-room-section-1 standard-room-section-4"
+    "standard-room-section-1 standard-room-section-3"
+    "standard-room-section-1 standard-room-section-4"
+    "standard-room-section-2 standard-room-section-5"
+    ;
+    background-color: #e6670c;
+    gap: 10px; /* Borde transparente */
+}
+
+.standard-room-section-grid:last-child {
+    margin-bottom: 100px;
+}
+
+.standard-room-section-one{
+    background-color: blue;
+    grid-area: standard-room-section-1;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+.standard-room-section-one img{
+    width:75%;
+    max-width: 100%;
+}
+
+.standard-room-section-two{
+    background-color: rgb(9, 255, 0);
+    grid-area: standard-room-section-2;
+}
+
+.standard-room-section-three{
+    background-color: #789461;
+    grid-area: standard-room-section-3;
+    justify-self: center;
+    align-self: center;
+    border: 10px solid #789461;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.standard-room-section-four{
+    background-color: rgb(0, 179, 255);
+    grid-area: standard-room-section-4;
+    font-size: 17px;
+}
+
+.standard-room-section-four p {
+    margin-bottom: 10px; /* Ajusta este valor según sea necesario */
+}
+
+.standard-room-section-five{
+    background-color: rgb(255, 0, 13);
+    grid-area: standard-room-section-5;
 }
 
 /* --------- GASTRONOMIA --------- */
@@ -305,109 +456,156 @@ body{
     max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
 }
 
-.gastronomic-experience-section-grid{
+/* INTRODUCCIÓN */
+.gastronomic-experience-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "gastronomic-experience-section-1 gastronomic-experience-section-1"
-    "gastronomic-experience-section-2 gastronomic-experience-section-2"
-    "gastronomic-experience-section-3 gastronomic-experience-section-3"
-    "gastronomic-experience-section-4 gastronomic-experience-section-5"
+    height: 100vh;
+    grid-template-columns: repeat(2,650px);
+    grid-template-rows: 40px repeat(2,60px) 40px repeat(2,225px);
+    column-gap: 15px;
+    justify-content: center;
+    align-content: center;
 }
 
-.gastronomic-experience-section-one{
-    background-color: blue;
-    grid-area: gastronomic-experience-section-1;
+.gastronomic-experience-one{
+    grid-column-start: 1;
+    grid-column-end: 3;
     justify-self: center;
+    align-self: center;
+    font-size: 30px;
 }
 
-.gastronomic-experience-section-two{
-    background-color: rgb(0, 255, 64);
-    grid-area: gastronomic-experience-section-2;
+.gastronomic-experience-two{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
     justify-self: center;
+    align-self: center;
+    font-size: 25px;
+    text-align: center;
 }
 
-.gastronomic-experience-section-three{
-    background-color: rgb(255, 0, 68);
-    grid-area: gastronomic-experience-section-3;
-    justify-self: center;
+.gastronomic-experience-three{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 25px;
 }
 
-.gastronomic-experience-section-four{
-    background-color: rgb(0, 47, 255);
-    grid-area: gastronomic-experience-section-4;
-}
-
-.gastronomic-experience-section-four img{
+.gastronomic-experience-four{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
     width: 100%;
     height: 100%;
 }
 
-.gastronomic-experience-section-five{
-    background-color: rgb(255, 222, 5);
-    grid-area: gastronomic-experience-section-5;
+.gastronomic-experience-five{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    font-size: 25px;
+    justify-self: center;
+    text-align: center;
 }
 
-/* PLATOS REGIONALES */
-.our-meals-section-grid{
+/* SERVICIO REGIONAL */
+.regional-service-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "our-meals-section-1 our-meals-section-1 our-meals-section-1"
-    "our-meals-section-2 our-meals-section-2 our-meals-section-2"
-    "our-meals-section-3 our-meals-section-4 our-meals-section-5"
-    "our-meals-section-6 our-meals-section-6 our-meals-section-6";
-    gap: .625rem; 
-
+    /* height: 100vh; */
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: 50px 30px 320px 80px 30px 320px 80px;
+    column-gap: 15px;
+    justify-content: center;
+    /* align-content: center; */
 }
 
-.our-meals-section-one{
-    background-color: rgb(5, 255, 126);
-    grid-area: our-meals-section-1;
+.regional-service-one{
+    grid-column: 2/3;    
+    justify-self: center;
+    text-align: center;
 }
 
-.our-meals-section-two{
-    background-color: rgb(5, 47, 255);
-    grid-area: our-meals-section-2;     
+.regional-service-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
 }
 
-.our-meals-section-three{
-    background-color: rgb(255, 5, 155);
-    grid-area: our-meals-section-3;
-}
-
-.our-meals-section-three img{
+.regional-service-three{
+    grid-column: 1/2;
+    grid-row: 3/4;
     width: 100%;
     height: 100%;
 }
 
-.our-meals-section-four{
-    background-color: rgb(5, 255, 9);
-    grid-area: our-meals-section-4;
-}
-
-.our-meals-section-four img{
+.regional-service-four{
+    grid-column: 2/3;
+    grid-row: 3/4;
     width: 100%;
     height: 100%;
 }
 
-.our-meals-section-five{
-    background-color: rgb(5, 234, 255);
-    grid-area: our-meals-section-5;
-}
-
-.our-meals-section-five img{
+.regional-service-five{
+    grid-column: 3/4;
+    grid-row: 3/4;
     width: 100%;
     height: 100%;
 }
 
-.our-meals-section-six{
-    background-color: rgb(60, 210, 105);
-    grid-area: our-meals-section-6;
+.regional-service-six{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    font-size: 20px;
+    justify-self: center;
+    text-align: center;
+}
+
+.regional-service-seven{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.regional-service-eight{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+}
+
+.regional-service-nine{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+}
+
+.regional-service-ten{
+    grid-column: 3/4;
+    grid-row: 6/7;
+    width: 100%;
+    height: 100%;
+}
+
+.regional-service-eleven{
+    grid-column: 1/4;
+    grid-row: 7/8;
+    font-size: 20px;
+    justify-self: center;
+    text-align: center;
 }
 
 /* ............EXCURSIONES............ */
@@ -416,106 +614,647 @@ body{
     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
     max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
 }
-/* SECCION SALINAS GRANDES */
-.salinas-grandes-section-grid{
+
+/* SECCION 1 */
+.introduction-excursions-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "salinas-grandes-1 salinas-grandes-1"
-    "salinas-grandes-2 salinas-grandes-2"
-    "salinas-grandes-3 salinas-grandes-4";
-    gap: .625rem; 
+    height: 150px;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(2,50px);
+    justify-content: center;
+    align-content: center;
+    background-color: #3be60c;
 }
 
-.salinas-grandes-section-one{
-    background-color: rgb(5, 234, 255);
-    grid-area: salinas-grandes-1;
+.introduction-excursions-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 25px;
+    justify-self: center;
+    align-content: center;
 }
 
-.salinas-grandes-section-two{
-    background-color: rgb(255, 5, 201);
-    grid-area: salinas-grandes-2;
+.introduction-excursions-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 21px;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
 }
 
-.salinas-grandes-section-three{
-    background-color: rgb(255, 159, 5);
-    grid-area: salinas-grandes-3;
-}
-
-.salinas-grandes-section-three img{
-    width: 100%;
-    height: 100%;
-}
-
-.salinas-grandes-section-four{
-    background-color: rgb(5, 168, 255);
-    grid-area: salinas-grandes-4;
-}
-
-/* SECCION PROMOCIONES EXCURSIONES*/
-.excursions-promotions-section-grid{
+/* SECCION 2: Salinas Grandes */
+.salinas-grandes-grid{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "promotions-section-1 promotions-section-1 promotions-section-1"
-    "promotions-section-2 promotions-section-3 promotions-section-4"
-    "promotions-section-5 promotions-section-6 promotions-section-7";
-    gap: .625rem; 
+    grid-template-columns: 500px 350px;
+    grid-template-rows: 70px 110px 370px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 15px;
+    row-gap: 5px;
+    background-color: aqua;
 }
 
-.excursions-section-one{
-    background-color: rgb(5, 234, 255);
-    grid-area: promotions-section-1;
+.salinas-grandes-one{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 23px;
+    justify-self: center;
+    align-content: center;
 }
 
-.excursions-section-two{
-    background-color: rgb(255, 5, 205);
-    grid-area: promotions-section-2;
+.salinas-grandes-two{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 21px;
+    justify-self: center;
+    align-content: center; 
+    text-align: center;
 }
 
-.excursions-section-two img{
+.salinas-grandes-three{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+    /* height: auto; */
+    /* margin-left: auto; */
+}
+
+.salinas-grandes-four{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.salinas-grandes-four h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.salinas-grandes-four p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.salinas-grandes-four ul{
+    font-size: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside; 
+}
+
+/* Promociones Disponibles - Salinas Grandes */
+.available-promotions-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 40px 300px 40px 120px;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: #f54f4f;
+}
+
+.available-promotions-one{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 25px;
+    justify-self: center;
+    align-content: center; 
+}
+
+.available-promotions-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
     width: 100%;
     height: 100%;
 }
 
-.excursions-section-three{
-    background-color: rgb(255, 5, 205);
-    grid-area: promotions-section-3;
+.available-promotions-three{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
 }
 
-.excursions-section-three img{
+.available-promotions-four{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 20px;
+    list-style-position: inside; 
+    text-align: left;
+}
+
+.available-promotions-five{
+    grid-column: 2/3;
+    grid-row: 2/3;
     width: 100%;
     height: 100%;
 }
 
-.excursions-section-four{
-    background-color: rgb(255, 5, 205);
-    grid-area: promotions-section-4;
+.available-promotions-six{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
 }
 
-.excursions-section-four img{
+.available-promotions-seven{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 20px;
+    list-style-position: inside; 
+    text-align: left;
+}
+
+.available-promotions-eight{
+    grid-column: 3/4;
+    grid-row: 2/3;
     width: 100%;
     height: 100%;
 }
 
-.excursions-section-five{
-    background-color: rgb(230, 255, 5);
-    grid-area: promotions-section-5;
+.available-promotions-nine{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
 }
 
-.excursions-section-six{
-    background-color: rgb(230, 255, 5);
-    grid-area: promotions-section-6;
+.available-promotions-ten{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    font-size: 20px;
+    list-style-position: inside; 
+    text-align: left;
 }
 
-.excursions-section-seven{
-    background-color: rgb(230, 255, 5);
-    grid-area: promotions-section-7;
+/* ............RESERVAR............ */
+.book-room-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 1fr);
+    grid-template-rows: 100px 140px 120px 120px;
+    /* justify-content: center;
+    align-content: center;
+    column-gap: 15px;
+    row-gap: 5px; */
+    background-color: aqua;
 }
 
+.book-room-one{
+    grid-column: 1/5;
+    grid-row: 1/5;
+    width: 100%;
+    height: 100%;
+}
+
+.book-room-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    font-size: 70px;
+    word-wrap: break-word;
+}
+
+.book-room-three{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: white;
+    font-size: 25px;
+}
+
+.book-room-four{
+    width: 80%;
+    height: 80%;
+    grid-column: 3/4;
+    grid-row: 1/5;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.book-card-grid{
+    display: grid;
+    width: 90%;
+    height: 100%;
+    grid-template-columns:  repeat(2,1fr);;
+    grid-template-rows: repeat(10,1fr);
+    /* background-color: #f54f4f; */
+    margin: auto; 
+    column-gap: 10px;
+    /* row-gap: 10px; */
+}
+
+.book-card-title{
+    grid-column: 1/3;
+    font-size: 20px;
+    justify-self: center;
+    align-content: center; 
+}
+
+.book-card-one{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 18px;
+    align-content: end;
+    margin: 5px;
+}
+
+.book-card-two{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-bottom: 10px;
+    background-color: rgba(163, 163, 163, 0.49);
+    border: none;
+}
+
+.book-card-three{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 18px;
+    align-content: end;
+    margin: 5px;
+}
+
+.book-card-four{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-bottom: 10px;
+    background-color: rgba(163, 163, 163, 0.49);
+    border: none;
+}
+
+.book-card-five{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 18px;
+    align-content: end;
+    margin: 5px;
+}
+
+.book-card-six{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-bottom: 10px;
+    background-color: rgba(163, 163, 163, 0.49);
+    border: none;
+}
+
+.book-card-seven{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    font-size: 18px;
+    align-content: end;
+    margin: 5px;
+}
+
+.book-card-eight{
+    grid-column: 1/3;
+    grid-row: 7/8;
+    margin-bottom: 10px;
+    background-color: rgba(163, 163, 163, 0.49);
+    border: none;
+}
+
+.book-card-nine{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    font-size: 18px;
+    align-content: end;
+    margin: 5px;
+}
+
+.book-card-ten{
+    grid-column: 1/3;
+    grid-row: 9/10;
+    margin-bottom: 10px;
+    background-color: rgba(163, 163, 163, 0.49);
+    border: none;
+}
+
+.book-card-eleven{
+    background-color: #B19470; 
+    grid-column: 2/3;
+    grid-row: 10/11;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.book-card-eleven:hover {
+    background-color: #76453B; 
+}
+
+/* Contactanos */
+.contact-us-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr repeat(2,1fr);
+    grid-template-rows: 60px 70px repeat(6, 65px);
+    /* justify-content: center;
+    align-content: center;
+    column-gap: 15px; */
+    column-gap: 5px; 
+    background-color: rgb(87, 158, 225);
+}
+
+.contact-us-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-two{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 24px;
+}
+
+.contact-us-three{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 5px;
+}
+
+.contact-us-three label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-three input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-four{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.contact-us-four label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-four input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-five{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.contact-us-five label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-five input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-six{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.contact-us-six label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-six input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-seven{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.contact-us-seven label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-seven input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-eight{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+.contact-us-eight label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-eight input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-nine{
+    grid-column: 2/4;
+    grid-row: 7/8;
+}
+
+.contact-us-nine label{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us-nine input{
+    display: block;
+    margin-bottom: 1px;
+}
+
+.contact-us-ten{
+    width: 50%;
+    height: 60%;
+    background-color: #B19470; 
+    grid-column: 3/4;
+    grid-row: 8/9;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.contact-us-ten:hover{
+    background-color: #76453B; /* Cambia el color de fondo cuando se pasa el mouse */
+}
+
+.contact-us-eleven{
+    grid-column: 1/2;
+    grid-row: 2/9;
+    justify-self: center;
+}
+
+.payment-methods h2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.payment-methods div{
+    display: flex;
+    justify-content: center;
+}
 
 /*-------------------------------------- FOOTER ------------------------------------------------- */
+.footer-grid{
+    width: 100%;
+    background-color: #43766C;
+
+}
+
+.first-group{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    padding: 45px 0px;
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box figure img{
+    width: 270px;
+}
+
+.box h2{
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.social-network a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    background-color: #26554C;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.social-network a:hover{
+    color: #1A64D3;
+}
+
+.second-group{
+    background-color: #294E47;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.second-group small{
+    font-size: 15px;
+}
+
+@media (max-width:768px){
+    /* ---- HEADER ---- */
+    header img{
+        width: 18%;
+        height: 18%;
+    }
+
+    .menu-nav{
+        display: flex;
+        list-style: none; 
+        gap: 30px;
+        margin-right: 1.25rem;
+    }
+    
+    .menu-nav li a{  
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* ---- INDEX ---- */
+    .main-back{
+        width: 100%;
+        height: 400px;
+        align-items: center;
+    }
+
+    .main-back h1{
+        font-size: 58px;
+    }
+
+    .main-back h2{
+        font-size: 20px;
+    }
+
+    .main-sections-grid{
+        grid-template-rows: 60px repeat(3,110px);
+    }
+
+    .main-section-3{
+        font-size: 15px;
+    }
+    
+    .main-section-4{
+        font-size: 15px;
+    }
+    /* Seccion cliente */
+    .client-section-five {
+        display: none; /* Oculta la sección en dispositivos con un ancho máximo de 768px */
+    }
+
+    .clients-section-grid{
+        grid-template-areas: 
+        "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
+        "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
+        ". client-section-7 client-section-7 . ."
+        ;
+    }
+
+    .first-group{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .box {
+        text-align: center; /* Alinea el contenido al centro horizontalmente */
+    }
+}
