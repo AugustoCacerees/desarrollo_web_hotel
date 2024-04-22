@@ -10,18 +10,23 @@
 </head>
     <body>
         <!------------------------------------- HEADER -------------------------------------------------->
-        <header>
-            <img src="../assets/img/iconos/logo-aucomi.png" alt="">
+        <header class="nav-wraper">
             <nav>
-                <ul class="menu-nav">
+                <img class="logo" src="../assets/img/iconos/logo-aucomi.png" alt="">
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+                <div class="menu-bar">
+                    <ul class="menu-nav">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Habitaciones</a></li>
+                    <li><a href="# ">Habitaciones</a></li>
                     <li><a href="./gastronimia.html">Gastronomia</a></li>
                     <li><a href="./excursiones.html">Excursiones</a></li>
                     <li><a href="./reservar.html">Reservar</a></li>
-                </ul>
+                    </ul>
+                </div>
             </nav>         
         </header>
+        
         <!--------------------------------------- MAIN --------------------------------------------------->
         <main class="image-background-rooms">
             <img src="../assets/img/habitaciones/main-room.jpg" alt="">
@@ -29,7 +34,7 @@
         <!------------------------------------- SECCIONES ----------------------------------------------->
         <div class="text-section-grid">
             <section class="text-section-one">
-                <h1>NUESTRAS HABITACIONES A SU DISPOSICIÓN PARA SU COMODIDAD</h1>
+                <h1>NUESTRAS HABITACIONES A TU DISPOSICIÓN CON LA COMODIDAD QUE TE MERECES</h1>
             </section>
             <section class="text-section-two">
                 <p>
@@ -42,17 +47,17 @@
                 <h2>TE OFRECEMOS CATEGORÍA ESTÁNDAR Y SUPERIOR</h2>
             </section>
         </div>    
-        <section class="room-type-section-grid">
-            <section class="room-type-section-one">
+        <div class="premium-room-section-grid">
+            <section class="premium-room-section-one">
                 <img src="../assets/img/habitaciones/premium-room.jpg" alt="">
             </section>
-            <section class="room-type-section-two">
+            <section class="premium-room-section-two">
                 <img src="../assets/img/inicio/browser-indicator.png" alt="">
             </section>
-            <section class="room-type-section-three">
+            <section class="premium-room-section-three">
                 <h3>HABITACIONES PREMIUM</h3>
             </section>
-            <section class="room-type-section-four">
+            <section class="premium-room-section-four">
                 <p>
                     Espaciosas habitaciones en Categoría Estándar con vista a 
                     los cerros de la Quebrada de Humahuaca y al Río Grande. 
@@ -66,10 +71,10 @@
                     Placard.
                 </p>
             </section>
-            <section class="room-type-section-five">
-                <p>Ver tarifa</p>
+            <section class="premium-room-section-five">
+                <input type="submit" value="Chequear Disponibilidad">
             </section>
-        </section>
+        </div>
         <div class="standard-room-section-grid">
             <section class="standard-room-section-one">
                 <img src="../assets/img/habitaciones/standar-room.jpg" alt="">
@@ -97,7 +102,7 @@
                 </p>
             </section>
             <section class="standard-room-section-five">
-                <p>Ver tarifa</p>
+                <input type="submit" value="Chequear Disponibilidad">
             </section>
         </div>
         <!------------------------------------- FOOTER ----------------------------------------------->
@@ -130,3 +135,5 @@
         </footer>
     </body>
 </html>
+
+
