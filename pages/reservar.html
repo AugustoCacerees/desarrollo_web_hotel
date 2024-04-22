@@ -10,21 +10,25 @@
 </head>
     <body>
         <!------------------------------------- HEADER -------------------------------------------------->
-        <header>
-            <img src="../assets/img/iconos/logo-aucomi.png" alt="">
+        <header class="nav-wraper">
             <nav>
-                <ul class="menu-nav">
-                    <li><a href="../index.html">Inicio</a></li>
+                <img class="logo" src="../assets/img/iconos/logo-aucomi.png" alt="">
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+                <div class="menu-bar">
+                    <ul class="menu-nav">
+                        <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./habitaciones.html">Habitaciones</a></li>
                         <li><a href="./gastronimia.html">Gastronomia</a></li>
                         <li><a href="./excursiones.html">Excursiones</a></li>
                         <li><a href="#">Reservar</a></li>
-                </ul>
+                    </ul>
+                </div>
             </nav>         
         </header>
         <!--------------------------------------- MAIN --------------------------------------------------->
         <main class="book-room-grid">
-            <img class="book-room-one" src="../assets/img/reservar/main-hotel.jpg" alt="">
+            <!-- <img class="book-room-one" src="https://www.hotelhuacalera.com/wp-content/uploads/Huacalera-019A.jpg" alt=""> -->
             <h1 class="book-room-two">A Humahuaca siempre se vuelve</h1>
             <p class="book-room-three">¡Hace tu reserva y accede a las mejores promociones de temporada!</p>
             <section class="book-room-four">
@@ -80,9 +84,9 @@
             <input class="contact-us-ten" type="submit" value="Enviar Consulta">  
             <iframe class="contact-us-eleven" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14667.677882000704!2d-65.36125274706002!3d-23.209605214686714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9404e9a4ba40a8c1%3A0x5ff8703d0479ecf9!2sHumahuaca%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1712276454981!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section class="payment-methods">
-            <h2>Medios de Pago</h2>
-            <div>
+        <section class="payment-methods-grid">
+            <h2 class="payment-methods-one">Medios de Pago</h2>
+            <div class="payment-methods-two">
                 <img src="../assets/img/reservar/payment-methods.png" alt="">
             </div>
         </section>
