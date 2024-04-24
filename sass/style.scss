@@ -1,9 +1,14 @@
-@import "generales.scss";
-@import "index.scss";
-@import "habitaciones.scss";
-@import "gastronomia.scss";
-@import "excursiones.scss";
-@import "reservar.scss";
+//Base
+@import "./base/reset";
+
+//Layout
+@import "./layout/index";
+@import "./layout/habitaciones";
+@import "./layout/gastronomia";
+@import "./layout/excursiones";
+@import "./layout/reservar";
+@import "./layout/header";
+@import "./layout/footer";
 
 @media (max-width:1024px){
     /* ----- HEADER ----- */
@@ -98,17 +103,6 @@
             display: none;
         }
     }
-
-    /* ---- FOOTER ---- */
-    .first-group{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-        .box {
-            text-align: center;
-        }
-    }   
     
     /* ----- HABITACIONES ----- */
     .text-section-one{
@@ -285,6 +279,20 @@
             font-size: 34px;
         }
     }
+
+    /* ---- FOOTER ---- */
+    .footer-grid{
+        .first-group{
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            .box {
+                text-align: center;
+            }
+        }  
+    }
+    
 }
 
 @media (max-width:320px){    
