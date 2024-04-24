@@ -1,0 +1,178 @@
+/* ............EXCURSIONES............ */
+.image-background-excursions{
+    img{
+        width: 100%; 
+        height: auto; 
+        max-width: 100%;
+    }
+}
+
+.introduction-excursions-grid{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(2,50px);
+    justify-content: center;
+    align-content: center;
+    /* background-color: #3be60c; */
+    .introduction-excursions-one{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 25px;
+        justify-self: center;
+        align-content: center;
+    }
+    
+    .introduction-excursions-two{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 21px;
+        justify-self: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+.salinas-grandes-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 500px 350px;
+    grid-template-rows: 70px 110px 370px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 15px;
+    row-gap: 5px;
+    /* background-color: aqua; */
+
+    .salinas-grandes-one{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 23px;
+        justify-self: center;
+        align-content: center;
+    }
+    
+    .salinas-grandes-two{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        font-size: 21px;
+        justify-self: center;
+        align-content: center; 
+        text-align: center;
+    }
+    
+    .salinas-grandes-three{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        /* height: auto; */
+        /* margin-left: auto; */
+    }
+    
+    .salinas-grandes-four{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        h3{
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        ul{
+            font-size: 20px;
+            margin-bottom: 20px;
+            list-style-position: inside; 
+        }
+    }
+}
+
+.available-promotions-grid{
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 40px 300px 40px 120px;
+    justify-content: center;
+    column-gap: 10px;
+    /* background-color: #f54f4f; */
+
+    .available-promotions-one{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: 25px;
+        justify-self: center;
+        align-content: center; 
+    }
+    
+    .available-promotions-two{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .available-promotions-three{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .available-promotions-four{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-size: 20px;
+        list-style-position: inside; 
+        text-align: left;
+    }
+    
+    .available-promotions-five{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .available-promotions-six{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .available-promotions-seven{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        font-size: 20px;
+        list-style-position: inside; 
+        text-align: left;
+    }
+    
+    .available-promotions-eight{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .available-promotions-nine{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .available-promotions-ten{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        font-size: 20px;
+        list-style-position: inside; 
+        text-align: left;
+    }
+}

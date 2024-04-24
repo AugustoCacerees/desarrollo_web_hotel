@@ -1,1941 +1,1643 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*------------------------------------- HEADER --------------------------------------------------*/
-body{
-    /* background-color: rgb(232, 152, 62); */
-    font-family: "Josefin Sans", sans-serif;
-}
-
-.nav-wraper{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: sticky;
-    top:0;
-}
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #76453B;
-    color: white;
-}
-
-.menu-nav{
-    display: flex;
-    list-style: none; 
-    gap: 3.75rem;
-    margin-right: 1.25rem;
-}
-
-nav div ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-}
-
-nav #toggle, nav label{
-    display: none;
-}
-
-.menu-nav li a:hover{  
-    color:rgba(55, 166, 142, 0.682);
-    text-decoration: underline;
-}
-
-/*------------------------------------- INDEX --------------------------------------------------*/
-.main-back{
-    width: 100%;
-    height: 31.25rem;
-    background-image: url("https://resizer.glanacion.com/resizer/v2/la-ex-finca-monterrey-conserva-las-fachadas-y-DPYMBABYLBAAPI24SGQ42MGZHM.jpg?auth=ba0896fcaee651cce277b56a8f91fcdf05f4328666fb2e783192096ad6161a58&width=1920&height=1280&quality=70&smart=true");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 2.5%;
-    padding-top: 9.375rem;
-    color: white;
-}
-
-.main-back h1{
-    font-size: 70px;
-    text-shadow: 1px 1px 3px black;
-}
-
-.main-sections-grid{
-    display: grid;
-    width: 100%;
-    padding: 25px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 60px repeat(3,150px);
-    grid-template-areas: 
-    "section-1 section-1 section-1 section-1"
-    "section-2 section-2 section-3 section-3"
-    "section-2 section-2 section-5 section-5"
-    "section-4 section-4 section-5 section-5"
-    ;
-    gap: 20px;
-    background-color: #F8FAE5;
-}
-
-.main-section-1{
-    /* background-color: blue; */
-    grid-area: section-1;
-    justify-self: center;
-    align-self: center;
-    font-size: 21px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.main-section-2{
-    /* background-color: red; */
-    grid-area: section-2;
-}
-
-.main-section-2 img{
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.main-section-3{
-    /* background-color: rgb(0, 255, 17); */
-    grid-area: section-3;
-    font-size: 20px;
-    text-align: center;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-.main-section-4{
-    /* background-color: rgb(255, 204, 0); */
-    grid-area: section-4;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-section-5{
-    /* background-color: rgb(255, 0, 255); */
-    grid-area: section-5;
-}
-
-.main-section-5 img{
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* ---- SUB SECCIÓN CLIENTES ----*/
-.clients-section-grid{
-    display: grid;
-    width: 100%;
-    height: 450px;
-    padding: 1.5625rem;
-    grid-template-columns: 1fr repeat(3,10fr) 1fr;
-    grid-template-rows: 60px 300px 30px;
-    grid-template-areas: 
-    "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
-    "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
-    ". . client-section-7 . ."
-    ;
-    gap: .625rem;
-    background-color: #D4E7C5;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-section-one{
-    /* background-color: blue; */
-    grid-area: client-section-1;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    font-size: 25px;
-}
-
-.client-section-two{
-    /* background-color: rgb(47, 108, 62); */
-    grid-area: client-section-2;
-    align-self: center;
-}
-
-.client-section-three{
-    background-color: #789461;
-    grid-area: client-section-3;
-}
-
-.client-testimony-section-grid{
-    display: grid;
-    width: 100%;
-    height: 300px;
-    padding: .9375rem;
-    grid-template-columns: 75px 60px 1fr;
-    grid-template-rows: 35px 35px 20px 200px;
-    grid-template-areas: 
-    "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
-    "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4"
-    "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5"
-    "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6"
-    ;
-    gap: 5px;
-    /* background-color: #F8FAE5; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.client-testimony-section-one{
-    grid-area: client-testimony-section-1;
-}
-
-.client-testimony-section-one img{
-    width: 100%;
-    height: 100%;
-}
-
-.client-testimony-section-two{
-    /* background-color: rgb(0, 229, 255); */
-    grid-area: client-testimony-section-2;
-    align-self: center;
-    font-size: 30px;
-}
-
-.client-testimony-section-three{
-    /* background-color: rgb(255, 0, 64); */
-    grid-area: client-testimony-section-3;
-    display: flex;
-    align-items: center;
-}
-
-.client-testimony-section-three img{
-    width: 75%;
-    height: 80%;
-}
-
-.client-testimony-section-four{
-    /* background-color: rgb(0, 17, 255); */
-    grid-area: client-testimony-section-4;
-    align-self: center;
-    font-size: 1.5625rem;
-}
-
-.client-testimony-section-five{
-    /* background-color: rgb(204, 206, 112); */
-    grid-area: client-testimony-section-5;
-}
-
-.client-testimony-section-five img{
-    height: 100%;
-}
-
-.client-testimony-section-six{
-    /* background-color: rgb(24, 67, 60); */
-    grid-area: client-testimony-section-6;
-    font-size: 15px;
-}
-
-.client-section-four{
-    background-color: #789461;
-    grid-area: client-section-4;
-}
-
-.client-section-five{
-    background-color: #789461;
-    grid-area: client-section-5;
-}
-
-.client-section-six{
-    /* background-color: rgb(0, 208, 255); */
-    grid-area: client-section-6;
-    align-self: center;
-}
-
-.client-section-seven{
-    /* background-color: rgb(72, 82, 29); */
-    grid-area: client-section-7;
-    justify-self: center;
-}
-
-/* --------- HABITACIONES --------- */
-.image-background-rooms img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-.text-section-grid{
-    display: grid;
-    width: 85%;
-    margin: 0 auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,0.75fr);
-    grid-template-areas: 
-    "text-section-1"
-    "text-section-2"
-    "text-section-3"
-    ;
-    gap: .625rem;
-    background-color: #FFFFFF;
-    justify-content: center ;
-}
-
-.text-section-one{
-    grid-area: text-section-1;
-    font-size: 21px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.text-section-two{
-    /* background-color: rgb(0, 255, 64); */
-    grid-area: text-section-2;
-    text-align: center;
-    font-size: 25px;
-    /* padding-inline-start: 200px;
-    padding-inline-end: 200px; */
-}
-
-.text-section-three{
-    /* background-color: rgb(255, 0, 68); */
-    grid-area: text-section-3;
-    justify-self: center;
-    align-self: center;
-    color: #76453B;
-}
-
-
-/* Habitacion Premium */
-.premium-room-section-grid{
-    display: grid;
-    width: 80%;
-    margin: 30px auto;
-    padding: 25px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "premium-room-section-1 premium-room-section-3"
-    "premium-room-section-1 premium-room-section-4"
-    "premium-room-section-1 premium-room-section-4"
-    "premium-room-section-1 premium-room-section-4"
-    "premium-room-section-2 premium-room-section-5"
-    ;
-    background-color: #D4E7C5;
-    gap: 10px;
-    justify-content: center ;
-}
-
-.premium-room-section-grid:last-child {
-    margin-bottom: 100px;
-}
-
-.premium-room-section-one{
-    /* background-color: blue; */
-    grid-area: premium-room-section-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.premium-room-section-one img{
-    width: 100%;
-    max-width: 100%;
-}
-
-.premium-room-section-two{
-    /* background-color: rgb(9, 255, 0); */
-    grid-area: premium-room-section-2;
-    text-align: center;
-}
-
-
-.premium-room-section-three{
-    background-color: #789461;
-    grid-area: premium-room-section-3;
-    justify-self: center;
-    align-self: center;
-    border: 10px solid #789461;
-    padding-top: 5px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-.premium-room-section-four{
-    /* background-color: rgb(0, 179, 255); */
-    grid-area: premium-room-section-4;
-    font-size: 17px;
-}
-
-.premium-room-section-four p {
-    margin-bottom: 10px;
-}
-
-.premium-room-section-five{
-    /* background-color: rgb(255, 0, 13); */
-    grid-area: premium-room-section-5;
-    text-align: center;
-}
-
-.premium-room-section-five input{
-    height: 80%;
-    width: 60%;
-    background-color: #B19470; 
-    color: white;
-    margin: 2px;
-    cursor: pointer;
-}
-
-.premium-room-section-five input:hover{
-    background-color: #76453B; 
-}
-
-/* Habitacion Estandar */
-.standard-room-section-grid{
-    display: grid;
-    width: 80%;
-    margin: 30px auto;
-    padding: 25px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "standard-room-section-1 standard-room-section-3"
-    "standard-room-section-1 standard-room-section-4"
-    "standard-room-section-1 standard-room-section-4"
-    "standard-room-section-1 standard-room-section-4"
-    "standard-room-section-2 standard-room-section-5"
-    ;
-    background-color: #D4E7C5;
-    gap: 10px;
-    justify-content: center ;
-}
-
-.standard-room-section-grid:last-child {
-    margin-bottom: 100px;
-}
-
-.standard-room-section-one{
-    background-color: blue;
-    grid-area: standard-room-section-1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.standard-room-section-one img{
-    width:100%;
-    max-width: 100%;
-}
-
-.standard-room-section-two{
-    /* background-color: rgb(9, 255, 0); */
-    grid-area: standard-room-section-2;
-    text-align: center;
-}
-
-.standard-room-section-three{
-    background-color: #789461;
-    grid-area: standard-room-section-3;
-    justify-self: center;
-    align-self: center;
-    border: 10px solid #789461;
-    padding-top: 5px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-.standard-room-section-four{
-    /* background-color: rgb(0, 179, 255); */
-    grid-area: standard-room-section-4;
-    font-size: 17px;
-}
-
-.standard-room-section-four p {
-    margin-bottom: 10px;
-}
-
-.standard-room-section-five{
-    /* background-color: rgb(255, 0, 13); */
-    grid-area: standard-room-section-5;
-    text-align: center;
-}
-
-.standard-room-section-five input{
-    height: 80%;
-    width: 60%;
-    background-color: #B19470; 
-    color: white;
-    margin: 2px;
-    cursor: pointer;
-}
-
-.standard-room-section-five input:hover{
-    background-color: #76453B; 
-}
-
-/* --------- GASTRONOMIA --------- */
-.image-background-gastronomy img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-/* INTRODUCCIÓN */
-.gastronomic-experience-grid{
-    display: grid;
-    width: 100%;
-    height: 600px;
-    grid-template-columns: repeat(2,480px);
-    grid-template-rows: 40px repeat(2,60px) 40px repeat(2,180x);
-    justify-content: center;
-    align-content: center;
-    /* background-color: #789461; */
-    column-gap: 15px;
-    row-gap: 15px;
-}
-
-.gastronomic-experience-one{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-}
-
-.gastronomic-experience-two{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    justify-self: center;
-    align-self: center;
-    font-size: 25px;
-    text-align: center;
-}
-
-.gastronomic-experience-three{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    font-size: 25px;
-}
-
-.gastronomic-experience-four{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.gastronomic-experience-five{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    font-size: 25px;
-    justify-self: center;
-    text-align: center;
-}
-
-/* SERVICIO REGIONAL */
-.regional-service-grid{
-    display: grid;
-    width: 100%;
-    height: 1100px;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: 80px 30px 300px 120px 30px 300px 120px;
-    column-gap: 15px;
-    row-gap: 10px;
-    justify-content: center;
-    align-content: center;
-    /* background-color: #e6670c; */
-}
-
-.regional-service-one{
-    grid-column: 1/4;    
-    justify-self: center;
-    text-align: center;
-    font-size: 30px;
-}
-
-.regional-service-two{
-    grid-column: 1/4;
-    grid-row: 2/3;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    font-size: 28px;
-}
-
-.regional-service-three{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-four{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-five{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-six{
-    grid-column: 1/4;
-    grid-row: 4/5;
-    font-size: 20px;
-    justify-self: center;
-    text-align: center;
-    font-size: 24px;
-}
-
-.regional-service-seven{
-    grid-column: 1/4;
-    grid-row: 5/6;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    font-size: 28px;
-}
-
-.regional-service-eight{
-    grid-column: 1/2;
-    grid-row: 6/7;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-nine{
-    grid-column: 2/3;
-    grid-row: 6/7;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-ten{
-    grid-column: 3/4;
-    grid-row: 6/7;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.regional-service-eleven{
-    grid-column: 1/4;
-    grid-row: 7/8;
-    font-size: 24px;
-    justify-self: center;
-    text-align: center;
-}
-
-/* ............EXCURSIONES............ */
-.image-background-excursions{
-    width: 100%; 
-    height: auto; 
-    max-width: 100%;
-}
-
-/* SECCION 1 */
-.introduction-excursions-grid{
-    display: grid;
-    width: 100%;
-    height: 150px;
-    grid-template-columns: 80%;
-    grid-template-rows: repeat(2,50px);
-    justify-content: center;
-    align-content: center;
-    /* background-color: #3be60c; */
-}
-
-.introduction-excursions-one{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 25px;
-    justify-self: center;
-    align-content: center;
-}
-
-.introduction-excursions-two{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-size: 21px;
-    justify-self: center;
-    align-content: center;
-    text-align: center;
-}
-
-/* SECCION 2: Salinas Grandes */
-.salinas-grandes-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 500px 350px;
-    grid-template-rows: 70px 110px 370px;
-    justify-content: center;
-    align-content: center;
-    column-gap: 15px;
-    row-gap: 5px;
-    /* background-color: aqua; */
-}
-
-.salinas-grandes-one{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    font-size: 23px;
-    justify-self: center;
-    align-content: center;
-}
-
-.salinas-grandes-two{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    font-size: 21px;
-    justify-self: center;
-    align-content: center; 
-    text-align: center;
-}
-
-.salinas-grandes-three{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    width: 100%;
-    /* height: auto; */
-    /* margin-left: auto; */
-}
-
-.salinas-grandes-four{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.salinas-grandes-four h3{
-    font-size: 23px;
-    margin-bottom: 20px;
-}
-
-.salinas-grandes-four p{
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.salinas-grandes-four ul{
-    font-size: 20px;
-    margin-bottom: 20px;
-    list-style-position: inside; 
-}
-
-/* Promociones Disponibles - Salinas Grandes */
-.available-promotions-grid{
-    display: grid;
-    width: 100%;
-    height: 550px;
-    grid-template-columns: repeat(3,400px);
-    grid-template-rows: 40px 300px 40px 120px;
-    justify-content: center;
-    column-gap: 10px;
-    /* background-color: #f54f4f; */
-}
-
-.available-promotions-one{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-size: 25px;
-    justify-self: center;
-    align-content: center; 
-}
-
-.available-promotions-two{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-}
-
-.available-promotions-three{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-}
-
-.available-promotions-four{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    font-size: 20px;
-    list-style-position: inside; 
-    text-align: left;
-}
-
-.available-promotions-five{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-}
-
-.available-promotions-six{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-}
-
-.available-promotions-seven{
-    grid-column: 2/3;
-    grid-row: 4/5;
-    font-size: 20px;
-    list-style-position: inside; 
-    text-align: left;
-}
-
-.available-promotions-eight{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-}
-
-.available-promotions-nine{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-}
-
-.available-promotions-ten{
-    grid-column: 3/4;
-    grid-row: 4/5;
-    font-size: 20px;
-    list-style-position: inside; 
-    text-align: left;
-}
-
-/* ............RESERVAR............ */
-.book-room-grid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 1fr);
-    grid-template-rows: 100px 140px 120px 120px;
-    /* justify-content: center;
-    align-content: center;
-    column-gap: 15px;
-    row-gap: 5px; */
-    /* background-color: aqua; */
-    background-image: url(https://www.hotelhuacalera.com/wp-content/uploads/Huacalera-019A.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* .book-room-one{
-    grid-column: 1/5;
-    grid-row: 1/5;
-    width: 100%;
-    height: 100%;
-} */
-
-.book-room-two{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    color: white;
-    font-size: 70px;
-    word-wrap: break-word;
-}
-
-.book-room-three{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    color: white;
-    font-size: 25px;
-}
-
-.book-room-four{
-    width: 80%;
-    height: 80%;
-    grid-column: 3/4;
-    grid-row: 1/5;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.book-card-grid{
-    display: grid;
-    width: 90%;
-    height: 100%;
-    grid-template-columns:  repeat(2,1fr);;
-    grid-template-rows: repeat(10,1fr);
-    /* background-color: #f54f4f; */
-    margin: auto; 
-    column-gap: 10px;
-    /* row-gap: 10px; */
-}
-
-.book-card-title{
-    grid-column: 1/3;
-    font-size: 20px;
-    justify-self: center;
-    align-content: center; 
-}
-
-.book-card-one{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    font-size: 18px;
-    align-content: end;
-    margin: 5px;
-}
-
-.book-card-two{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin-bottom: 10px;
-    background-color: rgba(163, 163, 163, 0.49);
-    border: none;
-}
-
-.book-card-three{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-size: 18px;
-    align-content: end;
-    margin: 5px;
-}
-
-.book-card-four{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin-bottom: 10px;
-    background-color: rgba(163, 163, 163, 0.49);
-    border: none;
-}
-
-.book-card-five{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    font-size: 18px;
-    align-content: end;
-    margin: 5px;
-}
-
-.book-card-six{
-    grid-column: 1/3;
-    grid-row: 5/6;
-    margin-bottom: 10px;
-    background-color: rgba(163, 163, 163, 0.49);
-    border: none;
-}
-
-.book-card-seven{
-    grid-column: 1/2;
-    grid-row: 6/7;
-    font-size: 18px;
-    align-content: end;
-    margin: 5px;
-}
-
-.book-card-eight{
-    grid-column: 1/3;
-    grid-row: 7/8;
-    margin-bottom: 10px;
-    background-color: rgba(163, 163, 163, 0.49);
-    border: none;
-}
-
-.book-card-nine{
-    grid-column: 1/3;
-    grid-row: 8/9;
-    font-size: 18px;
-    align-content: end;
-    margin: 5px;
-}
-
-.book-card-ten{
-    grid-column: 1/3;
-    grid-row: 9/10;
-    margin-bottom: 10px;
-    background-color: rgba(163, 163, 163, 0.49);
-    border: none;
-}
-
-.book-card-eleven{
-    background-color: #B19470; 
-    grid-column: 2/3;
-    grid-row: 10/11;
-    color: white;
-    margin: 2px;
-    cursor: pointer;
-}
-
-.book-card-eleven:hover {
-    background-color: #76453B; 
-}
-
-/* Contactanos */
-.contact-us-grid{
-    display: grid;
-    width: 95%;
-    height: 600px;
-    grid-template-columns: 2fr repeat(2,1fr);
-    grid-template-rows: 70px 85px repeat(6, 65px);
-    /* justify-content: center;*/
-    align-content: center;
-    column-gap: 10px; 
-    /* background-color: rgb(87, 158, 225); */
-    margin-left: auto; /* Alinea el contenedor a la izquierda */
-    margin-right: auto; /* Alinea el contenedor a la derecha */
-}
-
-.contact-us-one{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.contact-us-two{
-    grid-column: 2/4;
-    grid-row: 2/3;
-    font-size: 24px;
-}
-
-.contact-us-three{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin-top: 5px;
-}
-
-.contact-us-three label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-three input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-four{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.contact-us-four label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-four input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-five{
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.contact-us-five label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-five input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-six{
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-
-.contact-us-six label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-six input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-seven{
-    grid-column: 2/3;
-    grid-row: 6/7;
-}
-
-.contact-us-seven label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-seven input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-eight{
-    grid-column: 3/4;
-    grid-row: 6/7;
-}
-
-.contact-us-eight label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-eight input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-nine{
-    grid-column: 2/4;
-    grid-row: 7/8;
-}
-
-.contact-us-nine label{
-    font-size: 24px;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-us-nine input{
-    display: block;
-    margin-bottom: 1px;
-}
-
-.contact-us-ten{
-    width: 70%;
-    height: 80%;
-    background-color: #B19470; 
-    grid-column: 3/4;
-    grid-row: 8/9;
-    color: white;
-    margin: 2px;
-    cursor: pointer;
-    margin-left: auto; /* Alinea el contenedor a la izquierda */
-    margin-right: auto; /* Alinea el contenedor a la derecha */
-}
-
-.contact-us-ten:hover{
-    background-color: #76453B;
-}
-
-.contact-us-eleven{
-    grid-column: 1/2;
-    grid-row: 2/9;
-    justify-self: center;
-    width: 100%;
-    height: 100%;
-}
-
-.payment-methods-grid{
-    display: grid;
-    width: 95%;
-    /* height: 600px; */
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 200px;
-    /* justify-content: center;*/
-    /* align-content: center; */
-    /* column-gap: 10px;  */
-    /* background-color: rgb(101, 46, 133); */
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.payment-methods-one{
-    grid-row: 1/2;
-    margin-top: 20px;
-    font-size: 40px;
-}
-
-.payment-methods-two{
-    grid-row: 2/3;
-    /* display: flex;
-    justify-content: center; */
-}
-
-.payment-methods-two img{
-    /* width: 100%; */
-    max-height: 100%;
-    max-width: 100%;
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.nav-wraper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #76453B;
+  color: white;
+}
+nav .menu-nav {
+  display: flex;
+  list-style: none;
+  gap: 3.75rem;
+  margin-right: 1.25rem;
+}
+nav .menu-nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+nav .menu-nav li a:hover {
+  color: rgba(55, 166, 142, 0.682);
+  text-decoration: underline;
+}
+nav #toggle, nav label {
+  display: none;
 }
 
 /*-------------------------------------- FOOTER ------------------------------------------------- */
-.footer-grid{
-    width: 100%;
-    background-color: #43766C;
-
+.footer-grid {
+  width: 100%;
+  background-color: #43766C;
 }
 
-.first-group{
-    width: 100%;
-    max-width: 1024px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 40px;
-    padding: 45px 0px;
+.first-group {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 45px 0px;
 }
 
-.box figure{
+.box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box figure img {
+  width: 270px;
+}
+
+.box h2 {
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.social-network a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  background-color: #26554C;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.social-network a:hover {
+  color: #1A64D3;
+}
+
+.second-group {
+  background-color: #294E47;
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.second-group small {
+  font-size: 15px;
+}
+
+/*------------------------------------- INDEX --------------------------------------------------*/
+.main-back {
+  width: 100%;
+  height: 31.25rem;
+  background-image: url("https://resizer.glanacion.com/resizer/v2/la-ex-finca-monterrey-conserva-las-fachadas-y-DPYMBABYLBAAPI24SGQ42MGZHM.jpg?auth=ba0896fcaee651cce277b56a8f91fcdf05f4328666fb2e783192096ad6161a58&width=1920&height=1280&quality=70&smart=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 2.5%;
+  padding-top: 9.375rem;
+  color: white;
+}
+.main-back h1 {
+  font-size: 70px;
+  text-shadow: 1px 1px 3px black;
+}
+.main-back h2 {
+  text-shadow: 1px 1px 3px black;
+}
+
+.main-sections-grid {
+  display: grid;
+  width: 100%;
+  padding: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px repeat(3, 150px);
+  grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-3 section-3" "section-2 section-2 section-5 section-5" "section-4 section-4 section-5 section-5";
+  gap: 20px;
+  background-color: #F8FAE5;
+}
+.main-sections-grid .main-section-1 {
+  /* background-color: blue; */
+  grid-area: section-1;
+  justify-self: center;
+  align-self: center;
+  font-size: 21px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.main-sections-grid .main-section-2 {
+  /* background-color: red; */
+  grid-area: section-2;
+}
+.main-sections-grid .main-section-2 img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.main-sections-grid .main-section-3 {
+  /* background-color: rgb(0, 255, 17); */
+  grid-area: section-3;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-sections-grid .main-section-4 {
+  /* background-color: rgb(255, 204, 0); */
+  grid-area: section-4;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-sections-grid .main-section-5 {
+  /* background-color: rgb(255, 0, 255); */
+  grid-area: section-5;
+}
+.main-sections-grid .main-section-5 img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.clients-section-grid {
+  display: grid;
+  width: 100%;
+  height: 450px;
+  padding: 1.5625rem;
+  grid-template-columns: 1fr repeat(3, 10fr) 1fr;
+  grid-template-rows: 60px 300px 30px;
+  grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
+  gap: 0.625rem;
+  background-color: #D4E7C5;
+  justify-content: center;
+  align-items: center;
+}
+.clients-section-grid .client-section-one {
+  /* background-color: blue; */
+  grid-area: client-section-1;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 25px;
+}
+.clients-section-grid .client-section-two {
+  /* background-color: rgb(47, 108, 62); */
+  grid-area: client-section-2;
+  align-self: center;
+}
+.clients-section-grid .client-section-three {
+  background-color: #789461;
+  grid-area: client-section-3;
+}
+.clients-section-grid .client-section-four {
+  background-color: #789461;
+  grid-area: client-section-4;
+}
+.clients-section-grid .client-section-five {
+  background-color: #789461;
+  grid-area: client-section-5;
+}
+.clients-section-grid .client-section-six {
+  /* background-color: rgb(0, 208, 255); */
+  grid-area: client-section-6;
+  align-self: center;
+}
+.clients-section-grid .client-section-seven {
+  /* background-color: rgb(72, 82, 29); */
+  grid-area: client-section-7;
+  justify-self: center;
+}
+
+.client-testimony-section-grid {
+  display: grid;
+  width: 100%;
+  height: 300px;
+  padding: 0.9375rem;
+  grid-template-columns: 75px 60px 1fr;
+  grid-template-rows: 35px 35px 20px 200px;
+  grid-template-areas: "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2" "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4" "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5" "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6";
+  gap: 5px;
+  /* background-color: #F8FAE5; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.client-testimony-section-grid .client-testimony-section-one {
+  grid-area: client-testimony-section-1;
+}
+.client-testimony-section-grid .client-testimony-section-one img {
+  width: 100%;
+  height: 100%;
+}
+.client-testimony-section-grid .client-testimony-section-two {
+  /* background-color: rgb(0, 229, 255); */
+  grid-area: client-testimony-section-2;
+  align-self: center;
+  font-size: 30px;
+}
+.client-testimony-section-grid .client-testimony-section-three {
+  /* background-color: rgb(255, 0, 64); */
+  grid-area: client-testimony-section-3;
+  display: flex;
+  align-items: center;
+}
+.client-testimony-section-grid .client-testimony-section-three img {
+  width: 75%;
+  height: 80%;
+}
+.client-testimony-section-grid .client-testimony-section-four {
+  /* background-color: rgb(0, 17, 255); */
+  grid-area: client-testimony-section-4;
+  align-self: center;
+  font-size: 1.5625rem;
+}
+.client-testimony-section-grid .client-testimony-section-five {
+  /* background-color: rgb(204, 206, 112); */
+  grid-area: client-testimony-section-5;
+}
+.client-testimony-section-grid .client-testimony-section-five img {
+  height: 100%;
+}
+.client-testimony-section-grid .client-testimony-section-six {
+  /* background-color: rgb(24, 67, 60); */
+  grid-area: client-testimony-section-6;
+  font-size: 15px;
+}
+
+/* --------- HABITACIONES --------- */
+.image-background-rooms img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.text-section-grid {
+  display: grid;
+  width: 85%;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 0.75fr);
+  grid-template-areas: "text-section-1" "text-section-2" "text-section-3";
+  gap: 0.625rem;
+  background-color: #FFFFFF;
+  justify-content: center;
+}
+.text-section-grid .text-section-one {
+  grid-area: text-section-1;
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.text-section-grid .text-section-two {
+  /* background-color: rgb(0, 255, 64); */
+  grid-area: text-section-2;
+  text-align: center;
+  font-size: 25px;
+  /* padding-inline-start: 200px;
+  padding-inline-end: 200px; */
+}
+.text-section-grid .text-section-three {
+  /* background-color: rgb(255, 0, 68); */
+  grid-area: text-section-3;
+  justify-self: center;
+  align-self: center;
+  color: #76453B;
+}
+
+/* Habitacion Premium */
+.premium-room-section-grid {
+  display: grid;
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "premium-room-section-1 premium-room-section-3" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-2 premium-room-section-5";
+  background-color: #D4E7C5;
+  gap: 10px;
+  justify-content: center;
+}
+.premium-room-section-grid:last-child {
+  margin-bottom: 100px;
+}
+.premium-room-section-grid .premium-room-section-one {
+  /* background-color: blue; */
+  grid-area: premium-room-section-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.premium-room-section-grid .premium-room-section-one img {
+  width: 100%;
+  max-width: 100%;
+}
+.premium-room-section-grid .premium-room-section-two {
+  /* background-color: rgb(9, 255, 0); */
+  grid-area: premium-room-section-2;
+  text-align: center;
+}
+.premium-room-section-grid .premium-room-section-three {
+  background-color: #789461;
+  grid-area: premium-room-section-3;
+  justify-self: center;
+  align-self: center;
+  border: 10px solid #789461;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.premium-room-section-grid .premium-room-section-four {
+  /* background-color: rgb(0, 179, 255); */
+  grid-area: premium-room-section-4;
+  font-size: 17px;
+}
+.premium-room-section-grid .premium-room-section-four p {
+  margin-bottom: 10px;
+}
+.premium-room-section-grid .premium-room-section-five {
+  /* background-color: rgb(255, 0, 13); */
+  grid-area: premium-room-section-5;
+  text-align: center;
+}
+.premium-room-section-grid .premium-room-section-five input {
+  height: 80%;
+  width: 60%;
+  background-color: #B19470;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+}
+.premium-room-section-grid .premium-room-section-five input:hover {
+  background-color: #76453B;
+}
+
+/* Habitacion Estandar */
+.standard-room-section-grid {
+  display: grid;
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "standard-room-section-1 standard-room-section-3" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-2 standard-room-section-5";
+  background-color: #D4E7C5;
+  gap: 10px;
+  justify-content: center;
+}
+.standard-room-section-grid:last-child {
+  margin-bottom: 100px;
+}
+.standard-room-section-grid .standard-room-section-one {
+  background-color: blue;
+  grid-area: standard-room-section-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.standard-room-section-grid .standard-room-section-one img {
+  width: 100%;
+  max-width: 100%;
+}
+.standard-room-section-grid .standard-room-section-two {
+  /* background-color: rgb(9, 255, 0); */
+  grid-area: standard-room-section-2;
+  text-align: center;
+}
+.standard-room-section-grid .standard-room-section-three {
+  background-color: #789461;
+  grid-area: standard-room-section-3;
+  justify-self: center;
+  align-self: center;
+  border: 10px solid #789461;
+  padding-top: 5px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.standard-room-section-grid .standard-room-section-four {
+  /* background-color: rgb(0, 179, 255); */
+  grid-area: standard-room-section-4;
+  font-size: 17px;
+}
+.standard-room-section-grid .standard-room-section-four p {
+  margin-bottom: 10px;
+}
+.standard-room-section-grid .standard-room-section-five {
+  /* background-color: rgb(255, 0, 13); */
+  grid-area: standard-room-section-5;
+  text-align: center;
+}
+.standard-room-section-grid .standard-room-section-five input {
+  height: 80%;
+  width: 60%;
+  background-color: #B19470;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+}
+.standard-room-section-grid .standard-room-section-five input:hover {
+  background-color: #76453B;
+}
+
+/* --------- GASTRONOMIA --------- */
+.image-background-gastronomy img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* INTRODUCCIÓN */
+.gastronomic-experience-grid {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template-columns: repeat(2, 480px);
+  grid-template-rows: 40px repeat(2, 60px) 40px repeat(2, 180x);
+  justify-content: center;
+  align-content: center;
+  /* background-color: #789461; */
+  column-gap: 15px;
+  row-gap: 15px;
+}
+.gastronomic-experience-grid .gastronomic-experience-one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+}
+.gastronomic-experience-grid .gastronomic-experience-two {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  justify-self: center;
+  align-self: center;
+  font-size: 25px;
+  text-align: center;
+}
+.gastronomic-experience-grid .gastronomic-experience-three {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: 25px;
+}
+.gastronomic-experience-grid .gastronomic-experience-four {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.gastronomic-experience-grid .gastronomic-experience-five {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  font-size: 25px;
+  justify-self: center;
+  text-align: center;
+}
+
+/* SERVICIO REGIONAL */
+.regional-service-grid {
+  display: grid;
+  width: 100%;
+  height: 1100px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 80px 30px 300px 120px 30px 300px 120px;
+  column-gap: 15px;
+  row-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  /* background-color: #e6670c; */
+}
+.regional-service-grid .regional-service-one {
+  grid-column: 1/4;
+  justify-self: center;
+  text-align: center;
+  font-size: 30px;
+}
+.regional-service-grid .regional-service-two {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 28px;
+}
+.regional-service-grid .regional-service-three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-four {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-five {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-six {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  font-size: 20px;
+  justify-self: center;
+  text-align: center;
+  font-size: 24px;
+}
+.regional-service-grid .regional-service-seven {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-size: 28px;
+}
+.regional-service-grid .regional-service-eight {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-nine {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-ten {
+  grid-column: 3/4;
+  grid-row: 6/7;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.regional-service-grid .regional-service-eleven {
+  grid-column: 1/4;
+  grid-row: 7/8;
+  font-size: 24px;
+  justify-self: center;
+  text-align: center;
+}
+
+/* ............EXCURSIONES............ */
+.image-background-excursions img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.introduction-excursions-grid {
+  display: grid;
+  width: 100%;
+  height: 150px;
+  grid-template-columns: 80%;
+  grid-template-rows: repeat(2, 50px);
+  justify-content: center;
+  align-content: center;
+  /* background-color: #3be60c; */
+}
+.introduction-excursions-grid .introduction-excursions-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 25px;
+  justify-self: center;
+  align-content: center;
+}
+.introduction-excursions-grid .introduction-excursions-two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 21px;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+.salinas-grandes-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 500px 350px;
+  grid-template-rows: 70px 110px 370px;
+  justify-content: center;
+  align-content: center;
+  column-gap: 15px;
+  row-gap: 5px;
+  /* background-color: aqua; */
+}
+.salinas-grandes-grid .salinas-grandes-one {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size: 23px;
+  justify-self: center;
+  align-content: center;
+}
+.salinas-grandes-grid .salinas-grandes-two {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  font-size: 21px;
+  justify-self: center;
+  align-content: center;
+  text-align: center;
+}
+.salinas-grandes-grid .salinas-grandes-three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  /* height: auto; */
+  /* margin-left: auto; */
+}
+.salinas-grandes-grid .salinas-grandes-four {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.salinas-grandes-grid .salinas-grandes-four h3 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.salinas-grandes-grid .salinas-grandes-four p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.salinas-grandes-grid .salinas-grandes-four ul {
+  font-size: 20px;
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+
+.available-promotions-grid {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 40px 300px 40px 120px;
+  justify-content: center;
+  column-gap: 10px;
+  /* background-color: #f54f4f; */
+}
+.available-promotions-grid .available-promotions-one {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: 25px;
+  justify-self: center;
+  align-content: center;
+}
+.available-promotions-grid .available-promotions-two {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+.available-promotions-grid .available-promotions-three {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.available-promotions-grid .available-promotions-four {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  font-size: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+.available-promotions-grid .available-promotions-five {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+.available-promotions-grid .available-promotions-six {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.available-promotions-grid .available-promotions-seven {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-size: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+.available-promotions-grid .available-promotions-eight {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+.available-promotions-grid .available-promotions-nine {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.available-promotions-grid .available-promotions-ten {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-size: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+/* ............RESERVAR............ */
+.book-room-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 1fr);
+  grid-template-rows: 100px 140px 120px 120px;
+  /* justify-content: center;
+  align-content: center;
+  column-gap: 15px;
+  row-gap: 5px; */
+  /* background-color: aqua; */
+  background-image: url(https://www.hotelhuacalera.com/wp-content/uploads/Huacalera-019A.jpg);
+  background-size: cover;
+  background-position: center;
+  /* .book-room-one{
+  grid-column: 1/5;
+  grid-row: 1/5;
+  width: 100%;
+  height: 100%;
+  } */
+}
+.book-room-grid .book-room-two {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: white;
+  font-size: 70px;
+  word-wrap: break-word;
+}
+.book-room-grid .book-room-three {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  color: white;
+  font-size: 25px;
+}
+.book-room-grid .book-room-four {
+  width: 80%;
+  height: 80%;
+  grid-column: 3/4;
+  grid-row: 1/5;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.book-card-grid {
+  display: grid;
+  width: 90%;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  /* background-color: #f54f4f; */
+  margin: auto;
+  column-gap: 10px;
+  /* row-gap: 10px; */
+}
+.book-card-grid .book-card-title {
+  grid-column: 1/3;
+  font-size: 20px;
+  justify-self: center;
+  align-content: center;
+}
+.book-card-grid .book-card-one {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 18px;
+  align-content: end;
+  margin: 5px;
+}
+.book-card-grid .book-card-two {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-bottom: 10px;
+  background-color: rgba(163, 163, 163, 0.49);
+  border: none;
+}
+.book-card-grid .book-card-three {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 18px;
+  align-content: end;
+  margin: 5px;
+}
+.book-card-grid .book-card-four {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-bottom: 10px;
+  background-color: rgba(163, 163, 163, 0.49);
+  border: none;
+}
+.book-card-grid .book-card-five {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  font-size: 18px;
+  align-content: end;
+  margin: 5px;
+}
+.book-card-grid .book-card-six {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  margin-bottom: 10px;
+  background-color: rgba(163, 163, 163, 0.49);
+  border: none;
+}
+.book-card-grid .book-card-seven {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  font-size: 18px;
+  align-content: end;
+  margin: 5px;
+}
+.book-card-grid .book-card-eight {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  margin-bottom: 10px;
+  background-color: rgba(163, 163, 163, 0.49);
+  border: none;
+}
+.book-card-grid .book-card-nine {
+  grid-column: 1/3;
+  grid-row: 8/9;
+  font-size: 18px;
+  align-content: end;
+  margin: 5px;
+}
+.book-card-grid .book-card-ten {
+  grid-column: 1/3;
+  grid-row: 9/10;
+  margin-bottom: 10px;
+  background-color: rgba(163, 163, 163, 0.49);
+  border: none;
+}
+.book-card-grid .book-card-eleven {
+  background-color: #B19470;
+  grid-column: 2/3;
+  grid-row: 10/11;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+}
+.book-card-grid .book-card-elevenhover {
+  background-color: #76453B;
+}
+
+.contact-us-grid {
+  display: grid;
+  width: 95%;
+  height: 600px;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  grid-template-rows: 70px 85px repeat(6, 65px);
+  /* justify-content: center;*/
+  align-content: center;
+  column-gap: 10px;
+  /* background-color: rgb(87, 158, 225); */
+  margin-left: auto; /* Alinea el contenedor a la izquierda */
+  margin-right: auto; /* Alinea el contenedor a la derecha */
+}
+.contact-us-grid .contact-us-one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+.contact-us-grid .contact-us-two {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  font-size: 24px;
+}
+.contact-us-grid .contact-us-three {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-top: 5px;
+}
+.contact-us-grid .contact-us-three label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-three input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-four {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.contact-us-grid .contact-us-four label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-four input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-five {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.contact-us-grid .contact-us-five label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-five input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-six {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.contact-us-grid .contact-us-six label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-six input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-seven {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.contact-us-grid .contact-us-seven label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-seven input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-eight {
+  grid-column: 3/4;
+  grid-row: 6/7;
+}
+.contact-us-grid .contact-us-eight label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-eight input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-nine {
+  grid-column: 2/4;
+  grid-row: 7/8;
+}
+.contact-us-grid .contact-us-nine label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-us-grid .contact-us-nine input {
+  display: block;
+  margin-bottom: 1px;
+}
+.contact-us-grid .contact-us-ten {
+  width: 70%;
+  height: 80%;
+  background-color: #B19470;
+  grid-column: 3/4;
+  grid-row: 8/9;
+  color: white;
+  margin: 2px;
+  cursor: pointer;
+  margin-left: auto; /* Alinea el contenedor a la izquierda */
+  margin-right: auto; /* Alinea el contenedor a la derecha */
+}
+.contact-us-grid .contact-us-ten:hover {
+  background-color: #76453B;
+}
+.contact-us-grid .contact-us-eleven {
+  grid-column: 1/2;
+  grid-row: 2/9;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+}
+
+.payment-methods-grid {
+  display: grid;
+  width: 95%;
+  /* height: 600px; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 200px;
+  /* justify-content: center;*/
+  /* align-content: center; */
+  /* column-gap: 10px;  */
+  /* background-color: rgb(101, 46, 133); */
+  margin-left: auto;
+  margin-right: auto;
+}
+.payment-methods-grid .payment-methods-one {
+  grid-row: 1/2;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.payment-methods-grid .payment-methods-two {
+  grid-row: 2/3;
+  /* display: flex;
+  justify-content: center; */
+}
+.payment-methods-grid .payment-methods-two img {
+  /* width: 100%; */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  /* ----- HEADER ----- */
+  nav .logo {
+    width: 18%;
+    height: 18%;
+  }
+  nav .menu-nav {
+    gap: 30px;
+  }
+  nav .menu-nav li a {
+    font-size: 24px;
+  }
+  /* ----- INICIO ----- */
+  /* ----- HABITACIONES ----- */
+  /* ----- GASTRONOMIA ----- */
+  /* ----- EXCURSIONES ----- */
+  .image-background-excursions {
+    width: 1024px;
+  }
+  .image-background-excursions img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  }
+  .introduction-excursions-grid {
+    grid-template-columns: 90%;
+  }
+  .salinas-grandes-two {
+    font-size: 20px;
+  }
+  .available-promotions-grid {
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: 40px 300px 40px 200px;
+  }
+  /* ----- RESERVAR ----- */
+}
+@media (max-width: 768px) {
+  /* ----- HEADER ----- */
+  nav .logo {
+    width: 18%;
+    height: 18%;
+  }
+  nav .menu-nav {
+    gap: 30px;
+  }
+  nav .menu-nav li a {
+    font-size: 18px;
+  }
+  /* ----- INDEX ----- */
+  .main-back {
+    width: 100%;
+    height: 400px;
     align-items: center;
-}
-
-.box figure img{
-    width: 270px;
-}
-
-.box h2{
-    color: #FFFFFF;
-    margin-bottom: 25px;
-    font-size: 25px;
-}
-
-.box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-
-.social-network a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #FFFFFF;
-    margin-right: 10px;
-    background-color: #26554C;
-    text-align: center;
-    transition: all 300ms ease;
-}
-
-.social-network a:hover{
-    color: #1A64D3;
-}
-
-.second-group{
-    background-color: #294E47;
-    padding: 15px 10px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.second-group small{
+  }
+  .main-back h1 {
+    font-size: 58px;
+  }
+  .main-back h2 {
+    font-size: 20px;
+  }
+  .main-sections-grid {
+    grid-template-rows: 60px repeat(3, 110px);
+  }
+  .main-sections-grid .main-section-3 {
     font-size: 15px;
+  }
+  .main-sections-grid .main-section-4 {
+    font-size: 15px;
+  }
+  .clients-section-grid {
+    grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". client-section-7 client-section-7 . .";
+  }
+  .clients-section-grid .client-section-five {
+    display: none;
+  }
+  /* ---- FOOTER ---- */
+  .first-group {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .first-group .box {
+    text-align: center;
+  }
+  /* ----- HABITACIONES ----- */
+  .text-section-one {
+    font-size: 16px;
+  }
+  .text-section-two {
+    font-size: 17px;
+  }
+  .premium-room-section-three, .standard-room-section-three {
+    font-size: 16px;
+  }
+  .premium-room-section-four, .standard-room-section-four {
+    font-size: 13px;
+  }
+  .premium-room-section-five input, .standard-room-section-five input {
+    height: 70%;
+    width: 55%;
+  }
+  /* ----- GASTRONOMIA ----- */
+  .gastronomic-experience-grid {
+    width: 768px;
+    height: 450px;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 40px repeat(2, 25px) 40px repeat(2, 125px);
+    /* background-color: #789461; */
+    column-gap: 10px;
+    row-gap: 8px;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-two {
+    font-size: 18px;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-five {
+    font-size: 18px;
+  }
+  .regional-service-grid {
+    width: 768px;
+    grid-template-columns: repeat(2, 300px);
+  }
+  .regional-service-grid .regional-service-one {
+    grid-column: 1/3;
+  }
+  .regional-service-grid .regional-service-two {
+    grid-column: 1/3;
+    font-size: 25px;
+  }
+  .regional-service-grid .regional-service-five {
+    display: none;
+  }
+  .regional-service-grid .regional-service-six {
+    grid-column: 1/3;
+    font-size: 18px;
+  }
+  .regional-service-grid .regional-service-seven {
+    grid-column: 1/3;
+    font-size: 25px;
+  }
+  .regional-service-grid .regional-service-ten {
+    display: none;
+  }
+  .regional-service-grid .regional-service-eleven {
+    grid-column: 1/3;
+    font-size: 18px;
+  }
+  /* ----- EXCURSIONES ----- */
+  .introduction-excursions-grid {
+    height: 150px;
+    grid-template-rows: 55px 70px;
+    row-gap: 10px;
+  }
+  .introduction-excursions-grid .introduction-excursions-one {
+    text-align: center;
+  }
+  .introduction-excursions-grid .introduction-excursions-two {
+    font-size: 19px;
+  }
+  .salinas-grandes-grid {
+    grid-template-columns: 440px 290px;
+  }
+  .salinas-grandes-grid .salinas-grandes-two {
+    font-size: 18px;
+  }
+  .salinas-grandes-grid .salinas-grandes-four h3 {
+    font-size: 21px;
+  }
+  .salinas-grandes-grid .salinas-grandes-four p {
+    font-size: 18px;
+  }
+  .salinas-grandes-grid .salinas-grandes-four ul {
+    font-size: 18px;
+  }
+  .available-promotions-grid {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 40px 300px 40px 140px;
+  }
+  .available-promotions-grid .available-promotions-eight, .available-promotions-grid .available-promotions-nine,
+  .available-promotions-grid .available-promotions-ten {
+    display: none;
+  }
+  .available-promotions-grid .available-promotions-seven, .available-promotions-grid .available-promotions-ten {
+    font-size: 18px;
+  }
+  /* ----- RESERVAR ----- */
+  .book-room-grid {
+    grid-template-columns: minmax(0, 0.4fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 0.4fr);
+  }
+  .book-room-grid .book-room-two {
+    font-size: 49px;
+    margin-top: auto;
+  }
+  .book-room-grid .book-room-four .book-card-grid .book-card-title {
+    font-size: 16px;
+  }
+  .book-room-grid .book-room-four .book-card-grid .book-card-one, .book-room-grid .book-room-four .book-card-grid .book-card-three, .book-room-grid .book-room-four .book-card-grid .book-card-five, .book-room-grid .book-room-four .book-card-grid .book-card-seven, .book-room-grid .book-room-four .book-card-grid .book-card-nine {
+    font-size: 15px;
+  }
+  .book-room-grid .book-room-four .book-card-grid .book-card-eleven {
+    grid-column: 1/3;
+  }
+  .contact-us-grid .contact-us-one {
+    font-size: 34px;
+  }
+  .contact-us-grid .contact-us-two, .contact-us-grid .contact-us-three label, .contact-us-grid .contact-us-four label, .contact-us-grid .contact-us-five label,
+  .contact-us-grid .contact-us-six label, .contact-us-grid .contact-us-seven label, .contact-us-grid .contact-us-eight label,
+  .contact-us-grid .contact-us-nine label {
+    font-size: 19px;
+  }
+  .contact-us-grid .contact-us-ten {
+    height: 60%;
+  }
+  .payment-methods-grid .payment-methods-one {
+    font-size: 34px;
+  }
+}
+@media (max-width: 320px) {
+  /* ----- HEADER ----- */
+  header {
+    width: 100%;
+    position: fixed;
+  }
+  nav .logo {
+    width: 25%;
+    height: 25%;
+  }
+  nav #toggle:checked ~ .menu-bar {
+    height: 100%;
+  }
+  nav label {
+    display: inline-flex;
+    cursor: pointer;
+    padding-right: 5px;
+  }
+  nav .menu-bar {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav .menu-bar ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+  }
+  /* ---- INDEX ---- */
+  .main-back {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+  }
+  .main-back h1 {
+    font-size: 35px;
+  }
+  .main-back h2 {
+    font-size: 11px;
+  }
+  .main-sections-grid {
+    grid-template-rows: 60px repeat(6, 75px);
+    grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-2 section-2" "section-2 section-2 section-2 section-2" "section-3 section-3 section-3 section-3" "section-5 section-5 section-5 section-5" "section-5 section-5 section-5 section-5" "section-4 section-4 section-4 section-4";
+    gap: 12px;
+  }
+  .main-sections-grid .main-section-1 {
+    font-size: 15px;
+  }
+  .main-sections-grid .main-section-3 {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .main-sections-grid .main-section-4 {
+    font-size: 12px;
+  }
+  .main-sections-grid .main-section-5 {
+    margin-top: 20px;
+  }
+  .clients-section-grid {
+    grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
+  }
+  .clients-section-grid .client-section-one {
+    font-size: 14px;
+  }
+  .clients-section-grid .client-section-two, .clients-section-grid .client-section-three,
+  .clients-section-grid .client-section-five, .clients-section-grid .client-section-six {
+    display: none;
+  }
+  .clients-section-grid .client-section-seven img {
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .client-testimony-section-grid .client-testimony-section-two p {
+    font-size: 23px;
+  }
+  .client-testimony-section-grid .client-testimony-section-three img {
+    width: 70%;
+    height: 75%;
+  }
+  .client-testimony-section-grid .client-testimony-section-four p {
+    font-size: 20px;
+  }
+  /* ----- HABITACIONES ----- */
+  .text-section-grid .text-section-one, .text-section-grid .text-section-three {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text-section-grid .text-section-two {
+    font-size: 13px;
+  }
+  .premium-room-section-grid .premium-room-section-three {
+    font-size: 12px;
+  }
+  .premium-room-section-grid .premium-room-section-four {
+    font-size: 9px;
+  }
+  .premium-room-section-grid .premium-room-section-five input {
+    height: 60%;
+    width: 45%;
+  }
+  .standard-room-section-grid .standard-room-section-three {
+    font-size: 12px;
+  }
+  .standard-room-section-grid .standard-room-section-four {
+    font-size: 9px;
+  }
+  .standard-room-section-grid .standard-room-section-five input {
+    height: 60%;
+    width: 45%;
+  }
+  /* ----- GASTRONOMIA ----- */
+  .gastronomic-experience-grid {
+    width: 320px;
+    height: 600px;
+    grid-template-columns: 300px;
+    grid-template-rows: 40px 70px 45px repeat(3, 60px) 180px;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 17px;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 14px;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 15px;
+    align-self: center;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-four {
+    grid-column: 1/2;
+    grid-row: 4/7;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+  }
+  .gastronomic-experience-grid .gastronomic-experience-five {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    font-size: 14px;
+  }
+  .regional-service-grid {
+    width: 320px;
+    height: 900px;
+    grid-template-columns: 300px;
+    grid-template-rows: 40px 30px 220px 120px 30px 220px 120px;
+  }
+  .regional-service-grid .regional-service-one {
+    grid-column: 1/2;
+    font-size: 20px;
+  }
+  .regional-service-grid .regional-service-two {
+    grid-column: 1/2;
+    font-size: 18px;
+  }
+  .regional-service-grid .regional-service-four {
+    display: none;
+  }
+  .regional-service-grid .regional-service-five {
+    display: none;
+  }
+  .regional-service-grid .regional-service-six {
+    grid-column: 1/2;
+    font-size: 14px;
+  }
+  .regional-service-grid .regional-service-seven {
+    grid-column: 1/2;
+    font-size: 18px;
+  }
+  .regional-service-grid .regional-service-nine {
+    display: none;
+  }
+  .regional-service-grid .regional-service-ten {
+    display: none;
+  }
+  .regional-service-grid .regional-service-eleven {
+    grid-column: 1/2;
+    font-size: 14px;
+  }
+  /* ----- EXCURSIONES ----- */
+  .introduction-excursions-grid {
+    grid-template-rows: 60px 70px;
+    row-gap: 10px;
+  }
+  .introduction-excursions-grid .introduction-excursions-one {
+    font-size: 18px;
+    text-align: center;
+  }
+  .introduction-excursions-grid .introduction-excursions-two {
+    font-size: 15px;
+  }
+  .salinas-grandes-grid {
+    grid-template-columns: 300px;
+    grid-template-rows: 60px 150px 350px 250px;
+  }
+  .salinas-grandes-grid .salinas-grandes-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 18px;
+  }
+  .salinas-grandes-grid .salinas-grandes-two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 15px;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
+  }
+  .salinas-grandes-grid .salinas-grandes-three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+  }
+  .salinas-grandes-grid .salinas-grandes-four {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .salinas-grandes-grid .salinas-grandes-four h3 {
+    font-size: 18px;
+  }
+  .salinas-grandes-grid .salinas-grandes-four p {
+    font-size: 15px;
+  }
+  .salinas-grandes-grid .salinas-grandes-four ul {
+    font-size: 15px;
+  }
+  .available-promotions-grid {
+    grid-template-columns: repeat(3, 290px);
+    grid-template-rows: 40px 300px 40px 120px;
+  }
+  .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-three,
+  .available-promotions-grid .available-promotions-four, .available-promotions-grid .available-promotions-eight,
+  .available-promotions-grid .available-promotions-nine, .available-promotions-grid .available-promotions-ten {
+    display: none;
+  }
+  .available-promotions-grid .available-promotions-one {
+    font-size: 19px;
+  }
+  .available-promotions-grid .available-promotions-six {
+    font-size: 18px;
+  }
+  .available-promotions-grid .available-promotions-seven {
+    font-size: 15px;
+  }
+  /* ----- RESERVAR ----- */
+  .book-room-grid {
+    grid-template-rows: 100px 75px 140px 120px 130px;
+  }
+  .book-room-grid .book-room-two {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 35px;
+    text-align: center;
+  }
+  .book-room-grid .book-room-three {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .book-room-grid .book-room-four {
+    height: 90%;
+    grid-column: 2/4;
+    grid-row: 3/6;
+  }
+  .contact-us-grid {
+    /* width: auto; */
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px repeat(4, 65px) 110px repeat(8, 75px);
+  }
+  .contact-us-grid .contact-us-two {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    align-content: center;
+  }
+  .contact-us-grid .contact-us-three {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .contact-us-grid .contact-us-four {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .contact-us-grid .contact-us-five {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .contact-us-grid .contact-us-six {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .contact-us-grid .contact-us-seven {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .contact-us-grid .contact-us-eight {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .contact-us-grid .contact-us-nine {
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .contact-us-grid .contact-us-ten {
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+  .contact-us-grid .contact-us-eleven {
+    grid-column: 1/2;
+    grid-row: 2/6;
+  }
+  .payment-methods-grid {
+    grid-template-rows: 80px 150px;
+  }
 }
 
-@media (max-width:1024px){
-    /* ----- INICIO ----- */
-    /* ----- HABITACIONES ----- */
-    /* ----- GASTRONOMIA ----- */
-    /* ----- EXCURSIONES ----- */
-    .image-background-excursions {
-        width: 1024px;
-    }
-
-    .image-background-excursions img{
-        width: 100%;
-    }
-
-    .introduction-excursions-grid{
-        grid-template-columns: 90%;
-    }
-
-    .salinas-grandes-two{
-        font-size: 20px;
-    }
-
-    /* Promociones Disponibles */
-    .available-promotions-grid{
-        grid-template-columns: repeat(3,320px);
-        grid-template-rows: 40px 300px 40px 200px;
-    }
-    /* ----- RESERVAR ----- */
-}
-
-@media (max-width:768px){
-    /* ---- HEADER ---- */
-    .logo{
-        width: 18%;
-        height: 18%;
-    }
-    
-    .menu-nav{
-        gap: 30px;
-    }
-    
-    nav div ul li a{
-        font-size: 18px;
-    }
-    
-
-    /* ---- INDEX ---- */
-    .main-back{
-        width: 100%;
-        height: 400px;
-        align-items: center;
-    }
-
-    .main-back h1{
-        font-size: 58px;
-    }
-
-    .main-back h2{
-        font-size: 20px;
-    }
-
-    .main-sections-grid{
-        grid-template-rows: 60px repeat(3,110px);
-    }
-
-    .main-section-3{
-        font-size: 15px;
-    }
-    
-    .main-section-4{
-        font-size: 15px;
-    }
-    /* Seccion cliente */
-    .client-section-five {
-        display: none;
-    }
-
-    .clients-section-grid{
-        grid-template-areas: 
-        "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
-        "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
-        ". client-section-7 client-section-7 . ."
-        ;
-    }
-
-    .first-group{
-        width: 90%;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-
-    .box {
-        text-align: center;
-    }
-    
-    /* --------- HABITACIONES --------- */
-    .text-section-one{
-        font-size: 16px;
-    }
-
-    .text-section-two{
-        font-size: 17px;
-    }
-
-    .premium-room-section-three, .standard-room-section-three{
-        font-size: 16px;
-    }
-
-    .premium-room-section-four, .standard-room-section-four{
-        font-size: 13px;
-    }
-    
-    .premium-room-section-five input, .standard-room-section-five input {
-        height: 70%;
-        width: 55%;
-    }
-
-    /* --------- GASTRONOMIA --------- */
-    .gastronomic-experience-grid{
-        width: 768px;
-        height: 450px;
-        grid-template-columns: repeat(2,350px);
-        grid-template-rows: 40px repeat(2,25px) 40px repeat(2,125px);
-        /* background-color: #789461; */
-        column-gap: 10px; 
-        row-gap: 8px; 
-    }
-
-    .gastronomic-experience-two{
-        font-size: 18px;
-    }
-
-    .gastronomic-experience-five{
-        font-size: 18px;
-    }
-
-    /* SERVICIO REGIONAL */
-    .regional-service-grid{
-        width: 768px;
-        grid-template-columns: repeat(2,300px);
-    }
-
-    .regional-service-one{
-        grid-column: 1/3;    
-    }
-
-    .regional-service-two{
-        grid-column: 1/3;
-        font-size: 25px; 
-    }
-
-    .regional-service-five{
-        display: none;
-    }
-
-    .regional-service-six{
-        grid-column: 1/3;
-        font-size: 18px;
-    }
-
-    .regional-service-seven{
-        grid-column: 1/3;
-        font-size: 25px; 
-    }
-
-    .regional-service-ten{
-        display: none;
-    }
-
-    .regional-service-eleven{
-        grid-column: 1/3;
-        font-size: 18px;
-    }
-
-    /* ----- EXCURSIONES ----- */
-    .introduction-excursions-grid{
-        height: 150px;
-        grid-template-rows: 55px 70px;
-        row-gap: 10px;
-    }
-    
-    .introduction-excursions-one{
-        text-align: center;
-    }
-    
-    .introduction-excursions-two{
-        font-size: 19px;
-    }
-
-    .salinas-grandes-grid{
-        grid-template-columns: 440px 290px;
-    }
-
-    .salinas-grandes-two{
-        font-size: 18px;
-    }
-
-    .salinas-grandes-four h3{
-        font-size: 21px;
-    }
-    
-    .salinas-grandes-four p{
-        font-size: 18px;
-    }
-    
-    .salinas-grandes-four ul{
-        font-size: 18px;
-    }
-
-    /* Promociones Disponibles */
-    .available-promotions-grid{
-        grid-template-columns: repeat(2,360px);
-        grid-template-rows: 40px 300px 40px 140px;
-    }
-
-    .available-promotions-eight, .available-promotions-nine,
-    .available-promotions-ten{
-        display: none;
-    }
-    
-    .available-promotions-seven, .available-promotions-ten{
-        font-size: 18px;
-    }
-
-    /* --------- RESERVAR --------- */
-    .book-room-grid {
-        grid-template-columns: minmax(0, 0.4fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 0.4fr);
-    }
-
-    .book-room-two {
-        font-size: 49px;
-        margin-top: auto;
-    }
-
-    .book-card-title {
-        font-size: 16px;
-    }
-
-    .book-card-one, .book-card-three, .book-card-five, .book-card-seven, .book-card-nine{
-        font-size: 15px;
-    }  
-
-    .book-card-eleven {
-        grid-column: 1/3;
-    }
-    
-    /* Contactanos */
-    .contact-us-two, .contact-us-three label, .contact-us-four label, .contact-us-five label,
-    .contact-us-six label, .contact-us-seven label, .contact-us-eight label, 
-    .contact-us-nine label{
-        font-size: 19px;
-    } 
-
-    .contact-us-ten{
-        height: 60%;
-    }
-
-    .contact-us-one, .payment-methods-one{
-        font-size: 34px;
-    }
-}
-
-@media (max-width:320px){    
-    /* ---- HEADER ---- */    
-    header{
-        width: 100%;
-        position: fixed;
-    }
-    .menu-bar{
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .logo{
-        width: 25%;
-        height: 25%;
-    }
-
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 8px 0;
-    }
-
-    nav label{
-        display: inline-flex;
-        cursor: pointer;
-        padding-right: 5px;
-    }
-
-    nav #toggle:checked ~ .menu-bar{
-        height: 100%;
-    }
-
-    /* ---- INDEX ---- */
-    .main-back{
-        width: 100%;
-        height: 400px;
-        align-items: center;
-    }
-
-    .main-back h1{
-        font-size: 35px;
-    }
-
-    .main-back h2{
-        font-size: 11px;
-    }
-
-    .main-section-1{
-        font-size: 15px;
-    }
-
-    .main-sections-grid{
-        grid-template-rows: 60px repeat(6,75px);
-        grid-template-areas: 
-        "section-1 section-1 section-1 section-1"
-        "section-2 section-2 section-2 section-2"
-        "section-2 section-2 section-2 section-2"
-        "section-3 section-3 section-3 section-3"
-        "section-5 section-5 section-5 section-5"
-        "section-5 section-5 section-5 section-5"
-        "section-4 section-4 section-4 section-4"
-        ;
-        gap: 12px;
-    }
-
-    .main-section-3{
-        font-size: 12px;
-        margin-top: 20px;
-    }
-    
-    .main-section-4{
-        font-size: 12px;
-    }
-
-    .main-section-5{
-        margin-top: 20px;
-    }
-    /* Seccion cliente */
-    .clients-section-grid{
-        grid-template-areas: 
-        "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
-        "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
-        ". . client-section-7 . ."
-        ;
-    }
-
-    .client-section-one{
-        font-size: 14px;
-    }
-
-    .client-section-two, .client-section-three, 
-    .client-section-five , .client-section-six{
-        display: none;
-    }
-
-    .client-testimony-section-two p{
-        font-size: 23px;
-    }
-
-    .client-testimony-section-three img{
-        width: 70%;
-        height: 75%;
-    }
-
-    .client-testimony-section-four p{
-        font-size: 20px;
-    }
-
-    .client-section-seven img{
-        width: 70%;
-        height: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* --------- HABITACIONES --------- */
-    .text-section-one, .text-section-three{
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .text-section-two{
-        font-size: 13px;
-    }
-
-    .premium-room-section-three, .standard-room-section-three{
-        font-size: 12px;
-    }
-
-    .premium-room-section-four, .standard-room-section-four{
-        font-size: 9px;
-    }
-    
-    .premium-room-section-five input, .standard-room-section-five input {
-        height: 60%;
-        width: 45%;
-    }
-
-    /* --------- GASTRONOMIA --------- */
-    .gastronomic-experience-grid{
-        width: 320px;
-        height: 600px;
-        grid-template-columns: 300px;
-        grid-template-rows: 40px 70px 45px repeat(3,60px) 180px;
-    }
-
-    .gastronomic-experience-one{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-size: 17px; 
-    }
-
-    .gastronomic-experience-two{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        font-size: 14px;
-    }
-
-    .gastronomic-experience-three{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        font-size: 15px;
-        align-self: center;
-    }
-
-    .gastronomic-experience-four{
-        grid-column: 1/2;
-        grid-row: 4/7;
-        width: 95%;
-        height: 95%;
-        margin: 0 auto;
-    }
-
-    .gastronomic-experience-five{
-        grid-column: 1/2;
-        grid-row: 7/8;
-        font-size: 14px;
-    }
-
-    /* SERVICIO REGIONAL */
-    .regional-service-grid{
-        width: 320px;
-        height: 900px;
-        grid-template-columns: 300px;
-        grid-template-rows: 40px 30px 220px 120px 30px 220px 120px;
-    }
-
-    .regional-service-one{
-        grid-column: 1/2;    
-        font-size: 20px; 
-    }
-
-    .regional-service-two{
-        grid-column: 1/2;
-        font-size: 18px; 
-    }
-
-    .regional-service-four{
-        display: none;
-    }
-
-    .regional-service-five{
-        display: none;
-    }
-
-    .regional-service-six{
-        grid-column: 1/2;
-        font-size: 14px;
-    }
-
-    .regional-service-seven{
-        grid-column: 1/2;
-        font-size: 18px; 
-    }
-
-    .regional-service-nine{
-        display: none;
-    }
-
-    .regional-service-ten{
-        display: none;
-    }
-
-    .regional-service-eleven{
-        grid-column: 1/2;
-        font-size: 14px;
-    }
-
-    /* ----- EXCURSIONES ----- */
-    .introduction-excursions-grid{
-        grid-template-rows: 60px 70px;
-        background-color: #3be60c;
-    }
-
-    .introduction-excursions-one{
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .introduction-excursions-two{
-        font-size: 15px;
-    }
-
-    .introduction-excursions-grid{
-        grid-template-rows: 55px 70px;
-        row-gap: 10px;
-    }
-
-    .salinas-grandes-grid{
-        grid-template-columns: 300px;
-        grid-template-rows: 60px 150px 350px 250px;
-    }
-
-    .salinas-grandes-one{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-size: 18px;
-    }
-    
-    .salinas-grandes-two{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        font-size: 15px;
-        justify-self: center;
-        align-content: center; 
-        text-align: center;
-    }
-    
-    .salinas-grandes-three{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 100%;
-    }
-    
-    .salinas-grandes-four{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    
-    .salinas-grandes-four h3{
-        font-size: 18px;
-    }
-    
-    .salinas-grandes-four p{
-        font-size: 15px;
-    }
-    
-    .salinas-grandes-four ul{
-        font-size: 15px;
-    }
-
-    .available-promotions-grid{
-        grid-template-columns: repeat(3,290px);
-        grid-template-rows: 40px 300px 40px 120px;
-    }
-
-    .available-promotions-two, .available-promotions-three,
-    .available-promotions-four, .available-promotions-eight,
-    .available-promotions-nine, .available-promotions-ten{
-        display: none;
-    }
-
-    .available-promotions-one{
-        font-size: 19px;
-    }
-
-    .available-promotions-six{
-        font-size: 18px;
-    }
-
-    .available-promotions-seven{
-        font-size: 15px;
-    }
-
-    /* --------- RESERVAR --------- */
-    .book-room-grid{
-        grid-template-rows: 100px 75px 140px 120px 130px;
-    }
-    
-    .book-room-two{
-        grid-column: 2/4;
-        grid-row: 1/2;
-        font-size: 35px;
-        text-align: center;
-    }
-    
-    .book-room-three{
-        grid-column: 2/4;
-        grid-row: 2/3;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .book-room-four {
-        height: 90%; 
-        grid-column: 2 / 4;
-        grid-row: 3 / 6;
-    }
-    
-    .contact-us-grid{
-        /* width: auto; */
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px repeat(4, 65px) 110px repeat(8, 75px);
-    }
-
-    .contact-us-eleven{
-        grid-column: 1/2;
-        grid-row: 2/6;
-    }
-    
-    .contact-us-two{
-        grid-column: 1/2;
-        grid-row: 6/7;
-        align-content: center;
-    }
-
-    .contact-us-three{
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-
-    .contact-us-four{
-        grid-column: 1/2;
-        grid-row: 8/9;
-    }
-
-    .contact-us-five{
-        grid-column: 1/2;
-        grid-row: 9/10;
-    }
-
-    .contact-us-six{
-        grid-column: 1/2;
-        grid-row: 10/11;
-    }
-
-    .contact-us-seven{
-        grid-column: 1/2;
-        grid-row: 11/12;
-    }
-
-    .contact-us-eight{
-        grid-column: 1/2;
-        grid-row: 12/13;
-    }
-
-    .contact-us-nine{
-        grid-column: 1/2;
-        grid-row: 13/14;
-    }
-
-    .contact-us-ten{
-        grid-column: 1/2;
-        grid-row: 14/15;
-    }
-
-    .contact-us-eleven{
-        grid-column: 1/2;
-        grid-row: 2/6;
-    }
-
-    .payment-methods-grid{
-        grid-template-rows: 80px 150px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
