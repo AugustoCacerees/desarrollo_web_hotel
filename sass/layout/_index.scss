@@ -1,4 +1,3 @@
-/*------------------------------------- INDEX --------------------------------------------------*/
 .main-back{
     width: 100%;
     height: 31.25rem;
@@ -8,52 +7,42 @@
     background-repeat: no-repeat;
     padding-left: 2.5%;
     padding-top: 9.375rem;
-    color: white;
     h1{
         font-size: 70px;
+        color: map-get($colors, colorTitle);
         text-shadow: 1px 1px 3px black;
     }
     h2{
+        color: map-get($colors, colorTitle);
         text-shadow: 1px 1px 3px black;
     }
 }
 
 .main-sections-grid{
-    display: grid;
+    @include grid(
+        repeat(4,1fr),
+        60px repeat(3,150px),
+        none,
+        none,
+        "section-1 section-1 section-1 section-1"
+        "section-2 section-2 section-3 section-3"
+        "section-2 section-2 section-5 section-5"
+        "section-4 section-4 section-5 section-5"
+    );
     width: 100%;
     padding: 25px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 60px repeat(3,150px);
-    grid-template-areas: 
-    "section-1 section-1 section-1 section-1"
-    "section-2 section-2 section-3 section-3"
-    "section-2 section-2 section-5 section-5"
-    "section-4 section-4 section-5 section-5"
-    ;
     gap: 20px;
-    background-color: #F8FAE5;
+    background-color: map-get($colors, colorQuaternary);
+    
     .main-section-1{
-        /* background-color: blue; */
         grid-area: section-1;
         justify-self: center;
         align-self: center;
-        font-size: 21px;
-        margin-bottom: 5px;
         text-align: center;
+        font-size: 21px;
     }
-    
-    .main-section-2{
-        /* background-color: red; */
-        grid-area: section-2;
-        img{
-            width: 100%;
-            height: 100%;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        }
-    }
-        
+
     .main-section-3{
-        /* background-color: rgb(0, 255, 17); */
         grid-area: section-3;
         font-size: 20px;
         text-align: center;
@@ -61,47 +50,46 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .main-section-4{
-        /* background-color: rgb(255, 204, 0); */
+        @extend .main-section-3;
         grid-area: section-4;
-        font-size: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
+
     
-    .main-section-5{
-        /* background-color: rgb(255, 0, 255); */
-        grid-area: section-5;
+    .main-section-2{
+        grid-area: section-2;
         img{
             width: 100%;
             height: 100%;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
     }
+
+    .main-section-5{
+        @extend .main-section-2;
+        grid-area: section-5;
+    }
 }
 
 .clients-section-grid{
-    display: grid;
+    @include grid(
+        1fr repeat(3,10fr) 1fr,
+        60px 300px 30px,
+        center,
+        none,
+        "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
+        "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
+        ". . client-section-7 . ."
+    );
     width: 100%;
     height: 450px;
     padding: 1.5625rem;
-    grid-template-columns: 1fr repeat(3,10fr) 1fr;
-    grid-template-rows: 60px 300px 30px;
-    grid-template-areas: 
-    "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
-    "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
-    ". . client-section-7 . ."
-    ;
     gap: .625rem;
-    background-color: #D4E7C5;
-    justify-content: center;
+    background-color: map-get($colors, colorTerteary);
     align-items: center;
     
     .client-section-one{
-        /* background-color: blue; */
         grid-area: client-section-1;
         justify-self: center;
         align-self: center;
@@ -109,54 +97,52 @@
         font-size: 25px;
     }
     .client-section-two{
-        /* background-color: rgb(47, 108, 62); */
         grid-area: client-section-2;
         align-self: center;
     }
     .client-section-three{
-        background-color: #789461;
+        background-color:  map-get($colors, colorSecondary);
         grid-area: client-section-3;
     }
 
     .client-section-four{
-        background-color: #789461;
+        @extend .client-section-three;
         grid-area: client-section-4;
     }
     
     .client-section-five{
-        background-color: #789461;
+        @extend .client-section-three;
         grid-area: client-section-5;
     }
     
     .client-section-six{
-        /* background-color: rgb(0, 208, 255); */
         grid-area: client-section-6;
         align-self: center;
     }
     
     .client-section-seven{
-        /* background-color: rgb(72, 82, 29); */
         grid-area: client-section-7;
         justify-self: center;
     }
 }
 
 .client-testimony-section-grid{
-    display: grid;
+    @include grid(
+        75px 60px 1fr,
+        35px 35px 20px 200px,
+        none,
+        none,
+        "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
+        "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4"
+        "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5"
+        "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6",
+    );
     width: 100%;
     height: 300px;
     padding: .9375rem;
-    grid-template-columns: 75px 60px 1fr;
-    grid-template-rows: 35px 35px 20px 200px;
-    grid-template-areas: 
-    "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
-    "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4"
-    "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5"
-    "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6"
-    ;
     gap: 5px;
-    /* background-color: #F8FAE5; */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
     .client-testimony-section-one{
         grid-area: client-testimony-section-1;
     }
@@ -167,14 +153,12 @@
     }
     
     .client-testimony-section-two{
-        /* background-color: rgb(0, 229, 255); */
         grid-area: client-testimony-section-2;
         align-self: center;
         font-size: 30px;
     }
     
     .client-testimony-section-three{
-        /* background-color: rgb(255, 0, 64); */
         grid-area: client-testimony-section-3;
         display: flex;
         align-items: center;
@@ -186,14 +170,12 @@
     }
     
     .client-testimony-section-four{
-        /* background-color: rgb(0, 17, 255); */
         grid-area: client-testimony-section-4;
         align-self: center;
         font-size: 1.5625rem;
     }
     
     .client-testimony-section-five{
-        /* background-color: rgb(204, 206, 112); */
         grid-area: client-testimony-section-5;
     }
     
@@ -202,7 +184,6 @@
     }
     
     .client-testimony-section-six{
-        /* background-color: rgb(24, 67, 60); */
         grid-area: client-testimony-section-6;
         font-size: 15px;
     }

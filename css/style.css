@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
@@ -10,7 +9,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/*------------------------------------- INDEX --------------------------------------------------*/
 .main-back {
   width: 100%;
   height: 31.25rem;
@@ -20,46 +18,37 @@ body {
   background-repeat: no-repeat;
   padding-left: 2.5%;
   padding-top: 9.375rem;
-  color: white;
 }
 .main-back h1 {
   font-size: 70px;
+  color: white;
   text-shadow: 1px 1px 3px black;
 }
 .main-back h2 {
+  color: white;
   text-shadow: 1px 1px 3px black;
 }
 
 .main-sections-grid {
   display: grid;
-  width: 100%;
-  padding: 25px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 60px repeat(3, 150px);
+  justify-content: none;
+  align-content: none;
   grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-3 section-3" "section-2 section-2 section-5 section-5" "section-4 section-4 section-5 section-5";
+  width: 100%;
+  padding: 25px;
   gap: 20px;
   background-color: #F8FAE5;
 }
 .main-sections-grid .main-section-1 {
-  /* background-color: blue; */
   grid-area: section-1;
   justify-self: center;
   align-self: center;
-  font-size: 21px;
-  margin-bottom: 5px;
   text-align: center;
+  font-size: 21px;
 }
-.main-sections-grid .main-section-2 {
-  /* background-color: red; */
-  grid-area: section-2;
-}
-.main-sections-grid .main-section-2 img {
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-.main-sections-grid .main-section-3 {
-  /* background-color: rgb(0, 255, 17); */
+.main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
   grid-area: section-3;
   font-size: 20px;
   text-align: center;
@@ -68,39 +57,35 @@ body {
   align-items: center;
 }
 .main-sections-grid .main-section-4 {
-  /* background-color: rgb(255, 204, 0); */
   grid-area: section-4;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.main-sections-grid .main-section-5 {
-  /* background-color: rgb(255, 0, 255); */
-  grid-area: section-5;
+.main-sections-grid .main-section-2, .main-sections-grid .main-section-5 {
+  grid-area: section-2;
 }
-.main-sections-grid .main-section-5 img {
+.main-sections-grid .main-section-2 img, .main-sections-grid .main-section-5 img {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+.main-sections-grid .main-section-5 {
+  grid-area: section-5;
+}
 
 .clients-section-grid {
   display: grid;
+  grid-template-columns: 1fr repeat(3, 10fr) 1fr;
+  grid-template-rows: 60px 300px 30px;
+  justify-content: center;
+  align-content: none;
+  grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
   width: 100%;
   height: 450px;
   padding: 1.5625rem;
-  grid-template-columns: 1fr repeat(3, 10fr) 1fr;
-  grid-template-rows: 60px 300px 30px;
-  grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
   gap: 0.625rem;
   background-color: #D4E7C5;
-  justify-content: center;
   align-items: center;
 }
 .clients-section-grid .client-section-one {
-  /* background-color: blue; */
   grid-area: client-section-1;
   justify-self: center;
   align-self: center;
@@ -108,43 +93,39 @@ body {
   font-size: 25px;
 }
 .clients-section-grid .client-section-two {
-  /* background-color: rgb(47, 108, 62); */
   grid-area: client-section-2;
   align-self: center;
 }
-.clients-section-grid .client-section-three {
+.clients-section-grid .client-section-three, .clients-section-grid .client-section-five, .clients-section-grid .client-section-four {
   background-color: #789461;
   grid-area: client-section-3;
 }
 .clients-section-grid .client-section-four {
-  background-color: #789461;
   grid-area: client-section-4;
 }
 .clients-section-grid .client-section-five {
-  background-color: #789461;
   grid-area: client-section-5;
 }
 .clients-section-grid .client-section-six {
-  /* background-color: rgb(0, 208, 255); */
   grid-area: client-section-6;
   align-self: center;
 }
 .clients-section-grid .client-section-seven {
-  /* background-color: rgb(72, 82, 29); */
   grid-area: client-section-7;
   justify-self: center;
 }
 
 .client-testimony-section-grid {
   display: grid;
+  grid-template-columns: 75px 60px 1fr;
+  grid-template-rows: 35px 35px 20px 200px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2" "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4" "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5" "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6";
   width: 100%;
   height: 300px;
   padding: 0.9375rem;
-  grid-template-columns: 75px 60px 1fr;
-  grid-template-rows: 35px 35px 20px 200px;
-  grid-template-areas: "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2" "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4" "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5" "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6";
   gap: 5px;
-  /* background-color: #F8FAE5; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .client-testimony-section-grid .client-testimony-section-one {
@@ -155,13 +136,11 @@ body {
   height: 100%;
 }
 .client-testimony-section-grid .client-testimony-section-two {
-  /* background-color: rgb(0, 229, 255); */
   grid-area: client-testimony-section-2;
   align-self: center;
   font-size: 30px;
 }
 .client-testimony-section-grid .client-testimony-section-three {
-  /* background-color: rgb(255, 0, 64); */
   grid-area: client-testimony-section-3;
   display: flex;
   align-items: center;
@@ -171,25 +150,21 @@ body {
   height: 80%;
 }
 .client-testimony-section-grid .client-testimony-section-four {
-  /* background-color: rgb(0, 17, 255); */
   grid-area: client-testimony-section-4;
   align-self: center;
   font-size: 1.5625rem;
 }
 .client-testimony-section-grid .client-testimony-section-five {
-  /* background-color: rgb(204, 206, 112); */
   grid-area: client-testimony-section-5;
 }
 .client-testimony-section-grid .client-testimony-section-five img {
   height: 100%;
 }
 .client-testimony-section-grid .client-testimony-section-six {
-  /* background-color: rgb(24, 67, 60); */
   grid-area: client-testimony-section-6;
   font-size: 15px;
 }
 
-/* --------- HABITACIONES --------- */
 .image-background-rooms img {
   width: 100%;
   height: auto;
@@ -198,14 +173,15 @@ body {
 
 .text-section-grid {
   display: grid;
-  width: 85%;
-  margin: 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 0.75fr);
-  grid-template-areas: "text-section-1" "text-section-2" "text-section-3";
-  gap: 0.625rem;
-  background-color: #FFFFFF;
   justify-content: center;
+  align-content: none;
+  grid-template-areas: "text-section-1" "text-section-2" "text-section-3";
+  width: 85%;
+  margin: 0 auto;
+  gap: 0.625rem;
+  background-color: white;
 }
 .text-section-grid .text-section-one {
   grid-area: text-section-1;
@@ -215,39 +191,34 @@ body {
   text-align: center;
 }
 .text-section-grid .text-section-two {
-  /* background-color: rgb(0, 255, 64); */
   grid-area: text-section-2;
   text-align: center;
   font-size: 25px;
-  /* padding-inline-start: 200px;
-  padding-inline-end: 200px; */
 }
 .text-section-grid .text-section-three {
-  /* background-color: rgb(255, 0, 68); */
   grid-area: text-section-3;
   justify-self: center;
   align-self: center;
   color: #76453B;
 }
 
-/* Habitacion Premium */
 .premium-room-section-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-content: none;
+  grid-template-areas: "premium-room-section-1 premium-room-section-3" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-2 premium-room-section-5";
   width: 80%;
   margin: 30px auto;
   padding: 25px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "premium-room-section-1 premium-room-section-3" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-2 premium-room-section-5";
   background-color: #D4E7C5;
   gap: 10px;
-  justify-content: center;
 }
 .premium-room-section-grid:last-child {
   margin-bottom: 100px;
 }
 .premium-room-section-grid .premium-room-section-one {
-  /* background-color: blue; */
   grid-area: premium-room-section-1;
   display: flex;
   justify-content: center;
@@ -258,7 +229,6 @@ body {
   max-width: 100%;
 }
 .premium-room-section-grid .premium-room-section-two {
-  /* background-color: rgb(9, 255, 0); */
   grid-area: premium-room-section-2;
   text-align: center;
 }
@@ -274,7 +244,6 @@ body {
   font-size: 20px;
 }
 .premium-room-section-grid .premium-room-section-four {
-  /* background-color: rgb(0, 179, 255); */
   grid-area: premium-room-section-4;
   font-size: 17px;
 }
@@ -282,7 +251,6 @@ body {
   margin-bottom: 10px;
 }
 .premium-room-section-grid .premium-room-section-five {
-  /* background-color: rgb(255, 0, 13); */
   grid-area: premium-room-section-5;
   text-align: center;
 }
@@ -298,24 +266,23 @@ body {
   background-color: #76453B;
 }
 
-/* Habitacion Estandar */
 .standard-room-section-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  align-content: none;
+  grid-template-areas: "standard-room-section-1 standard-room-section-3" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-2 standard-room-section-5";
   width: 80%;
   margin: 30px auto;
   padding: 25px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "standard-room-section-1 standard-room-section-3" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-2 standard-room-section-5";
   background-color: #D4E7C5;
   gap: 10px;
-  justify-content: center;
 }
 .standard-room-section-grid:last-child {
   margin-bottom: 100px;
 }
 .standard-room-section-grid .standard-room-section-one {
-  background-color: blue;
   grid-area: standard-room-section-1;
   display: flex;
   justify-content: center;
@@ -326,7 +293,6 @@ body {
   max-width: 100%;
 }
 .standard-room-section-grid .standard-room-section-two {
-  /* background-color: rgb(9, 255, 0); */
   grid-area: standard-room-section-2;
   text-align: center;
 }
@@ -342,7 +308,6 @@ body {
   font-size: 20px;
 }
 .standard-room-section-grid .standard-room-section-four {
-  /* background-color: rgb(0, 179, 255); */
   grid-area: standard-room-section-4;
   font-size: 17px;
 }
@@ -350,7 +315,6 @@ body {
   margin-bottom: 10px;
 }
 .standard-room-section-grid .standard-room-section-five {
-  /* background-color: rgb(255, 0, 13); */
   grid-area: standard-room-section-5;
   text-align: center;
 }
@@ -366,97 +330,75 @@ body {
   background-color: #76453B;
 }
 
-/* --------- GASTRONOMIA --------- */
 .image-background-gastronomy img {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
 
-/* INTRODUCCIÓN */
 .gastronomic-experience-grid {
   display: grid;
-  width: 100%;
-  height: 600px;
   grid-template-columns: repeat(2, 480px);
   grid-template-rows: 40px repeat(2, 60px) 40px repeat(2, 180x);
   justify-content: center;
   align-content: center;
-  /* background-color: #789461; */
+  grid-template-areas: none;
+  width: 100%;
+  height: 600px;
   column-gap: 15px;
   row-gap: 15px;
 }
-.gastronomic-experience-grid .gastronomic-experience-one {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.gastronomic-experience-grid .gastronomic-experience-one, .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
+  grid-column: 1/3;
   justify-self: center;
   align-self: center;
   font-size: 30px;
 }
-.gastronomic-experience-grid .gastronomic-experience-two {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  justify-self: center;
-  align-self: center;
+.gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
+  grid-row: 2/4;
   font-size: 25px;
   text-align: center;
 }
 .gastronomic-experience-grid .gastronomic-experience-three {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-column: 1/3;
+  grid-row: 4/5;
   font-size: 25px;
 }
 .gastronomic-experience-grid .gastronomic-experience-four {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 7;
+  grid-column: 1/2;
+  grid-row: 5/7;
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .gastronomic-experience-grid .gastronomic-experience-five {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 7;
-  font-size: 25px;
-  justify-self: center;
-  text-align: center;
+  grid-column: 2/3;
+  grid-row: 5/7;
 }
 
-/* SERVICIO REGIONAL */
 .regional-service-grid {
   display: grid;
-  width: 100%;
-  height: 1100px;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 80px 30px 300px 120px 30px 300px 120px;
-  column-gap: 15px;
-  row-gap: 10px;
+  grid-template-rows: 80px repeat(2, 30px 300px 120px);
   justify-content: center;
   align-content: center;
-  /* background-color: #e6670c; */
+  grid-template-areas: none;
+  width: 100%;
+  height: 1100px;
+  column-gap: 15px;
+  row-gap: 10px;
 }
-.regional-service-grid .regional-service-one {
+.regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
   grid-column: 1/4;
   justify-self: center;
   text-align: center;
   font-size: 30px;
 }
-.regional-service-grid .regional-service-two {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
+.regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
   font-size: 28px;
+  grid-row: 2/3;
 }
-.regional-service-grid .regional-service-three {
+.regional-service-grid .regional-service-three, .regional-service-grid .regional-service-eight, .regional-service-grid .regional-service-ten, .regional-service-grid .regional-service-nine, .regional-service-grid .regional-service-five, .regional-service-grid .regional-service-four {
   grid-column: 1/2;
   grid-row: 3/4;
   width: 100%;
@@ -465,64 +407,33 @@ body {
 }
 .regional-service-grid .regional-service-four {
   grid-column: 2/3;
-  grid-row: 3/4;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .regional-service-grid .regional-service-five {
   grid-column: 3/4;
-  grid-row: 3/4;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.regional-service-grid .regional-service-six {
+.regional-service-grid .regional-service-six, .regional-service-grid .regional-service-eleven {
   grid-column: 1/4;
   grid-row: 4/5;
-  font-size: 20px;
   justify-self: center;
   text-align: center;
   font-size: 24px;
 }
 .regional-service-grid .regional-service-seven {
-  grid-column: 1/4;
   grid-row: 5/6;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  font-size: 28px;
 }
-.regional-service-grid .regional-service-eight {
-  grid-column: 1/2;
+.regional-service-grid .regional-service-eight, .regional-service-grid .regional-service-ten, .regional-service-grid .regional-service-nine {
   grid-row: 6/7;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .regional-service-grid .regional-service-nine {
   grid-column: 2/3;
-  grid-row: 6/7;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .regional-service-grid .regional-service-ten {
   grid-column: 3/4;
-  grid-row: 6/7;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .regional-service-grid .regional-service-eleven {
-  grid-column: 1/4;
   grid-row: 7/8;
-  font-size: 24px;
-  justify-self: center;
-  text-align: center;
 }
 
-/* ............EXCURSIONES............ */
 .image-background-excursions img {
   width: 100%;
   height: auto;
@@ -531,62 +442,54 @@ body {
 
 .introduction-excursions-grid {
   display: grid;
-  width: 100%;
-  height: 150px;
-  grid-template-columns: 80%;
+  grid-template-columns: 80px;
   grid-template-rows: repeat(2, 50px);
   justify-content: center;
   align-content: center;
-  /* background-color: #3be60c; */
+  grid-template-areas: none;
+  width: 100%;
+  height: 150px;
 }
-.introduction-excursions-grid .introduction-excursions-one {
+.introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
   grid-column: 1/2;
   grid-row: 1/2;
   font-size: 25px;
   justify-self: center;
   align-content: center;
+  text-align: center;
 }
 .introduction-excursions-grid .introduction-excursions-two {
-  grid-column: 1/2;
   grid-row: 2/3;
   font-size: 21px;
-  justify-self: center;
-  align-content: center;
-  text-align: center;
 }
 
 .salinas-grandes-grid {
   display: grid;
-  width: 100%;
   grid-template-columns: 500px 350px;
   grid-template-rows: 70px 110px 370px;
   justify-content: center;
   align-content: center;
+  grid-template-areas: none;
+  width: 100%;
   column-gap: 15px;
   row-gap: 5px;
-  /* background-color: aqua; */
 }
-.salinas-grandes-grid .salinas-grandes-one {
+.salinas-grandes-grid .salinas-grandes-one, .salinas-grandes-grid .salinas-grandes-two {
   grid-column: 1/3;
   grid-row: 1/2;
   font-size: 23px;
   justify-self: center;
   align-content: center;
+  text-align: center;
 }
 .salinas-grandes-grid .salinas-grandes-two {
-  grid-column: 1/3;
-  grid-row: 2/3;
   font-size: 21px;
-  justify-self: center;
-  align-content: center;
-  text-align: center;
+  grid-row: 2/3;
 }
 .salinas-grandes-grid .salinas-grandes-three {
   grid-column: 1/2;
   grid-row: 3/4;
   width: 100%;
-  /* height: auto; */
-  /* margin-left: auto; */
 }
 .salinas-grandes-grid .salinas-grandes-four {
   grid-column: 2/3;
@@ -608,13 +511,14 @@ body {
 
 .available-promotions-grid {
   display: grid;
-  width: 100%;
-  height: 600px;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: 40px 300px 40px 120px;
   justify-content: center;
+  align-content: none;
+  grid-template-areas: none;
+  width: 100%;
+  height: 600px;
   column-gap: 10px;
-  /* background-color: #f54f4f; */
 }
 .available-promotions-grid .available-promotions-one {
   grid-column: 1/4;
@@ -623,93 +527,63 @@ body {
   justify-self: center;
   align-content: center;
 }
-.available-promotions-grid .available-promotions-two {
+.available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-eight, .available-promotions-grid .available-promotions-five {
   grid-column: 1/2;
   grid-row: 2/3;
   width: 100%;
   height: 100%;
-}
-.available-promotions-grid .available-promotions-three {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-}
-.available-promotions-grid .available-promotions-four {
-  grid-column: 1/2;
-  grid-row: 4/5;
-  font-size: 20px;
-  list-style-position: inside;
-  text-align: left;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .available-promotions-grid .available-promotions-five {
   grid-column: 2/3;
-  grid-row: 2/3;
-  width: 100%;
-  height: 100%;
-}
-.available-promotions-grid .available-promotions-six {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-}
-.available-promotions-grid .available-promotions-seven {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  font-size: 20px;
-  list-style-position: inside;
-  text-align: left;
 }
 .available-promotions-grid .available-promotions-eight {
   grid-column: 3/4;
-  grid-row: 2/3;
-  width: 100%;
-  height: 100%;
+}
+.available-promotions-grid .available-promotions-three, .available-promotions-grid .available-promotions-nine, .available-promotions-grid .available-promotions-six {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+.available-promotions-grid .available-promotions-six {
+  grid-column: 2/3;
 }
 .available-promotions-grid .available-promotions-nine {
   grid-column: 3/4;
-  grid-row: 3/4;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
 }
-.available-promotions-grid .available-promotions-ten {
-  grid-column: 3/4;
+.available-promotions-grid .available-promotions-four, .available-promotions-grid .available-promotions-ten, .available-promotions-grid .available-promotions-seven {
+  grid-column: 1/2;
   grid-row: 4/5;
   font-size: 20px;
   list-style-position: inside;
   text-align: left;
 }
+.available-promotions-grid .available-promotions-seven {
+  grid-column: 2/3;
+}
+.available-promotions-grid .available-promotions-ten {
+  grid-column: 3/4;
+}
 
-/* ............RESERVAR............ */
 .book-room-grid {
   display: grid;
-  width: 100%;
   grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 1fr);
   grid-template-rows: 100px 140px 120px 120px;
-  /* justify-content: center;
-  align-content: center;
-  column-gap: 15px;
-  row-gap: 5px; */
-  /* background-color: aqua; */
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: none;
+  width: 100%;
   background-image: url(https://www.hotelhuacalera.com/wp-content/uploads/Huacalera-019A.jpg);
   background-size: cover;
   background-position: center;
-  /* .book-room-one{
-  grid-column: 1/5;
-  grid-row: 1/5;
-  width: 100%;
-  height: 100%;
-  } */
 }
 .book-room-grid .book-room-two {
   grid-column: 2/3;
   grid-row: 2/3;
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   word-wrap: break-word;
 }
 .book-room-grid .book-room-three {
@@ -731,14 +605,15 @@ body {
 
 .book-card-grid {
   display: grid;
-  width: 90%;
-  height: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  /* background-color: #f54f4f; */
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: none;
+  width: 90%;
+  height: 100%;
   margin: auto;
   column-gap: 10px;
-  /* row-gap: 10px; */
 }
 .book-card-grid .book-card-title {
   grid-column: 1/3;
@@ -746,82 +621,50 @@ body {
   justify-self: center;
   align-content: center;
 }
-.book-card-grid .book-card-one {
+.book-card-grid .book-card-one, .book-card-grid .book-card-nine, .book-card-grid .book-card-seven, .book-card-grid .book-card-five, .book-card-grid .book-card-three {
   grid-column: 1/2;
   grid-row: 2/3;
   font-size: 18px;
   align-content: end;
   margin: 5px;
-}
-.book-card-grid .book-card-two {
-  grid-column: 1/2;
-  grid-row: 3/4;
-  margin-bottom: 10px;
-  background-color: rgba(163, 163, 163, 0.49);
-  border: none;
 }
 .book-card-grid .book-card-three {
   grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 18px;
-  align-content: end;
-  margin: 5px;
-}
-.book-card-grid .book-card-four {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  margin-bottom: 10px;
-  background-color: rgba(163, 163, 163, 0.49);
-  border: none;
 }
 .book-card-grid .book-card-five {
-  grid-column: 1/2;
   grid-row: 4/5;
-  font-size: 18px;
-  align-content: end;
-  margin: 5px;
-}
-.book-card-grid .book-card-six {
-  grid-column: 1/3;
-  grid-row: 5/6;
-  margin-bottom: 10px;
-  background-color: rgba(163, 163, 163, 0.49);
-  border: none;
 }
 .book-card-grid .book-card-seven {
-  grid-column: 1/2;
   grid-row: 6/7;
-  font-size: 18px;
-  align-content: end;
-  margin: 5px;
-}
-.book-card-grid .book-card-eight {
-  grid-column: 1/3;
-  grid-row: 7/8;
-  margin-bottom: 10px;
-  background-color: rgba(163, 163, 163, 0.49);
-  border: none;
 }
 .book-card-grid .book-card-nine {
   grid-column: 1/3;
   grid-row: 8/9;
-  font-size: 18px;
-  align-content: end;
-  margin: 5px;
 }
-.book-card-grid .book-card-ten {
-  grid-column: 1/3;
-  grid-row: 9/10;
+.book-card-grid .book-card-two, .book-card-grid .book-card-six, .book-card-grid .book-card-ten, .book-card-grid .book-card-eight, .book-card-grid .book-card-four {
+  grid-column: 1/2;
+  grid-row: 3/4;
   margin-bottom: 10px;
   background-color: rgba(163, 163, 163, 0.49);
-  border: none;
+}
+.book-card-grid .book-card-four {
+  grid-column: 2/3;
+}
+.book-card-grid .book-card-six, .book-card-grid .book-card-ten, .book-card-grid .book-card-eight {
+  grid-column: 1/3;
+  grid-row: 5/6;
+}
+.book-card-grid .book-card-eight {
+  grid-row: 7/8;
+}
+.book-card-grid .book-card-ten {
+  grid-row: 9/10;
 }
 .book-card-grid .book-card-eleven {
   background-color: #B19470;
   grid-column: 2/3;
   grid-row: 10/11;
   color: white;
-  margin: 2px;
   cursor: pointer;
 }
 .book-card-grid .book-card-elevenhover {
@@ -830,16 +673,16 @@ body {
 
 .contact-us-grid {
   display: grid;
-  width: 95%;
-  height: 600px;
   grid-template-columns: 2fr repeat(2, 1fr);
   grid-template-rows: 70px 85px repeat(6, 65px);
-  /* justify-content: center;*/
+  justify-content: none;
   align-content: center;
+  grid-template-areas: none;
+  width: 95%;
+  height: 600px;
   column-gap: 10px;
-  /* background-color: rgb(87, 158, 225); */
-  margin-left: auto; /* Alinea el contenedor a la izquierda */
-  margin-right: auto; /* Alinea el contenedor a la derecha */
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-us-grid .contact-us-one {
   grid-column: 1/2;
@@ -857,91 +700,63 @@ body {
   grid-column: 2/3;
   grid-row: 3/4;
   margin-top: 5px;
-}
-.contact-us-grid .contact-us-three label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-three input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-four {
   grid-column: 3/4;
   grid-row: 3/4;
-}
-.contact-us-grid .contact-us-four label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-four input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-five {
   grid-column: 2/3;
   grid-row: 4/5;
-}
-.contact-us-grid .contact-us-five label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-five input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-six {
   grid-column: 2/3;
   grid-row: 5/6;
-}
-.contact-us-grid .contact-us-six label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-six input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-seven {
   grid-column: 2/3;
   grid-row: 6/7;
-}
-.contact-us-grid .contact-us-seven label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-seven input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-eight {
   grid-column: 3/4;
   grid-row: 6/7;
-}
-.contact-us-grid .contact-us-eight label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-eight input {
   display: block;
   margin-bottom: 1px;
 }
 .contact-us-grid .contact-us-nine {
   grid-column: 2/4;
   grid-row: 7/8;
-}
-.contact-us-grid .contact-us-nine label {
-  font-size: 24px;
   display: block;
+  font-size: 24px;
   margin-bottom: 5px;
-}
-.contact-us-grid .contact-us-nine input {
   display: block;
   margin-bottom: 1px;
 }
@@ -954,8 +769,8 @@ body {
   color: white;
   margin: 2px;
   cursor: pointer;
-  margin-left: auto; /* Alinea el contenedor a la izquierda */
-  margin-right: auto; /* Alinea el contenedor a la derecha */
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-us-grid .contact-us-ten:hover {
   background-color: #76453B;
@@ -970,14 +785,12 @@ body {
 
 .payment-methods-grid {
   display: grid;
-  width: 95%;
-  /* height: 600px; */
   grid-template-columns: 1fr;
   grid-template-rows: 80px 200px;
-  /* justify-content: center;*/
-  /* align-content: center; */
-  /* column-gap: 10px;  */
-  /* background-color: rgb(101, 46, 133); */
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: none;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -988,11 +801,8 @@ body {
 }
 .payment-methods-grid .payment-methods-two {
   grid-row: 2/3;
-  /* display: flex;
-  justify-content: center; */
 }
 .payment-methods-grid .payment-methods-two img {
-  /* width: 100%; */
   max-height: 100%;
   max-width: 100%;
 }
@@ -1007,11 +817,12 @@ body {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: none;
+  flex-wrap: wrap;
   background-color: #76453B;
-  color: white;
 }
 nav .menu-nav {
   display: flex;
@@ -1037,11 +848,15 @@ nav #toggle, nav label {
   background-color: #43766C;
 }
 .footer-grid .first-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: none;
   width: 100%;
   max-width: 1024px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   padding: 45px 0px;
 }
@@ -1049,14 +864,16 @@ nav #toggle, nav label {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: none;
   justify-content: center;
   align-items: center;
+  gap: none;
 }
 .footer-grid .first-group .box figure img {
   width: 270px;
 }
 .footer-grid .first-group .box h2 {
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 25px;
   font-size: 25px;
 }
@@ -1070,7 +887,7 @@ nav #toggle, nav label {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #FFFFFF;
+  color: white;
   margin-right: 10px;
   background-color: #26554C;
   text-align: center;
@@ -1083,7 +900,7 @@ nav #toggle, nav label {
   background-color: #294E47;
   padding: 15px 10px;
   text-align: center;
-  color: #FFFFFF;
+  color: white;
 }
 .footer-grid .second-group small {
   font-size: 15px;
@@ -1150,7 +967,7 @@ nav #toggle, nav label {
   .main-sections-grid {
     grid-template-rows: 60px repeat(3, 110px);
   }
-  .main-sections-grid .main-section-3 {
+  .main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
     font-size: 15px;
   }
   .main-sections-grid .main-section-4 {
@@ -1189,7 +1006,7 @@ nav #toggle, nav label {
     column-gap: 10px;
     row-gap: 8px;
   }
-  .gastronomic-experience-grid .gastronomic-experience-two {
+  .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
     font-size: 18px;
   }
   .gastronomic-experience-grid .gastronomic-experience-five {
@@ -1199,17 +1016,17 @@ nav #toggle, nav label {
     width: 768px;
     grid-template-columns: repeat(2, 300px);
   }
-  .regional-service-grid .regional-service-one {
+  .regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/3;
   }
-  .regional-service-grid .regional-service-two {
+  .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/3;
     font-size: 25px;
   }
   .regional-service-grid .regional-service-five {
     display: none;
   }
-  .regional-service-grid .regional-service-six {
+  .regional-service-grid .regional-service-six, .regional-service-grid .regional-service-eleven {
     grid-column: 1/3;
     font-size: 18px;
   }
@@ -1230,7 +1047,7 @@ nav #toggle, nav label {
     grid-template-rows: 55px 70px;
     row-gap: 10px;
   }
-  .introduction-excursions-grid .introduction-excursions-one {
+  .introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
     text-align: center;
   }
   .introduction-excursions-grid .introduction-excursions-two {
@@ -1352,7 +1169,7 @@ nav #toggle, nav label {
   .main-sections-grid .main-section-1 {
     font-size: 15px;
   }
-  .main-sections-grid .main-section-3 {
+  .main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
     font-size: 12px;
     margin-top: 20px;
   }
@@ -1368,7 +1185,7 @@ nav #toggle, nav label {
   .clients-section-grid .client-section-one {
     font-size: 14px;
   }
-  .clients-section-grid .client-section-two, .clients-section-grid .client-section-three,
+  .clients-section-grid .client-section-two, .clients-section-grid .client-section-three, .clients-section-grid .client-section-four,
   .clients-section-grid .client-section-five, .clients-section-grid .client-section-six {
     display: none;
   }
@@ -1424,12 +1241,12 @@ nav #toggle, nav label {
     grid-template-columns: 300px;
     grid-template-rows: 40px 70px 45px repeat(3, 60px) 180px;
   }
-  .gastronomic-experience-grid .gastronomic-experience-one {
+  .gastronomic-experience-grid .gastronomic-experience-one, .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 17px;
   }
-  .gastronomic-experience-grid .gastronomic-experience-two {
+  .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
     grid-column: 1/2;
     grid-row: 2/3;
     font-size: 14px;
@@ -1458,11 +1275,11 @@ nav #toggle, nav label {
     grid-template-columns: 300px;
     grid-template-rows: 40px 30px 220px 120px 30px 220px 120px;
   }
-  .regional-service-grid .regional-service-one {
+  .regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/2;
     font-size: 20px;
   }
-  .regional-service-grid .regional-service-two {
+  .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/2;
     font-size: 18px;
   }
@@ -1472,7 +1289,7 @@ nav #toggle, nav label {
   .regional-service-grid .regional-service-five {
     display: none;
   }
-  .regional-service-grid .regional-service-six {
+  .regional-service-grid .regional-service-six, .regional-service-grid .regional-service-eleven {
     grid-column: 1/2;
     font-size: 14px;
   }
@@ -1495,7 +1312,7 @@ nav #toggle, nav label {
     grid-template-rows: 60px 70px;
     row-gap: 10px;
   }
-  .introduction-excursions-grid .introduction-excursions-one {
+  .introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
     font-size: 18px;
     text-align: center;
   }
@@ -1506,7 +1323,7 @@ nav #toggle, nav label {
     grid-template-columns: 300px;
     grid-template-rows: 60px 150px 350px 250px;
   }
-  .salinas-grandes-grid .salinas-grandes-one {
+  .salinas-grandes-grid .salinas-grandes-one, .salinas-grandes-grid .salinas-grandes-two {
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 18px;
@@ -1541,8 +1358,9 @@ nav #toggle, nav label {
     grid-template-columns: repeat(3, 290px);
     grid-template-rows: 40px 300px 40px 120px;
   }
-  .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-three,
-  .available-promotions-grid .available-promotions-four, .available-promotions-grid .available-promotions-eight,
+  .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-three, .available-promotions-grid .available-promotions-six,
+  .available-promotions-grid .available-promotions-four,
+  .available-promotions-grid .available-promotions-seven, .available-promotions-grid .available-promotions-eight,
   .available-promotions-grid .available-promotions-nine, .available-promotions-grid .available-promotions-ten {
     display: none;
   }
