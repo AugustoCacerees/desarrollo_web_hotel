@@ -8,7 +8,7 @@
 
 .introduction-excursions-grid{
     @include grid(
-        80px,
+        1fr,
         repeat(2,50px),
         center,
         center,

@@ -1,0 +1,38 @@
+@media (max-width:1024px){
+    /* ----- HEADER ----- */
+    nav{
+        .logo{
+            width: 18%;
+            height: 18%;
+        }
+        .menu-nav{
+            gap: 30px;
+            li{
+                a{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    /* ----- EXCURSIONES ----- */
+    .image-background-excursions {
+        width: 1024px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .introduction-excursions-grid{
+        grid-template-columns: 90%;
+    }
+
+    .salinas-grandes-two{
+        font-size: 20px;
+    }
+
+    .available-promotions-grid{
+        grid-template-columns: repeat(3,320px);
+        grid-template-rows: 40px 300px 40px 200px;
+    }
+}
