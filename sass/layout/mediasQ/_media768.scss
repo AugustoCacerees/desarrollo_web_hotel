@@ -1,0 +1,262 @@
+@media (max-width:768px){
+    /* ----- HEADER ----- */
+    nav{
+        .logo{
+            width: 18%;
+            height: 18%;
+        }
+        .menu-nav{
+            gap: 30px;
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    /* ----- INDEX ----- */
+    .main-back{
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        h1{
+            font-size: 58px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .main-sections-grid{
+        grid-template-rows: 60px repeat(3,110px);
+        .main-section-3{
+            font-size: 15px;
+        }
+        
+        .main-section-4{
+            font-size: 15px;
+        }
+    }
+
+    .clients-section-grid{
+        grid-template-areas: 
+        "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
+        "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
+        ". client-section-7 client-section-7 . ."
+        ;
+        .client-section-five {
+            display: none;
+        }
+    }
+    
+    /* ----- HABITACIONES ----- */
+    .text-section-grid{
+        .text-section-one{
+            font-size: 18px;
+        }
+    
+        .text-section-two{
+            font-size: 18px;
+        }
+    }
+
+    .premium-room-section-grid{
+        .premium-room-section-three{
+            font-size: 16px;
+        }
+    
+        .premium-room-section-four{
+            font-size: 13px;
+        }
+        
+        .premium-room-section-five{
+            input {
+                height: 70%;
+                width: 55%;
+            }
+        }
+    }
+
+    .standard-room-section-grid{
+        .standard-room-section-three{
+            font-size: 16px;
+        }
+    
+        .standard-room-section-four{
+            font-size: 13px;
+        }
+        
+        .standard-room-section-five{
+            input {
+                height: 70%;
+                width: 55%;
+            }
+        }
+    }
+
+    /* ----- GASTRONOMIA ----- */
+    .gastronomic-experience-grid{
+        width: 768px;
+        height: 450px;
+        grid-template-columns: repeat(2,350px);
+        grid-template-rows: 40px repeat(2,25px) 40px repeat(2,125px);
+        column-gap: 10px; 
+        row-gap: 8px; 
+
+        .gastronomic-experience-two{
+            font-size: 18px;
+        }
+    
+        .gastronomic-experience-five{
+            font-size: 18px;
+        }
+    }
+
+    .regional-service-grid{
+        width: 768px;
+        grid-template-columns: repeat(2,300px);
+
+        .regional-service-one{
+            grid-column: 1/3;    
+        }
+    
+        .regional-service-two{
+            grid-column: 1/3;
+            font-size: 25px; 
+        }
+    
+        .regional-service-five{
+            display: none;
+        }
+    
+        .regional-service-six{
+            grid-column: 1/3;
+            font-size: 18px;
+        }
+    
+        .regional-service-seven{
+            grid-column: 1/3;
+            font-size: 25px; 
+        }
+    
+        .regional-service-ten{
+            display: none;
+        }
+    
+        .regional-service-eleven{
+            grid-column: 1/3;
+            font-size: 18px;
+        }
+    }
+
+    /* ----- EXCURSIONES ----- */
+    .introduction-excursions-grid{
+        height: 150px;
+        grid-template-rows: 55px 70px;
+        row-gap: 10px;
+
+        .introduction-excursions-one{
+            text-align: center;
+        }
+        
+        .introduction-excursions-two{
+            font-size: 19px;
+        }
+    }
+
+    .salinas-grandes-grid{
+        grid-template-columns: 440px 290px;
+
+        .salinas-grandes-two{
+            font-size: 18px;
+        }
+    
+        .salinas-grandes-four{
+            h3{
+                font-size: 21px;
+            }
+            
+            p{
+                font-size: 18px;
+            }
+            
+            ul{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .available-promotions-grid{
+        grid-template-columns: repeat(2,360px);
+        grid-template-rows: 40px 300px 40px 140px;
+
+        .available-promotions-eight, .available-promotions-nine,
+        .available-promotions-ten{
+            display: none;
+        }
+        
+        .available-promotions-seven, .available-promotions-ten{
+            font-size: 18px;
+        }
+    }
+
+    /* ----- RESERVAR ----- */
+    .book-room-grid {
+        grid-template-columns: minmax(0, 0.4fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 0.4fr);
+        
+        .book-room-two {
+            font-size: 49px;
+            margin-top: auto;
+        }
+
+        .book-room-four{
+            .book-card-grid{
+                .book-card-title {
+                    font-size: 16px;
+                }
+                .book-card-one, .book-card-three, .book-card-five, .book-card-seven, .book-card-nine{
+                    font-size: 15px;
+                }  
+            
+                .book-card-eleven {
+                    grid-column: 1/3;
+                }
+            }
+        }
+    }
+    
+    .contact-us-grid{
+        .contact-us-one{
+            font-size: 34px;
+        }
+        .contact-us-two, .contact-us-three label, .contact-us-four label, .contact-us-five label,
+        .contact-us-six label, .contact-us-seven label, .contact-us-eight label, 
+        .contact-us-nine label{
+            font-size: 19px;
+        } 
+
+        .contact-us-ten{
+            height: 60%;
+        }
+    }    
+    .payment-methods-grid{
+        .payment-methods-one{
+            font-size: 34px;
+        }
+    }
+
+    /* ---- FOOTER ---- */
+    .footer-grid{
+        .first-group{
+            width: 90%;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            .box {
+                text-align: center;
+            }
+        }  
+    }
+    
+}

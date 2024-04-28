@@ -442,7 +442,7 @@ body {
 
 .introduction-excursions-grid {
   display: grid;
-  grid-template-columns: 80px;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 50px);
   justify-content: center;
   align-content: center;
@@ -918,9 +918,6 @@ nav #toggle, nav label {
   nav .menu-nav li a {
     font-size: 24px;
   }
-  /* ----- INICIO ----- */
-  /* ----- HABITACIONES ----- */
-  /* ----- GASTRONOMIA ----- */
   /* ----- EXCURSIONES ----- */
   .image-background-excursions {
     width: 1024px;
@@ -938,7 +935,6 @@ nav #toggle, nav label {
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: 40px 300px 40px 200px;
   }
-  /* ----- RESERVAR ----- */
 }
 @media (max-width: 768px) {
   /* ----- HEADER ----- */
@@ -980,19 +976,29 @@ nav #toggle, nav label {
     display: none;
   }
   /* ----- HABITACIONES ----- */
-  .text-section-one {
+  .text-section-grid .text-section-one {
+    font-size: 18px;
+  }
+  .text-section-grid .text-section-two {
+    font-size: 18px;
+  }
+  .premium-room-section-grid .premium-room-section-three {
     font-size: 16px;
   }
-  .text-section-two {
-    font-size: 17px;
-  }
-  .premium-room-section-three, .standard-room-section-three {
-    font-size: 16px;
-  }
-  .premium-room-section-four, .standard-room-section-four {
+  .premium-room-section-grid .premium-room-section-four {
     font-size: 13px;
   }
-  .premium-room-section-five input, .standard-room-section-five input {
+  .premium-room-section-grid .premium-room-section-five input {
+    height: 70%;
+    width: 55%;
+  }
+  .standard-room-section-grid .standard-room-section-three {
+    font-size: 16px;
+  }
+  .standard-room-section-grid .standard-room-section-four {
+    font-size: 13px;
+  }
+  .standard-room-section-grid .standard-room-section-five input {
     height: 70%;
     width: 55%;
   }
@@ -1002,7 +1008,6 @@ nav #toggle, nav label {
     height: 450px;
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: 40px repeat(2, 25px) 40px repeat(2, 125px);
-    /* background-color: #789461; */
     column-gap: 10px;
     row-gap: 8px;
   }
@@ -1214,25 +1219,45 @@ nav #toggle, nav label {
   .text-section-grid .text-section-two {
     font-size: 13px;
   }
+  .premium-room-section-grid {
+    grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr;
+    grid-template-areas: "premium-room-section-3 premium-room-section-3" "premium-room-section-1 premium-room-section-1" "premium-room-section-1 premium-room-section-1" "premium-room-section-4 premium-room-section-4" "premium-room-section-5 premium-room-section-5";
+    width: 95%;
+    padding: 18px;
+    margin: 10px auto;
+  }
+  .premium-room-section-grid .premium-room-section-two {
+    display: none;
+  }
   .premium-room-section-grid .premium-room-section-three {
     font-size: 12px;
   }
   .premium-room-section-grid .premium-room-section-four {
-    font-size: 9px;
+    font-size: 10px;
   }
   .premium-room-section-grid .premium-room-section-five input {
-    height: 60%;
-    width: 45%;
+    height: 100%;
+    width: 65%;
+  }
+  .standard-room-section-grid {
+    grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr;
+    grid-template-areas: "standard-room-section-3 standard-room-section-3" "standard-room-section-1 standard-room-section-1" "standard-room-section-1 standard-room-section-1" "standard-room-section-4 standard-room-section-4" "standard-room-section-5 standard-room-section-5";
+    width: 95%;
+    padding: 18px;
+    margin: 10px auto;
+  }
+  .standard-room-section-grid .standard-room-section-two {
+    display: none;
   }
   .standard-room-section-grid .standard-room-section-three {
     font-size: 12px;
   }
   .standard-room-section-grid .standard-room-section-four {
-    font-size: 9px;
+    font-size: 10px;
   }
   .standard-room-section-grid .standard-room-section-five input {
-    height: 60%;
-    width: 45%;
+    height: 100%;
+    width: 65%;
   }
   /* ----- GASTRONOMIA ----- */
   .gastronomic-experience-grid {
@@ -1396,7 +1421,6 @@ nav #toggle, nav label {
     grid-row: 3/6;
   }
   .contact-us-grid {
-    /* width: auto; */
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 70px repeat(4, 65px) 110px repeat(8, 75px);
