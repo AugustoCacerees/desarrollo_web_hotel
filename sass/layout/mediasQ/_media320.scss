@@ -80,15 +80,15 @@
         grid-template-areas: 
         "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
         "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6"
-        ". . client-section-7 . ."
+        ". client-section-7 . . ."
         ;
 
         .client-section-one{
             font-size: 14px;
         }
     
-        .client-section-two, .client-section-three, 
-        .client-section-five , .client-section-six{
+        .client-section-two, .client-section-four, 
+        .client-section-five, .client-section-six{
             display: none;
         }
 
@@ -344,8 +344,8 @@
         grid-template-columns: repeat(3,290px);
         grid-template-rows: 40px 300px 40px 120px;
 
-        .available-promotions-two, .available-promotions-three,
-        .available-promotions-four, .available-promotions-eight,
+        .available-promotions-five, .available-promotions-six,
+        .available-promotions-seven, .available-promotions-eight,
         .available-promotions-nine, .available-promotions-ten{
             display: none;
         }
@@ -360,6 +360,11 @@
 
         .available-promotions-seven{
             font-size: 15px;
+        }
+
+        .available-promotions-two, .available-promotions-three,
+        .available-promotions-four{
+            grid-column: 2/3;
         }
     }
 
