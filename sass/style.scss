@@ -1,3 +1,7 @@
+//Utilities
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
 //Base
 @import "./base/reset";
 
@@ -9,6 +13,11 @@
 @import "./layout/reservar";
 @import "./layout/header";
 @import "./layout/footer";
+
+//Components
+
+
+//mediasQ
 
 @media (max-width:1024px){
     /* ----- HEADER ----- */

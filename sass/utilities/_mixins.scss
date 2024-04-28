@@ -1,0 +1,27 @@
+@mixin flex($flex-direction, $justify-content, $align-item, $gap){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-item;
+    gap: $gap;
+}
+
+@mixin grid($column, $rows, $justify-content, $aling-content, $areas){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    justify-content: $justify-content;
+    align-content: $aling-content;
+    grid-template-areas: $areas;
+}
+
+@mixin reservar-contact-us-label{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+@mixin reservar-contact-us-input{
+    display: block;
+    margin-bottom: 1px;
+}
