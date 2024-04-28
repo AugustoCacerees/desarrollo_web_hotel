@@ -1186,12 +1186,12 @@ nav #toggle, nav label {
     margin-top: 20px;
   }
   .clients-section-grid {
-    grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
+    grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". client-section-7 . . .";
   }
   .clients-section-grid .client-section-one {
     font-size: 14px;
   }
-  .clients-section-grid .client-section-two, .clients-section-grid .client-section-three, .clients-section-grid .client-section-four,
+  .clients-section-grid .client-section-two, .clients-section-grid .client-section-four,
   .clients-section-grid .client-section-five, .clients-section-grid .client-section-six {
     display: none;
   }
@@ -1384,8 +1384,7 @@ nav #toggle, nav label {
     grid-template-columns: repeat(3, 290px);
     grid-template-rows: 40px 300px 40px 120px;
   }
-  .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-three, .available-promotions-grid .available-promotions-six,
-  .available-promotions-grid .available-promotions-four,
+  .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-six,
   .available-promotions-grid .available-promotions-seven, .available-promotions-grid .available-promotions-eight,
   .available-promotions-grid .available-promotions-nine, .available-promotions-grid .available-promotions-ten {
     display: none;
@@ -1398,6 +1397,12 @@ nav #toggle, nav label {
   }
   .available-promotions-grid .available-promotions-seven {
     font-size: 15px;
+  }
+  .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-eight, .available-promotions-grid .available-promotions-three, .available-promotions-grid .available-promotions-six, .available-promotions-grid .available-promotions-nine,
+  .available-promotions-grid .available-promotions-four,
+  .available-promotions-grid .available-promotions-seven,
+  .available-promotions-grid .available-promotions-ten {
+    grid-column: 2/3;
   }
   /* ----- RESERVAR ----- */
   .book-room-grid {
