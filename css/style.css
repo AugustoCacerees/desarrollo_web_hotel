@@ -1143,6 +1143,7 @@ nav #toggle, nav label {
     display: inline-flex;
     cursor: pointer;
     padding-right: 5px;
+    color: white;
   }
   nav .menu-bar {
     width: 100%;

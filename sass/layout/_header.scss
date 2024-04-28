@@ -15,7 +15,6 @@ nav{
     );
     flex-wrap: wrap;
     background-color: map-get($colors, colorTitleSecondary);
-
     .menu-nav{
         display: flex;
         list-style: none; 
