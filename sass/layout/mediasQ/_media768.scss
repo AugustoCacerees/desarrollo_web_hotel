@@ -6,10 +6,10 @@
             height: 18%;
         }
         .menu-nav{
-            gap: 30px;
+            gap: 1.875rem;
             li{
                 a{
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }
             }
         }
@@ -18,24 +18,24 @@
     /* ----- INDEX ----- */
     .main-back{
         width: 100%;
-        height: 400px;
+        height: 25rem;
         align-items: center;
         h1{
-            font-size: 58px;
+            font-size: 3.625rem;
         }
         h2{
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 
     .main-sections-grid{
-        grid-template-rows: 60px repeat(3,110px);
+        grid-template-rows: 3.75rem repeat(3,6.875rem);
         .main-section-3{
-            font-size: 15px;
+            font-size: .9375rem;
         }
         
         .main-section-4{
-            font-size: 15px;
+            font-size: .9375rem;
         }
     }
 
@@ -53,21 +53,21 @@
     /* ----- HABITACIONES ----- */
     .text-section-grid{
         .text-section-one{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     
         .text-section-two{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     .premium-room-section-grid{
         .premium-room-section-three{
-            font-size: 16px;
+            font-size: 1rem;
         }
     
         .premium-room-section-four{
-            font-size: 13px;
+            font-size: .8125rem;
         }
         
         .premium-room-section-five{
@@ -80,11 +80,11 @@
 
     .standard-room-section-grid{
         .standard-room-section-three{
-            font-size: 16px;
+            font-size: 1rem;
         }
     
         .standard-room-section-four{
-            font-size: 13px;
+            font-size: .8125rem;
         }
         
         .standard-room-section-five{
@@ -97,25 +97,25 @@
 
     /* ----- GASTRONOMIA ----- */
     .gastronomic-experience-grid{
-        width: 768px;
-        height: 450px;
-        grid-template-columns: repeat(2,350px);
-        grid-template-rows: 40px repeat(2,25px) 40px repeat(2,125px);
-        column-gap: 10px; 
-        row-gap: 8px; 
+        width: 48rem;
+        height: 28.125rem;
+        grid-template-columns: repeat(2,21.875rem);
+        grid-template-rows: 2.5rem repeat(2,1.5625rem) 2.5rem repeat(2,7.8125rem);
+        column-gap: .625rem; 
+        row-gap: .5rem; 
 
         .gastronomic-experience-two{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     
         .gastronomic-experience-five{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     .regional-service-grid{
-        width: 768px;
-        grid-template-columns: repeat(2,300px);
+        width: 48rem;
+        grid-template-columns: repeat(2,18.75rem);
 
         .regional-service-one{
             grid-column: 1/3;    
@@ -123,7 +123,7 @@
     
         .regional-service-two{
             grid-column: 1/3;
-            font-size: 25px; 
+            font-size: 1.5625rem; 
         }
     
         .regional-service-five{
@@ -132,12 +132,12 @@
     
         .regional-service-six{
             grid-column: 1/3;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     
         .regional-service-seven{
             grid-column: 1/3;
-            font-size: 25px; 
+            font-size: 1.5625rem; 
         }
     
         .regional-service-ten{
@@ -146,50 +146,50 @@
     
         .regional-service-eleven{
             grid-column: 1/3;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     /* ----- EXCURSIONES ----- */
     .introduction-excursions-grid{
-        height: 150px;
-        grid-template-rows: 55px 70px;
-        row-gap: 10px;
+        height: 9.375rem;
+        grid-template-rows: 3.4375rem 4.375rem;
+        row-gap: .625rem;
 
         .introduction-excursions-one{
             text-align: center;
         }
         
         .introduction-excursions-two{
-            font-size: 19px;
+            font-size: 1.1875rem;
         }
     }
 
     .salinas-grandes-grid{
-        grid-template-columns: 440px 290px;
+        grid-template-columns: 27.5rem 18.125rem;
 
         .salinas-grandes-two{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     
         .salinas-grandes-four{
             h3{
-                font-size: 21px;
+                font-size: 1.3125rem;
             }
             
             p{
-                font-size: 18px;
+                font-size: 1.125rem;
             }
             
             ul{
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
     }
     
     .available-promotions-grid{
-        grid-template-columns: repeat(2,360px);
-        grid-template-rows: 40px 300px 40px 140px;
+        grid-template-columns: repeat(2,22.5rem);
+        grid-template-rows: 2.5rem 18.75rem 2.5rem 8.75rem;
 
         .available-promotions-eight, .available-promotions-nine,
         .available-promotions-ten{
@@ -197,7 +197,7 @@
         }
         
         .available-promotions-seven, .available-promotions-ten{
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
@@ -206,17 +206,17 @@
         grid-template-columns: minmax(0, 0.4fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 0.4fr);
         
         .book-room-two {
-            font-size: 49px;
+            font-size: 3.0625rem;
             margin-top: auto;
         }
 
         .book-room-four{
             .book-card-grid{
                 .book-card-title {
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
                 .book-card-one, .book-card-three, .book-card-five, .book-card-seven, .book-card-nine{
-                    font-size: 15px;
+                    font-size: .9375rem;
                 }  
             
                 .book-card-eleven {
@@ -228,12 +228,12 @@
     
     .contact-us-grid{
         .contact-us-one{
-            font-size: 34px;
+            font-size: 2.125rem;
         }
         .contact-us-two, .contact-us-three label, .contact-us-four label, .contact-us-five label,
         .contact-us-six label, .contact-us-seven label, .contact-us-eight label, 
         .contact-us-nine label{
-            font-size: 19px;
+            font-size: 1.1875rem;
         } 
 
         .contact-us-ten{
@@ -242,7 +242,7 @@
     }    
     .payment-methods-grid{
         .payment-methods-one{
-            font-size: 34px;
+            font-size: 2.125rem;
         }
     }
 
@@ -251,8 +251,8 @@
         .first-group{
             width: 90%;
             grid-template-columns: repeat(1,1fr);
-            grid-gap: 30px;
-            padding: 35px 0px;
+            grid-gap: 1.875rem;
+            padding: 2.1875rem 0rem;
             .box {
                 text-align: center;
             }

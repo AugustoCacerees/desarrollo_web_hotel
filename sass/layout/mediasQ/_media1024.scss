@@ -6,10 +6,10 @@
             height: 18%;
         }
         .menu-nav{
-            gap: 30px;
+            gap: 1.875rem;
             li{
                 a{
-                    font-size: 24px;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -17,7 +17,7 @@
 
     /* ----- EXCURSIONES ----- */
     .image-background-excursions {
-        width: 1024px;
+        width: 64rem;
         img{
             width: 100%;
         }
@@ -28,11 +28,11 @@
     }
 
     .salinas-grandes-two{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .available-promotions-grid{
-        grid-template-columns: repeat(3,320px);
-        grid-template-rows: 40px 300px 40px 200px;
+        grid-template-columns: repeat(3,20rem);
+        grid-template-rows: 2.5rem 18.75rem 2.5rem 12.5rem;
     }
 }

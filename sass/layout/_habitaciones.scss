@@ -21,16 +21,16 @@
     
     .text-section-one{
         grid-area: text-section-1;
-        font-size: 21px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        font-size: 1.3125rem;
+        margin-top: 1.25rem;
+        margin-bottom: .625rem;
         text-align: center;
     }
     
     .text-section-two{
         grid-area: text-section-2;
         text-align: center;
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
     
     .text-section-three{
@@ -54,12 +54,12 @@
         "premium-room-section-2 premium-room-section-5"
     );
     width: 80%;
-    margin: 30px auto;
-    padding: 25px;
+    margin: 1.875rem auto;
+    padding: 1.5625rem;
     background-color: #D4E7C5;
-    gap: 10px;
+    gap: .625rem;
     &:last-child {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     .premium-room-section-one{
@@ -83,18 +83,18 @@
         grid-area: premium-room-section-3;
         justify-self: center;
         align-self: center;
-        border: 10px solid map-get($colors, colorSecondary);
-        padding-top: 5px;
+        border: .625rem solid map-get($colors, colorSecondary);
+        padding-top: .3125rem;
         text-align: center;
         color: white;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
     .premium-room-section-four{
         grid-area: premium-room-section-4;
-        font-size: 17px;
+        font-size: 1.0625rem;
         p {
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
     }
     
@@ -106,7 +106,7 @@
             width: 60%;
             background-color: #B19470; 
             color: white;
-            margin: 2px;
+            margin: .125rem;
             cursor: pointer;
             &:hover{
                 background-color: #76453B; 
@@ -128,12 +128,12 @@
         "standard-room-section-2 standard-room-section-5"
     );
     width: 80%;
-    margin: 30px auto;
-    padding: 25px;
+    margin: 1.875rem auto;
+    padding: 1.5625rem;
     background-color: #D4E7C5;
-    gap: 10px;
+    gap: .625rem;
     &:last-child {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
     
     .standard-room-section-one{
@@ -157,18 +157,18 @@
         grid-area: standard-room-section-3;
         justify-self: center;
         align-self: center;
-        border: 10px solid map-get($colors, colorSecondary);
-        padding-top: 5px;
+        border: .625rem solid map-get($colors, colorSecondary);
+        padding-top: .3125rem;
         text-align: center;
         color: map-get($colors, colorTitle);
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
     .standard-room-section-four{
         grid-area: standard-room-section-4;
-        font-size: 17px;
+        font-size: 1.0625rem;
         p {
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
     }
     
@@ -180,7 +180,7 @@
             width: 60%;
             background-color: map-get($colors, colorButtonSecondary); 
             color: map-get($colors, colorTitle);
-            margin: 2px;
+            margin: .125rem;
             cursor: pointer;
             &:hover{
                 background-color: map-get($colors, colorButtonPrymary); 
