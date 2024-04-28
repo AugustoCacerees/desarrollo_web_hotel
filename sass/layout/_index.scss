@@ -8,13 +8,13 @@
     padding-left: 2.5%;
     padding-top: 9.375rem;
     h1{
-        font-size: 70px;
+        font-size: 4.375rem;
         color: map-get($colors, colorTitle);
-        text-shadow: 1px 1px 3px black;
+        text-shadow: .0625rem .0625rem .1875rem black;
     }
     h2{
         color: map-get($colors, colorTitle);
-        text-shadow: 1px 1px 3px black;
+        text-shadow: .0625rem .0625rem .1875rem black;
     }
 }
 
@@ -30,8 +30,8 @@
         "section-4 section-4 section-5 section-5"
     );
     width: 100%;
-    padding: 25px;
-    gap: 20px;
+    padding: 1.5625rem;
+    gap: 1.25rem;
     background-color: map-get($colors, colorQuaternary);
     
     .main-section-1{
@@ -39,12 +39,12 @@
         justify-self: center;
         align-self: center;
         text-align: center;
-        font-size: 21px;
+        font-size: 1.3125rem;
     }
 
     .main-section-3{
         grid-area: section-3;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: center;
         display: flex; 
         justify-content: center;
@@ -62,7 +62,7 @@
         img{
             width: 100%;
             height: 100%;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0rem 0rem .625rem rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -75,7 +75,7 @@
 .clients-section-grid{
     @include grid(
         1fr repeat(3,10fr) 1fr,
-        60px 300px 30px,
+        3.75rem 18.75rem 1.875rem,
         center,
         none,
         "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1"
@@ -83,7 +83,7 @@
         ". . client-section-7 . ."
     );
     width: 100%;
-    height: 450px;
+    height: 28.125rem;
     padding: 1.5625rem;
     gap: .625rem;
     background-color: map-get($colors, colorTerteary);
@@ -94,7 +94,7 @@
         justify-self: center;
         align-self: center;
         text-align: center;
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
     .client-section-two{
         grid-area: client-section-2;
@@ -128,8 +128,8 @@
 
 .client-testimony-section-grid{
     @include grid(
-        75px 60px 1fr,
-        35px 35px 20px 200px,
+        4.6875rem 3.75rem 1fr,
+        2.1875rem 2.1875rem 1.25rem 12.5rem,
         none,
         none,
         "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2"
@@ -138,10 +138,10 @@
         "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6",
     );
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     padding: .9375rem;
-    gap: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    gap: .3125rem;
+    box-shadow: 0rem 0rem .625rem rgba(0, 0, 0, 0.5);
 
     .client-testimony-section-one{
         grid-area: client-testimony-section-1;
@@ -155,7 +155,7 @@
     .client-testimony-section-two{
         grid-area: client-testimony-section-2;
         align-self: center;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     
     .client-testimony-section-three{
@@ -185,6 +185,6 @@
     
     .client-testimony-section-six{
         grid-area: client-testimony-section-6;
-        font-size: 15px;
+        font-size: .9375rem;
     }
 }
