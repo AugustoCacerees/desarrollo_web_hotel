@@ -20,13 +20,13 @@ body {
   padding-top: 9.375rem;
 }
 .main-back h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
   color: white;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem black;
 }
 .main-back h2 {
   color: white;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem black;
 }
 
 .main-sections-grid {
@@ -37,8 +37,8 @@ body {
   align-content: none;
   grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-3 section-3" "section-2 section-2 section-5 section-5" "section-4 section-4 section-5 section-5";
   width: 100%;
-  padding: 25px;
-  gap: 20px;
+  padding: 1.5625rem;
+  gap: 1.25rem;
   background-color: #F8FAE5;
 }
 .main-sections-grid .main-section-1 {
@@ -46,11 +46,11 @@ body {
   justify-self: center;
   align-self: center;
   text-align: center;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 .main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
   grid-area: section-3;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@ body {
 .main-sections-grid .main-section-2 img, .main-sections-grid .main-section-5 img {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .main-sections-grid .main-section-5 {
   grid-area: section-5;
@@ -74,12 +74,12 @@ body {
 .clients-section-grid {
   display: grid;
   grid-template-columns: 1fr repeat(3, 10fr) 1fr;
-  grid-template-rows: 60px 300px 30px;
+  grid-template-rows: 3.75rem 18.75rem 1.875rem;
   justify-content: center;
   align-content: none;
   grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". . client-section-7 . .";
   width: 100%;
-  height: 450px;
+  height: 28.125rem;
   padding: 1.5625rem;
   gap: 0.625rem;
   background-color: #D4E7C5;
@@ -90,7 +90,7 @@ body {
   justify-self: center;
   align-self: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .clients-section-grid .client-section-two {
   grid-area: client-section-2;
@@ -117,16 +117,16 @@ body {
 
 .client-testimony-section-grid {
   display: grid;
-  grid-template-columns: 75px 60px 1fr;
-  grid-template-rows: 35px 35px 20px 200px;
+  grid-template-columns: 4.6875rem 3.75rem 1fr;
+  grid-template-rows: 2.1875rem 2.1875rem 1.25rem 12.5rem;
   justify-content: none;
   align-content: none;
   grid-template-areas: "client-testimony-section-1 client-testimony-section-2 client-testimony-section-2" "client-testimony-section-1 client-testimony-section-3 client-testimony-section-4" "client-testimony-section-5 client-testimony-section-5 client-testimony-section-5" "client-testimony-section-6 client-testimony-section-6 client-testimony-section-6";
   width: 100%;
-  height: 300px;
+  height: 18.75rem;
   padding: 0.9375rem;
-  gap: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  gap: 0.3125rem;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .client-testimony-section-grid .client-testimony-section-one {
   grid-area: client-testimony-section-1;
@@ -138,7 +138,7 @@ body {
 .client-testimony-section-grid .client-testimony-section-two {
   grid-area: client-testimony-section-2;
   align-self: center;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .client-testimony-section-grid .client-testimony-section-three {
   grid-area: client-testimony-section-3;
@@ -162,7 +162,7 @@ body {
 }
 .client-testimony-section-grid .client-testimony-section-six {
   grid-area: client-testimony-section-6;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .image-background-rooms img {
@@ -185,15 +185,15 @@ body {
 }
 .text-section-grid .text-section-one {
   grid-area: text-section-1;
-  font-size: 21px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  font-size: 1.3125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
   text-align: center;
 }
 .text-section-grid .text-section-two {
   grid-area: text-section-2;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .text-section-grid .text-section-three {
   grid-area: text-section-3;
@@ -210,13 +210,13 @@ body {
   align-content: none;
   grid-template-areas: "premium-room-section-1 premium-room-section-3" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-1 premium-room-section-4" "premium-room-section-2 premium-room-section-5";
   width: 80%;
-  margin: 30px auto;
-  padding: 25px;
+  margin: 1.875rem auto;
+  padding: 1.5625rem;
   background-color: #D4E7C5;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .premium-room-section-grid:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 .premium-room-section-grid .premium-room-section-one {
   grid-area: premium-room-section-1;
@@ -237,18 +237,18 @@ body {
   grid-area: premium-room-section-3;
   justify-self: center;
   align-self: center;
-  border: 10px solid #789461;
-  padding-top: 5px;
+  border: 0.625rem solid #789461;
+  padding-top: 0.3125rem;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .premium-room-section-grid .premium-room-section-four {
   grid-area: premium-room-section-4;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .premium-room-section-grid .premium-room-section-four p {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .premium-room-section-grid .premium-room-section-five {
   grid-area: premium-room-section-5;
@@ -259,7 +259,7 @@ body {
   width: 60%;
   background-color: #B19470;
   color: white;
-  margin: 2px;
+  margin: 0.125rem;
   cursor: pointer;
 }
 .premium-room-section-grid .premium-room-section-five input:hover {
@@ -274,13 +274,13 @@ body {
   align-content: none;
   grid-template-areas: "standard-room-section-1 standard-room-section-3" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-1 standard-room-section-4" "standard-room-section-2 standard-room-section-5";
   width: 80%;
-  margin: 30px auto;
-  padding: 25px;
+  margin: 1.875rem auto;
+  padding: 1.5625rem;
   background-color: #D4E7C5;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .standard-room-section-grid:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 .standard-room-section-grid .standard-room-section-one {
   grid-area: standard-room-section-1;
@@ -301,18 +301,18 @@ body {
   grid-area: standard-room-section-3;
   justify-self: center;
   align-self: center;
-  border: 10px solid #789461;
-  padding-top: 5px;
+  border: 0.625rem solid #789461;
+  padding-top: 0.3125rem;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .standard-room-section-grid .standard-room-section-four {
   grid-area: standard-room-section-4;
-  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .standard-room-section-grid .standard-room-section-four p {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .standard-room-section-grid .standard-room-section-five {
   grid-area: standard-room-section-5;
@@ -323,7 +323,7 @@ body {
   width: 60%;
   background-color: #B19470;
   color: white;
-  margin: 2px;
+  margin: 0.125rem;
   cursor: pointer;
 }
 .standard-room-section-grid .standard-room-section-five input:hover {
@@ -338,38 +338,38 @@ body {
 
 .gastronomic-experience-grid {
   display: grid;
-  grid-template-columns: repeat(2, 480px);
-  grid-template-rows: 40px repeat(2, 60px) 40px repeat(2, 180x);
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: 2.5rem repeat(2, 3.75rem) 2.5rem repeat(2, 11.25rem);
   justify-content: center;
   align-content: center;
   grid-template-areas: none;
   width: 100%;
-  height: 600px;
-  column-gap: 15px;
-  row-gap: 15px;
+  height: 37.5rem;
+  column-gap: 0.9375rem;
+  row-gap: 0.9375rem;
 }
 .gastronomic-experience-grid .gastronomic-experience-one, .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
   grid-column: 1/3;
   justify-self: center;
   align-self: center;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
   grid-row: 2/4;
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: center;
 }
 .gastronomic-experience-grid .gastronomic-experience-three {
   grid-column: 1/3;
   grid-row: 4/5;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .gastronomic-experience-grid .gastronomic-experience-four {
   grid-column: 1/2;
   grid-row: 5/7;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .gastronomic-experience-grid .gastronomic-experience-five {
   grid-column: 2/3;
@@ -378,24 +378,24 @@ body {
 
 .regional-service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 80px repeat(2, 30px 300px 120px);
+  grid-template-columns: repeat(3, 18.75rem);
+  grid-template-rows: 80px repeat(2, 1.875rem 18.75rem 7.5rem);
   justify-content: center;
   align-content: center;
   grid-template-areas: none;
   width: 100%;
-  height: 1100px;
-  column-gap: 15px;
-  row-gap: 10px;
+  height: 68.75rem;
+  column-gap: 0.9375rem;
+  row-gap: 0.625rem;
 }
 .regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
   grid-column: 1/4;
   justify-self: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
-  font-size: 28px;
+  font-size: 1.75rem;
   grid-row: 2/3;
 }
 .regional-service-grid .regional-service-three, .regional-service-grid .regional-service-eight, .regional-service-grid .regional-service-ten, .regional-service-grid .regional-service-nine, .regional-service-grid .regional-service-five, .regional-service-grid .regional-service-four {
@@ -403,7 +403,7 @@ body {
   grid-row: 3/4;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .regional-service-grid .regional-service-four {
   grid-column: 2/3;
@@ -416,7 +416,7 @@ body {
   grid-row: 4/5;
   justify-self: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .regional-service-grid .regional-service-seven {
   grid-row: 5/6;
@@ -443,47 +443,47 @@ body {
 .introduction-excursions-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 50px);
+  grid-template-rows: repeat(2, 3.125rem);
   justify-content: center;
   align-content: center;
   grid-template-areas: none;
   width: 100%;
-  height: 150px;
+  height: 9.375rem;
 }
 .introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
   grid-column: 1/2;
   grid-row: 1/2;
-  font-size: 25px;
+  font-size: 1.5625rem;
   justify-self: center;
   align-content: center;
   text-align: center;
 }
 .introduction-excursions-grid .introduction-excursions-two {
   grid-row: 2/3;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .salinas-grandes-grid {
   display: grid;
-  grid-template-columns: 500px 350px;
-  grid-template-rows: 70px 110px 370px;
+  grid-template-columns: 31.25rem 21.875rem;
+  grid-template-rows: 4.375rem 6.875rem 23.125rem;
   justify-content: center;
   align-content: center;
   grid-template-areas: none;
   width: 100%;
-  column-gap: 15px;
-  row-gap: 5px;
+  column-gap: 0.9375rem;
+  row-gap: 0.3125rem;
 }
 .salinas-grandes-grid .salinas-grandes-one, .salinas-grandes-grid .salinas-grandes-two {
   grid-column: 1/3;
   grid-row: 1/2;
-  font-size: 23px;
+  font-size: 1.4375rem;
   justify-self: center;
   align-content: center;
   text-align: center;
 }
 .salinas-grandes-grid .salinas-grandes-two {
-  font-size: 21px;
+  font-size: 1.3125rem;
   grid-row: 2/3;
 }
 .salinas-grandes-grid .salinas-grandes-three {
@@ -496,34 +496,34 @@ body {
   grid-row: 3/4;
 }
 .salinas-grandes-grid .salinas-grandes-four h3 {
-  font-size: 23px;
-  margin-bottom: 20px;
+  font-size: 1.4375rem;
+  margin-bottom: 1.25rem;
 }
 .salinas-grandes-grid .salinas-grandes-four p {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 1.25rem;
+  margin-bottom: 0.9375rem;
 }
 .salinas-grandes-grid .salinas-grandes-four ul {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
   list-style-position: inside;
 }
 
 .available-promotions-grid {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 40px 300px 40px 120px;
+  grid-template-columns: repeat(3, 25rem);
+  grid-template-rows: 2.5rem 18.75rem 2.5rem 7.5rem;
   justify-content: center;
   align-content: none;
   grid-template-areas: none;
   width: 100%;
-  height: 600px;
-  column-gap: 10px;
+  height: 37.5rem;
+  column-gap: 0.625rem;
 }
 .available-promotions-grid .available-promotions-one {
   grid-column: 1/4;
   grid-row: 1/2;
-  font-size: 25px;
+  font-size: 1.5625rem;
   justify-self: center;
   align-content: center;
 }
@@ -532,7 +532,7 @@ body {
   grid-row: 2/3;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 .available-promotions-grid .available-promotions-five {
   grid-column: 2/3;
@@ -545,7 +545,7 @@ body {
   grid-row: 3/4;
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .available-promotions-grid .available-promotions-six {
   grid-column: 2/3;
@@ -556,7 +556,7 @@ body {
 .available-promotions-grid .available-promotions-four, .available-promotions-grid .available-promotions-ten, .available-promotions-grid .available-promotions-seven {
   grid-column: 1/2;
   grid-row: 4/5;
-  font-size: 20px;
+  font-size: 1.25rem;
   list-style-position: inside;
   text-align: left;
 }
@@ -570,7 +570,7 @@ body {
 .book-room-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 1fr);
-  grid-template-rows: 100px 140px 120px 120px;
+  grid-template-rows: 6.25rem 8.75rem 7.5rem 7.5rem;
   justify-content: none;
   align-content: none;
   grid-template-areas: none;
@@ -583,14 +583,14 @@ body {
   grid-column: 2/3;
   grid-row: 2/3;
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
   word-wrap: break-word;
 }
 .book-room-grid .book-room-three {
   grid-column: 2/3;
   grid-row: 3/4;
   color: white;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 .book-room-grid .book-room-four {
   width: 80%;
@@ -599,8 +599,8 @@ body {
   grid-row: 1/5;
   background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.625rem;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.5);
 }
 
 .book-card-grid {
@@ -613,20 +613,20 @@ body {
   width: 90%;
   height: 100%;
   margin: auto;
-  column-gap: 10px;
+  column-gap: 0.625rem;
 }
 .book-card-grid .book-card-title {
   grid-column: 1/3;
-  font-size: 20px;
+  font-size: 1.25rem;
   justify-self: center;
   align-content: center;
 }
 .book-card-grid .book-card-one, .book-card-grid .book-card-nine, .book-card-grid .book-card-seven, .book-card-grid .book-card-five, .book-card-grid .book-card-three {
   grid-column: 1/2;
   grid-row: 2/3;
-  font-size: 18px;
+  font-size: 1.125rem;
   align-content: end;
-  margin: 5px;
+  margin: 0.3125rem;
 }
 .book-card-grid .book-card-three {
   grid-column: 2/3;
@@ -644,7 +644,7 @@ body {
 .book-card-grid .book-card-two, .book-card-grid .book-card-six, .book-card-grid .book-card-ten, .book-card-grid .book-card-eight, .book-card-grid .book-card-four {
   grid-column: 1/2;
   grid-row: 3/4;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   background-color: rgba(163, 163, 163, 0.49);
 }
 .book-card-grid .book-card-four {
@@ -679,27 +679,27 @@ body {
   align-content: center;
   grid-template-areas: none;
   width: 95%;
-  height: 600px;
-  column-gap: 10px;
+  height: 37.5rem;
+  column-gap: 0.625rem;
   margin-left: auto;
   margin-right: auto;
 }
 .contact-us-grid .contact-us-one {
   grid-column: 1/2;
   grid-row: 1/2;
-  font-size: 40px;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
 }
 .contact-us-grid .contact-us-two {
   grid-column: 2/4;
   grid-row: 2/3;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .contact-us-grid .contact-us-three {
   grid-column: 2/3;
   grid-row: 3/4;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   display: block;
   font-size: 24px;
   margin-bottom: 5px;
@@ -767,7 +767,7 @@ body {
   grid-column: 3/4;
   grid-row: 8/9;
   color: white;
-  margin: 2px;
+  margin: 0.125rem;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -786,7 +786,7 @@ body {
 .payment-methods-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 200px;
+  grid-template-rows: 5rem 12.5rem;
   justify-content: none;
   align-content: none;
   grid-template-areas: none;
@@ -796,8 +796,8 @@ body {
 }
 .payment-methods-grid .payment-methods-one {
   grid-row: 1/2;
-  margin-top: 20px;
-  font-size: 40px;
+  margin-top: 1.25rem;
+  font-size: 2.5rem;
 }
 .payment-methods-grid .payment-methods-two {
   grid-row: 2/3;
@@ -833,7 +833,7 @@ nav .menu-nav {
 nav .menu-nav li a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 nav .menu-nav li a:hover {
   color: rgba(55, 166, 142, 0.682);
@@ -855,10 +855,10 @@ nav #toggle, nav label {
   align-content: none;
   grid-template-areas: none;
   width: 100%;
-  max-width: 1024px;
+  max-width: 64rem;
   margin: auto;
-  grid-gap: 40px;
-  padding: 45px 0px;
+  grid-gap: 2.5rem;
+  padding: 2.8125rem 0rem;
 }
 .footer-grid .first-group .box figure {
   width: 100%;
@@ -870,25 +870,25 @@ nav #toggle, nav label {
   gap: none;
 }
 .footer-grid .first-group .box figure img {
-  width: 270px;
+  width: 16.875rem;
 }
 .footer-grid .first-group .box h2 {
   color: white;
-  margin-bottom: 25px;
-  font-size: 25px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.5625rem;
 }
 .footer-grid .first-group .box p {
   color: #efefef;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .footer-grid .first-group .box .social-network a {
   display: inline-block;
   text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
   color: white;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   background-color: #26554C;
   text-align: center;
   transition: all 300ms ease;
@@ -898,12 +898,12 @@ nav #toggle, nav label {
 }
 .footer-grid .second-group {
   background-color: #294E47;
-  padding: 15px 10px;
+  padding: 0.9375rem 0.625rem;
   text-align: center;
   color: white;
 }
 .footer-grid .second-group small {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 @media (max-width: 1024px) {
@@ -913,14 +913,14 @@ nav #toggle, nav label {
     height: 18%;
   }
   nav .menu-nav {
-    gap: 30px;
+    gap: 1.875rem;
   }
   nav .menu-nav li a {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   /* ----- EXCURSIONES ----- */
   .image-background-excursions {
-    width: 1024px;
+    width: 64rem;
   }
   .image-background-excursions img {
     width: 100%;
@@ -929,11 +929,11 @@ nav #toggle, nav label {
     grid-template-columns: 90%;
   }
   .salinas-grandes-two {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .available-promotions-grid {
-    grid-template-columns: repeat(3, 320px);
-    grid-template-rows: 40px 300px 40px 200px;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: 2.5rem 18.75rem 2.5rem 12.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -943,31 +943,31 @@ nav #toggle, nav label {
     height: 18%;
   }
   nav .menu-nav {
-    gap: 30px;
+    gap: 1.875rem;
   }
   nav .menu-nav li a {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   /* ----- INDEX ----- */
   .main-back {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     align-items: center;
   }
   .main-back h1 {
-    font-size: 58px;
+    font-size: 3.625rem;
   }
   .main-back h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .main-sections-grid {
-    grid-template-rows: 60px repeat(3, 110px);
+    grid-template-rows: 3.75rem repeat(3, 6.875rem);
   }
   .main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .main-sections-grid .main-section-4 {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .clients-section-grid {
     grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". client-section-7 client-section-7 . .";
@@ -977,26 +977,26 @@ nav #toggle, nav label {
   }
   /* ----- HABITACIONES ----- */
   .text-section-grid .text-section-one {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .text-section-grid .text-section-two {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .premium-room-section-grid .premium-room-section-three {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .premium-room-section-grid .premium-room-section-four {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .premium-room-section-grid .premium-room-section-five input {
     height: 70%;
     width: 55%;
   }
   .standard-room-section-grid .standard-room-section-three {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .standard-room-section-grid .standard-room-section-four {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .standard-room-section-grid .standard-room-section-five input {
     height: 70%;
@@ -1004,123 +1004,123 @@ nav #toggle, nav label {
   }
   /* ----- GASTRONOMIA ----- */
   .gastronomic-experience-grid {
-    width: 768px;
-    height: 450px;
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: 40px repeat(2, 25px) 40px repeat(2, 125px);
-    column-gap: 10px;
-    row-gap: 8px;
+    width: 48rem;
+    height: 28.125rem;
+    grid-template-columns: repeat(2, 21.875rem);
+    grid-template-rows: 2.5rem repeat(2, 1.5625rem) 2.5rem repeat(2, 7.8125rem);
+    column-gap: 0.625rem;
+    row-gap: 0.5rem;
   }
   .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .gastronomic-experience-grid .gastronomic-experience-five {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .regional-service-grid {
-    width: 768px;
-    grid-template-columns: repeat(2, 300px);
+    width: 48rem;
+    grid-template-columns: repeat(2, 18.75rem);
   }
   .regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/3;
   }
   .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/3;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .regional-service-grid .regional-service-five {
     display: none;
   }
   .regional-service-grid .regional-service-six, .regional-service-grid .regional-service-eleven {
     grid-column: 1/3;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .regional-service-grid .regional-service-seven {
     grid-column: 1/3;
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .regional-service-grid .regional-service-ten {
     display: none;
   }
   .regional-service-grid .regional-service-eleven {
     grid-column: 1/3;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   /* ----- EXCURSIONES ----- */
   .introduction-excursions-grid {
-    height: 150px;
-    grid-template-rows: 55px 70px;
-    row-gap: 10px;
+    height: 9.375rem;
+    grid-template-rows: 3.4375rem 4.375rem;
+    row-gap: 0.625rem;
   }
   .introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
     text-align: center;
   }
   .introduction-excursions-grid .introduction-excursions-two {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .salinas-grandes-grid {
-    grid-template-columns: 440px 290px;
+    grid-template-columns: 27.5rem 18.125rem;
   }
   .salinas-grandes-grid .salinas-grandes-two {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .salinas-grandes-grid .salinas-grandes-four h3 {
-    font-size: 21px;
+    font-size: 1.3125rem;
   }
   .salinas-grandes-grid .salinas-grandes-four p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .salinas-grandes-grid .salinas-grandes-four ul {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .available-promotions-grid {
-    grid-template-columns: repeat(2, 360px);
-    grid-template-rows: 40px 300px 40px 140px;
+    grid-template-columns: repeat(2, 22.5rem);
+    grid-template-rows: 2.5rem 18.75rem 2.5rem 8.75rem;
   }
   .available-promotions-grid .available-promotions-eight, .available-promotions-grid .available-promotions-nine,
   .available-promotions-grid .available-promotions-ten {
     display: none;
   }
   .available-promotions-grid .available-promotions-seven, .available-promotions-grid .available-promotions-ten {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   /* ----- RESERVAR ----- */
   .book-room-grid {
     grid-template-columns: minmax(0, 0.4fr) minmax(0, 8fr) minmax(0, 6fr) minmax(0, 0.4fr);
   }
   .book-room-grid .book-room-two {
-    font-size: 49px;
+    font-size: 3.0625rem;
     margin-top: auto;
   }
   .book-room-grid .book-room-four .book-card-grid .book-card-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .book-room-grid .book-room-four .book-card-grid .book-card-one, .book-room-grid .book-room-four .book-card-grid .book-card-three, .book-room-grid .book-room-four .book-card-grid .book-card-five, .book-room-grid .book-room-four .book-card-grid .book-card-seven, .book-room-grid .book-room-four .book-card-grid .book-card-nine {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .book-room-grid .book-room-four .book-card-grid .book-card-eleven {
     grid-column: 1/3;
   }
   .contact-us-grid .contact-us-one {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
   .contact-us-grid .contact-us-two, .contact-us-grid .contact-us-three label, .contact-us-grid .contact-us-four label, .contact-us-grid .contact-us-five label,
   .contact-us-grid .contact-us-six label, .contact-us-grid .contact-us-seven label, .contact-us-grid .contact-us-eight label,
   .contact-us-grid .contact-us-nine label {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .contact-us-grid .contact-us-ten {
     height: 60%;
   }
   .payment-methods-grid .payment-methods-one {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
   /* ---- FOOTER ---- */
   .footer-grid .first-group {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
+    grid-gap: 1.875rem;
+    padding: 2.1875rem 0rem;
   }
   .footer-grid .first-group .box {
     text-align: center;
@@ -1142,7 +1142,7 @@ nav #toggle, nav label {
   nav label {
     display: inline-flex;
     cursor: pointer;
-    padding-right: 5px;
+    padding-right: 0.3125rem;
     color: white;
   }
   nav .menu-bar {
@@ -1153,43 +1153,43 @@ nav #toggle, nav label {
   nav .menu-bar ul {
     flex-direction: column;
     align-items: center;
-    padding: 8px 0;
+    padding: 0.5rem 0;
   }
   /* ---- INDEX ---- */
   .main-back {
     width: 100%;
-    height: 400px;
+    height: 25rem;
     align-items: center;
   }
   .main-back h1 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .main-back h2 {
-    font-size: 11px;
+    font-size: 0.6875rem;
   }
   .main-sections-grid {
-    grid-template-rows: 60px repeat(6, 75px);
+    grid-template-rows: 3.75rem repeat(6, 4.6875rem);
     grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-2 section-2" "section-2 section-2 section-2 section-2" "section-3 section-3 section-3 section-3" "section-5 section-5 section-5 section-5" "section-5 section-5 section-5 section-5" "section-4 section-4 section-4 section-4";
-    gap: 12px;
+    gap: 0.75rem;
   }
   .main-sections-grid .main-section-1 {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .main-sections-grid .main-section-3, .main-sections-grid .main-section-4 {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 0.75rem;
+    margin-top: 1.25rem;
   }
   .main-sections-grid .main-section-4 {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .main-sections-grid .main-section-5 {
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   .clients-section-grid {
     grid-template-areas: "client-section-1 client-section-1 client-section-1 client-section-1 client-section-1" "client-section-2 client-section-3 client-section-4 client-section-5 client-section-6" ". client-section-7 . . .";
   }
   .clients-section-grid .client-section-one {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .clients-section-grid .client-section-two, .clients-section-grid .client-section-four,
   .clients-section-grid .client-section-five, .clients-section-grid .client-section-six {
@@ -1203,38 +1203,38 @@ nav #toggle, nav label {
     margin-right: auto;
   }
   .client-testimony-section-grid .client-testimony-section-two p {
-    font-size: 23px;
+    font-size: 1.4375rem;
   }
   .client-testimony-section-grid .client-testimony-section-three img {
     width: 70%;
     height: 75%;
   }
   .client-testimony-section-grid .client-testimony-section-four p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   /* ----- HABITACIONES ----- */
   .text-section-grid .text-section-one, .text-section-grid .text-section-three {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
   }
   .text-section-grid .text-section-two {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
   .premium-room-section-grid {
     grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr;
     grid-template-areas: "premium-room-section-3 premium-room-section-3" "premium-room-section-1 premium-room-section-1" "premium-room-section-1 premium-room-section-1" "premium-room-section-4 premium-room-section-4" "premium-room-section-5 premium-room-section-5";
     width: 95%;
-    padding: 18px;
-    margin: 10px auto;
+    padding: 1.125rem;
+    margin: 0.625rem auto;
   }
   .premium-room-section-grid .premium-room-section-two {
     display: none;
   }
   .premium-room-section-grid .premium-room-section-three {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .premium-room-section-grid .premium-room-section-four {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .premium-room-section-grid .premium-room-section-five input {
     height: 100%;
@@ -1244,17 +1244,17 @@ nav #toggle, nav label {
     grid-template-rows: 0.25fr repeat(3, 1fr) 0.25fr;
     grid-template-areas: "standard-room-section-3 standard-room-section-3" "standard-room-section-1 standard-room-section-1" "standard-room-section-1 standard-room-section-1" "standard-room-section-4 standard-room-section-4" "standard-room-section-5 standard-room-section-5";
     width: 95%;
-    padding: 18px;
-    margin: 10px auto;
+    padding: 1.125rem;
+    margin: 0.625rem auto;
   }
   .standard-room-section-grid .standard-room-section-two {
     display: none;
   }
   .standard-room-section-grid .standard-room-section-three {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .standard-room-section-grid .standard-room-section-four {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .standard-room-section-grid .standard-room-section-five input {
     height: 100%;
@@ -1262,25 +1262,25 @@ nav #toggle, nav label {
   }
   /* ----- GASTRONOMIA ----- */
   .gastronomic-experience-grid {
-    width: 320px;
-    height: 600px;
-    grid-template-columns: 300px;
-    grid-template-rows: 40px 70px 45px repeat(3, 60px) 180px;
+    width: 20rem;
+    height: 37.5rem;
+    grid-template-columns: 18.75rem;
+    grid-template-rows: 2.5rem 4.375rem 2.8125rem repeat(3, 3.75rem) 11.25rem;
   }
   .gastronomic-experience-grid .gastronomic-experience-one, .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
   .gastronomic-experience-grid .gastronomic-experience-two, .gastronomic-experience-grid .gastronomic-experience-five {
     grid-column: 1/2;
     grid-row: 2/3;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .gastronomic-experience-grid .gastronomic-experience-three {
     grid-column: 1/2;
     grid-row: 3/4;
-    font-size: 15px;
+    font-size: 0.9375rem;
     align-self: center;
   }
   .gastronomic-experience-grid .gastronomic-experience-four {
@@ -1293,21 +1293,21 @@ nav #toggle, nav label {
   .gastronomic-experience-grid .gastronomic-experience-five {
     grid-column: 1/2;
     grid-row: 7/8;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .regional-service-grid {
-    width: 320px;
-    height: 900px;
-    grid-template-columns: 300px;
-    grid-template-rows: 40px 30px 220px 120px 30px 220px 120px;
+    width: 20rem;
+    height: 56.25rem;
+    grid-template-columns: 18.75rem;
+    grid-template-rows: 2.5rem 1.875rem 13.75rem 7.5rem 1.875rem 13.75rem 7.5rem;
   }
   .regional-service-grid .regional-service-one, .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/2;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .regional-service-grid .regional-service-two, .regional-service-grid .regional-service-seven {
     grid-column: 1/2;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .regional-service-grid .regional-service-four {
     display: none;
@@ -1317,11 +1317,11 @@ nav #toggle, nav label {
   }
   .regional-service-grid .regional-service-six, .regional-service-grid .regional-service-eleven {
     grid-column: 1/2;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .regional-service-grid .regional-service-seven {
     grid-column: 1/2;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .regional-service-grid .regional-service-nine {
     display: none;
@@ -1331,33 +1331,33 @@ nav #toggle, nav label {
   }
   .regional-service-grid .regional-service-eleven {
     grid-column: 1/2;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   /* ----- EXCURSIONES ----- */
   .introduction-excursions-grid {
-    grid-template-rows: 60px 70px;
-    row-gap: 10px;
+    grid-template-rows: 3.75rem 4.375rem;
+    row-gap: 0.625rem;
   }
   .introduction-excursions-grid .introduction-excursions-one, .introduction-excursions-grid .introduction-excursions-two {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
   }
   .introduction-excursions-grid .introduction-excursions-two {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .salinas-grandes-grid {
-    grid-template-columns: 300px;
-    grid-template-rows: 60px 150px 350px 250px;
+    grid-template-columns: 18.75rem;
+    grid-template-rows: 3.75rem 9.375rem 21.875rem 15.625rem;
   }
   .salinas-grandes-grid .salinas-grandes-one, .salinas-grandes-grid .salinas-grandes-two {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .salinas-grandes-grid .salinas-grandes-two {
     grid-column: 1/2;
     grid-row: 2/3;
-    font-size: 15px;
+    font-size: 0.9375rem;
     justify-self: center;
     align-content: center;
     text-align: center;
@@ -1372,17 +1372,17 @@ nav #toggle, nav label {
     grid-row: 4/5;
   }
   .salinas-grandes-grid .salinas-grandes-four h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .salinas-grandes-grid .salinas-grandes-four p {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .salinas-grandes-grid .salinas-grandes-four ul {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .available-promotions-grid {
-    grid-template-columns: repeat(3, 290px);
-    grid-template-rows: 40px 300px 40px 120px;
+    grid-template-columns: repeat(3, 18.125rem);
+    grid-template-rows: 2.5rem 18.75rem 2.5rem 7.5rem;
   }
   .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-six,
   .available-promotions-grid .available-promotions-seven, .available-promotions-grid .available-promotions-eight,
@@ -1390,13 +1390,13 @@ nav #toggle, nav label {
     display: none;
   }
   .available-promotions-grid .available-promotions-one {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
   .available-promotions-grid .available-promotions-six {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .available-promotions-grid .available-promotions-seven {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .available-promotions-grid .available-promotions-two, .available-promotions-grid .available-promotions-five, .available-promotions-grid .available-promotions-eight, .available-promotions-grid .available-promotions-three, .available-promotions-grid .available-promotions-six, .available-promotions-grid .available-promotions-nine,
   .available-promotions-grid .available-promotions-four,
@@ -1406,19 +1406,19 @@ nav #toggle, nav label {
   }
   /* ----- RESERVAR ----- */
   .book-room-grid {
-    grid-template-rows: 100px 75px 140px 120px 130px;
+    grid-template-rows: 6.25rem 4.6875rem 8.75rem 7.5rem 8.125rem;
   }
   .book-room-grid .book-room-two {
     grid-column: 2/4;
     grid-row: 1/2;
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
   }
   .book-room-grid .book-room-three {
     grid-column: 2/4;
     grid-row: 2/3;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
   }
   .book-room-grid .book-room-four {
@@ -1429,7 +1429,7 @@ nav #toggle, nav label {
   .contact-us-grid {
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px repeat(4, 65px) 110px repeat(8, 75px);
+    grid-template-rows: 4.375rem repeat(4, 4.0625rem) 6.875rem repeat(8, 4.6875rem);
   }
   .contact-us-grid .contact-us-two {
     grid-column: 1/2;
@@ -1473,7 +1473,7 @@ nav #toggle, nav label {
     grid-row: 2/6;
   }
   .payment-methods-grid {
-    grid-template-rows: 80px 150px;
+    grid-template-rows: 5rem 9.375rem;
   }
 }
 
